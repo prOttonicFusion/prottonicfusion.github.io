@@ -1,7 +1,7 @@
 import React from "react";
 import ContactMDX from "../sections/contact"
-import { Box, Grid, Image } from "theme-ui";
-import ContactUs from "../images/contactus.svg";
+import { Box, Grid } from "theme-ui";
+import ContacIcon from './social-icon';
 import "../styles/global.scss";
 
 const Contact = () => (
@@ -10,24 +10,15 @@ const Contact = () => (
         pb={100}
         pl={4}
         pr={4}
-        columns={[1, 2]}
+        columns={[1]}
         id="contact"
-        // className={"main-content"}
     >
-        <Box sx={{
-            textAlign: 'center'
-        }}>
-            <Image src={ContactUs}
-                sx={{
-                    maxWidth: '80%',
-                    minWidth: '300px',
-                    transform: 'rotate(-5deg)'
-                }}
-            />
-        </Box>
         <Box>
             <ContactMDX />
         </Box>
+        <SocialIcon service={"github"} url={"https://github.com/prottonicfusion/"} label={"GitHub"}></SocialIcon>
+        <SocialIcon service={"linkedin"} url={""} label={"LinkedIn"}></SocialIcon>
+        <SocialIcon service={"email"} url={"mailto: otto.lindblom@gmail.com"} label={"E-mail"}></SocialIcon>
     </Grid>
 )
 
