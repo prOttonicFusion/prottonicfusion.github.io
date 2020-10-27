@@ -1,15 +1,12 @@
 import React from "react"
 import { Link, Text } from 'theme-ui'
+import "../styles/global.scss";
 
 const Footer = () => (
     <Text
-        p={20}
-        sx={{
-            fontSize: 'small',
-            textAlign: 'center',
-        }}
+        className={"site-footer"}
     >
-        &copy; {new Date().getFullYear()} prOttonicFusion
+        {new Date().getFullYear()} &copy; prOttonicFusion
     </Text>
 )
 
