@@ -5,6 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `My Test Site`,
+    siteUrl: `https://www.gatsbyjs.com`,
+    description: `Just another sample site`,
+    author: `prOttonicFusion`,
+  },
+  plugins: [
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-mdx',
+  ],
 }
+
+
