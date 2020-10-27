@@ -1,16 +1,17 @@
 import React from "react"
 import { Container, Image, Box, NavLink } from 'theme-ui'
-import banner from '../images/banner.svg'
+import profilePic from '../images/profile.jpg'
 import BannerMDX from "../sections/banner"
 import "../styles/global.scss"
 
 const Banner = () => (
     <Container className={"page-banner"}>
-        <Image src={banner}
+        <Image src={profilePic}
             sx={{
                 maxWidth: '20%',
                 minWidth: '200px'
             }}
+            className={"profile-pic"}
         />
         <Box sx={{
             color: "white"

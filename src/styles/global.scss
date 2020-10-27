@@ -122,6 +122,15 @@ a {
   }
 }
 
+.profile-pic {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 4px;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
 .main-content {
   word-wrap: break-word;
   text-align: center;
@@ -338,3 +347,5 @@ a {
     margin-bottom: 0.5rem;
   }
 }
+
+
