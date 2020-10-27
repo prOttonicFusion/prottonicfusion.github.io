@@ -2,16 +2,10 @@ import React from "react"
 import { Container, Image, Box, NavLink } from 'theme-ui'
 import banner from '../images/banner.svg'
 import BannerMDX from "../sections/banner"
+import "../styles/global.scss"
 
 const Banner = () => (
-    <Container
-        pt={100}
-        pb={100}
-        bg='black'
-        sx={{
-            textAlign: 'center'
-        }}
-    >
+    <Container className={"page-banner"}>
         <Image src={banner}
             sx={{
                 maxWidth: '20%',
@@ -21,14 +15,9 @@ const Banner = () => (
         <Box sx={{
             color: "white"
         }}>
-            <BannerMDX/>
+            <BannerMDX />
         </Box>
-        <Box as='nav'
-            sx={{
-                color: 'grey',
-                fontSize: 'large'
-            }}
-        >
+        <Box as='nav'>
             <NavLink href='#about' p={2}>
                 About
             </NavLink>
