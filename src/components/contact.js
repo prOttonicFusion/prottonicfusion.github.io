@@ -1,7 +1,7 @@
 import React from "react";
 import ContactMDX from "../sections/contact"
 import { Box, Grid } from "theme-ui";
-import ContacIcon from './social-icon';
+import SocialIcon from './social-icon';
 import "../styles/global.scss";
 
 const Contact = () => (
@@ -16,9 +16,11 @@ const Contact = () => (
         <Box>
             <ContactMDX />
         </Box>
-        <SocialIcon service={"github"} url={"https://github.com/prottonicfusion/"} label={"GitHub"}></SocialIcon>
-        <SocialIcon service={"linkedin"} url={""} label={"LinkedIn"}></SocialIcon>
-        <SocialIcon service={"email"} url={"mailto: otto.lindblom@gmail.com"} label={"E-mail"}></SocialIcon>
+        <div className={"social-icon-container"}>
+            <SocialIcon service={"github"} url={"https://github.com/prottonicfusion/"} label={"GitHub"}></SocialIcon>
+            <SocialIcon service={"linkedin"} url={""} label={"LinkedIn"}></SocialIcon>
+            <SocialIcon service={"email"} url={"mailto: otto.lindblom@gmail.com"} label={"E-mail"}></SocialIcon>
+        </div>
     </Grid>
 )
 
