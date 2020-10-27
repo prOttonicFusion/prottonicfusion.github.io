@@ -7,6 +7,7 @@ import Contact from "../components/contact"
 import Footer from "../components/footer";
 import { Divider } from "theme-ui";
 import SEO from "../components/seo";
+import "../styles/global.scss";
 
 const DefaultTemplate = () => (
     <>
