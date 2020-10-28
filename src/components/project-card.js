@@ -13,10 +13,14 @@ const ProjectCard = ({
   documentation,
 }) => (
   <div class="card" style={{ width: "18rem" }}>
-    <Image class="card-img-top" src={image} alt="Card image cap"></Image>
     <div class="card-body">
-      <h5 class="card-title">{title}</h5>
-      <p class="card-text">{description}</p>
+      <Image class="card-img-top" src={image} alt="Card image cap"></Image>
+      <div class="card-body">
+        <h5 class="card-title">{title}</h5>
+        <p class="card-text">{description}</p>
+      </div>
+    </div>
+    <div class="card-footer text-center">
       {github && (
         <SocialIcon service="github" url={github} label="GitHub"></SocialIcon>
       )}
