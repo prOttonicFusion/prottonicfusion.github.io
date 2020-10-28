@@ -1,0 +1,32 @@
+[
+  {
+    "name": "",
+    "icon": "",
+    "projects": [
+      {
+        "name": "Parallel Genetic Optimization",
+        "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP). Written in C++, using Open MPI.",
+        "github": "prOttonicFusion/parallel-genetic-optimization",
+        "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png"
+      },
+      {
+        "name": "Darker+",
+        "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
+        "github": "prOttonicFusion/vscode-darker-plus",
+        "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
+      },
+      {
+        "name": "This site!",
+        "description": "Built using Jekyll and hosted on GitHub Pages. This is primarily my webDev playground, but also acts as something of a portfolio.",
+        "github": "prOttonicFusion/prOttonicFusion.github.io",
+        "image": "/assets/images/project-covers/jekyll-logo.png"
+      },
+      {
+        "name": "Oivahankinta.fi",
+        "description": "The homepage of Oiva Hankinta",
+        "wordpress": "https://oivahankinta.fi",
+        "image": "/assets/images/project-covers/oiva-screenshot.png"
+      }
+    ]
+  }
+]
