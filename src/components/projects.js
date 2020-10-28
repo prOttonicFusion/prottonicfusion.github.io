@@ -1,5 +1,4 @@
 import React from "react"
-import yaml from 'js-yaml'
 import ProjectsMDX from "../sections/projects"
 import { Grid } from "theme-ui"
 import ProjectCard from "./project-card"

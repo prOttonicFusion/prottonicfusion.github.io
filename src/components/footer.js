@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Text } from 'theme-ui'
+import { Text } from 'theme-ui'
 import "../styles/global.scss";
 
 const Footer = () => (

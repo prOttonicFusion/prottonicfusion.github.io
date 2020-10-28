@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Grid, Image } from "theme-ui";
 import "../styles/global.scss";
 
 const selectIcon = (service) => {
