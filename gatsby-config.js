@@ -11,10 +11,5 @@ module.exports = {
     description: `Just another sample site`,
     author: `prOttonicFusion`,
   },
-  plugins: [
-    'gatsby-plugin-mdx',
-    'gatsby-plugin-sass',
-  ],
+  plugins: ["gatsby-plugin-mdx", "gatsby-plugin-sass"],
 }
-
-
