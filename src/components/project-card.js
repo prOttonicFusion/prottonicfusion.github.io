@@ -22,7 +22,7 @@ const ProjectCard = ({
     </div>
     <div class="card-footer text-center">
       {github && (
-        <SocialIcon service="github" url={github} label="GitHub"></SocialIcon>
+        <SocialIcon service="github" url={`https://github.com/${github}`} label="GitHub"></SocialIcon>
       )}
       {wordpress && (
         <SocialIcon
