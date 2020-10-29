@@ -112,15 +112,29 @@ a {
   );
 
   @include large {
-    padding: 5rem 4rem;
+    padding: 1rem 4rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+  }
+
+  nav {
+    @include large {
+      margin-bottom: 1rem;
+    }
+  
+    @include medium {
+      margin-bottom: 1rem;
+    }
+  
+    @include small {
+      margin-bottom: 0.5rem;
+    }
   }
 
   h1 {
