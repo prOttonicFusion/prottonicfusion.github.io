@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Image, Box, NavLink } from "theme-ui"
-import profilePic from "../images/profile.jpg"
+import profilePic from "../assets/images/profile.jpg"
 import BannerMDX from "../sections/banner"
 import "../styles/global.scss"
 

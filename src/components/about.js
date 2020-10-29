@@ -1,7 +1,7 @@
 import React from "react"
 import AboutMDX from "../sections/about"
 import { Grid, Box, Image } from "theme-ui"
-import AboutUs from "../images/aboutus.svg"
+import AboutUs from "../assets/images/aboutus.svg"
 import "../styles/global.scss"
 
 const About = () => (
