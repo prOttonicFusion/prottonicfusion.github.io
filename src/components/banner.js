@@ -14,11 +14,7 @@ const Banner = () => (
       }}
       className={"profile-pic"}
     />
-    <Box
-      sx={{
-        color: "white",
-      }}
-    >
+    <Box>
       <BannerMDX />
     </Box>
     <Box as="nav">
