@@ -2,10 +2,12 @@ import React from "react"
 import { Container, Image, Box, NavLink } from "theme-ui"
 import profilePic from "../assets/images/profile.jpg"
 import BannerMDX from "../sections/banner"
+import NavMenu from "./nav-menu"
 import "../styles/global.scss"
 
 const Banner = () => (
   <Container className={"page-banner"}>
+    <NavMenu></NavMenu>
     <Image
       src={profilePic}
       sx={{

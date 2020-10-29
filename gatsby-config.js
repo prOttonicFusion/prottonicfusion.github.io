@@ -10,6 +10,20 @@ module.exports = {
     siteUrl: `https://www.gatsbyjs.com`,
     description: `Just another sample site`,
     author: `prOttonicFusion`,
+    menuLinks: [
+      {
+        name: "About",
+        link: "#about",
+      },
+      {
+        name: "Projects",
+        link: "#projects",
+      },
+      {
+        name: "Contact",
+        link: "#contact",
+      },
+    ],
   },
   plugins: ["gatsby-plugin-mdx", "gatsby-plugin-sass"],
 }
