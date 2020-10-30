@@ -1,7 +1,7 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
 import { Grid, Box, Image } from "theme-ui"
-import {Carousel} from "react-bootstrap"
+import { Carousel } from "react-bootstrap"
 import "../styles/global.scss"
 
 const Skills = () => (
