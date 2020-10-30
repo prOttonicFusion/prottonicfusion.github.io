@@ -17,6 +17,11 @@ $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 
+// Sizes
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+
 // Breakpoints
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
@@ -112,7 +117,7 @@ a {
   );
 
   @include large {
-    padding: 1rem 4rem;
+    padding: 0 4rem 2rem 4rem;
   }
 
   @include medium {
@@ -125,48 +130,146 @@ a {
 
   nav {
     @include large {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
-  
+
     @include medium {
       margin-bottom: 1rem;
     }
-  
+
     @include small {
       margin-bottom: 0.5rem;
     }
   }
 
+  .site-nav {
+    text-align: right;
+
+    .nav-trigger {
+      display: none;
+    }
+
+    .nav-menu-icon {
+      display: none;
+    }
+
+    .custom-nav-link {
+      color: #ffffff;
+
+      // Gaps between nav items excluding the last one
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    .custom-nav-link:hover {
+      color: #fff;
+    }
+
+    @include small {
+      position: absolute;
+      top: 9px;
+      right: 5px;
+      background-color: #ffffff;
+      border: 1px solid #a1a1a1;
+      border-radius: 5px;
+      text-align: right;
+      z-index: 9999;
+
+      label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 0;
+      }
+
+      .nav-menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+
+        > svg path {
+          fill: #444d56;
+        }
+      }
+
+      .custom-nav-link {
+        color: $section-headings-color;
+
+        // Gaps between nav items excluding the last one
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+
+      .custom-nav-link:hover {
+        color: $body-text-color;
+      }
+
+      input ~ .trigger {
+        clear: both;
+        display: none;
+      }
+
+      input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px;
+      }
+
+      .trigger {
+        padding-top: 20px;
+      }
+      .custom-nav-link {
+        display: block;
+        padding: 10px 10px;
+
+        &:last-child {
+          margin-bottom: 10px;
+          margin-right: 20px;
+        }
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
   h1 {
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-  
+
     @include large {
       font-size: 3.25rem;
     }
-  
+
     @include medium {
       font-size: 2.25rem;
     }
-  
+
     @include small {
       font-size: 1.75rem;
     }
   }
-  
+
   p {
     margin-bottom: 2rem;
     font-weight: normal;
     opacity: 0.7;
-  
+
     @include large {
       font-size: 1.25rem;
     }
-  
+
     @include medium {
       font-size: 1.15rem;
     }
-  
+
     @include small {
       font-size: 1rem;
     }
@@ -435,8 +538,8 @@ a {
 }
 
 .project-cards-container {
-    text-align: center;
-    display: inline-block;
+  text-align: center;
+  display: inline-block;
 }
 
 .card-footer {

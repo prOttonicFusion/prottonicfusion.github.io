@@ -7,7 +7,7 @@ import "../styles/global.scss"
 
 const Banner = () => (
   <Container className={"page-banner"}>
-    <NavMenu></NavMenu>
+    <NavMenu/>
     <Image
       src={profilePic}
       sx={{
@@ -18,17 +18,6 @@ const Banner = () => (
     />
     <Box>
       <BannerMDX />
-    </Box>
-    <Box as="nav">
-      <NavLink href="#about" p={2}>
-        About
-      </NavLink>
-      <NavLink href="#projects" p={2}>
-        Projects
-      </NavLink>
-      <NavLink href="#contact" p={2}>
-        Contact
-      </NavLink>
     </Box>
   </Container>
 )
