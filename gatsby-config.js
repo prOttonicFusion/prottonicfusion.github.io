@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `My Test Site`,
-    siteUrl: `https://www.gatsbyjs.com`,
-    description: `Just another sample site`,
+    title: `Otto Lindblom`,
+    siteUrl: `https://prottonicfusion.github.io`,
+    description: `My personal homepage`,
     author: `prOttonicFusion`,
     contactOptions: [
       {
