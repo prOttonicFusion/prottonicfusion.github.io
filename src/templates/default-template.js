@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import About from "../components/about"
 import Projects from "../components/projects"
+import Skills from "../components/skills"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 import { Divider } from "theme-ui"
@@ -14,6 +15,8 @@ const DefaultTemplate = () => (
     <Layout>
       <SEO title="Home" />
       <About />
+      <Divider />
+      <Skills />
       <Divider />
       <Projects />
       <Divider />
