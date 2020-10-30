@@ -27,6 +27,7 @@ const Projects = () => (
           wordpress={project.wordpress}
           documentation={project.documentation}
           link={project.link}
+          key={project.name}
         ></ProjectCard>
       )
     })}
