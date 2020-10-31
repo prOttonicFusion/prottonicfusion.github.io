@@ -103,7 +103,8 @@
             {
                 "title": "LAMMPS",
                 "description": "",
-                "level": 95
+                "level": 95,
+                "badges": []
             }
         ]
     }
