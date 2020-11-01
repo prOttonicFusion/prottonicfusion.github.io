@@ -16,9 +16,9 @@ const DefaultTemplate = () => (
       <SEO title="Home" />
       <About />
       <Divider />
-      <Skills />
-      <Divider />
       <Projects />
+      <Divider />
+      <Skills />
       <Divider />
       <Contact />
       <Divider />
