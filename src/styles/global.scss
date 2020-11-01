@@ -552,6 +552,7 @@ a {
 
 .skills-container {
   display: inline;
+  margin-top: 15px;
 }
 
 .skill-description-container {
@@ -586,15 +587,14 @@ a {
 
   @include large {
     padding: 0 25px;
-
   }
 
   @include medium {
-    padding: 0 15px;
+    padding: 20px 15px;
   }
 
   @include small {
-    padding: 0 15px;
+    padding: 20px 15px;
   }
 }
 
