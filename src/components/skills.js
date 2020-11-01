@@ -30,7 +30,12 @@ const SkillSheet = (props) => {
   return (
     <div className={"skill-sheet"}>
       {props.skills.map((skill) => (
-        <SkillItem name={skill.title} level={skill.level} badges={skill.badges} key={skill.title} />
+        <SkillItem
+          name={skill.title}
+          level={skill.level}
+          badges={skill.badges}
+          key={skill.title}
+        />
       ))}
     </div>
   )
@@ -41,36 +46,33 @@ const Skills = () => (
     <Box>
       <SkillsMDX />
     </Box>
-    <Tab.Container id="left-tabs-example" defaultActiveKey="0">
-      <Row>
-        <Col sm={3}>
-          <Nav variant="pills" className="flex-column">
-            {skillsData.map((category, index) => (
-              <Nav.Item key={category.categoryTitle}>
-                <Nav.Link eventKey={index}>{category.categoryTitle}</Nav.Link>
-              </Nav.Item>
-            ))}
-          </Nav>
-        </Col>
-        <Col sm={9}>
-          <Tab.Content>
-            {skillsData.map((category, index) => (
-              <Tab.Pane eventKey={index} key={category.categoryTitle}>
-                <SkillSheet skills={category.skills} />
-              </Tab.Pane>
-            ))}
-          </Tab.Content>
-        </Col>
-      </Row>
-    </Tab.Container>
-    {/**Carousel>
-      {skillsData.map((category) => (
-        <Carousel.Item interval={5000} key={category}>
-          <h3>{category.categoryTitle}</h3>
-          <SkillSheet skills={category.skills} />
-        </Carousel.Item>
-      ))}
-      </Carousel> */}
+    <div className="skills-container">
+      <Tab.Container
+        id="left-tabs-example"
+        defaultActiveKey="0"
+      >
+        <Row>
+          <Col sm={3}>
+            <Nav variant="pills" className="flex-column">
+              {skillsData.map((category, index) => (
+                <Nav.Item key={category.categoryTitle}>
+                  <Nav.Link eventKey={index}>{category.categoryTitle}</Nav.Link>
+                </Nav.Item>
+              ))}
+            </Nav>
+          </Col>
+          <Col sm={9}>
+            <Tab.Content>
+              {skillsData.map((category, index) => (
+                <Tab.Pane eventKey={index} key={category.categoryTitle}>
+                  <SkillSheet skills={category.skills} />
+                </Tab.Pane>
+              ))}
+            </Tab.Content>
+          </Col>
+        </Row>
+      </Tab.Container>
+    </div>
   </Grid>
 )
 

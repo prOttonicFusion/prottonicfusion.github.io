@@ -1,111 +1,95 @@
 [
-    {
-        "categoryTitle": "Languages",
-        "skills": [
-            {
-                "title": "Python",
-                "description": "",
-                "level": 98,
-                "badges": [
-                    "/assets/images/devIcons/python-plain.svg"
-                ]
-            },
-            {
-                "title": "JavaScript/NodeJS",
-                "description": "",
-                "level": 85,
-                "badges": [
-                    "/assets/images/devIcons/javascript-plain.svg",
-                    "/assets/images/devIcons/typescript-plain.svg",
-                    "/assets/images/devIcons/nodejs-plain.svg"
-                ]
-            },
-            {
-                "title": "C++",
-                "description": "",
-                "level": 75,
-                "badges": [
-                    "/assets/images/devIcons/cplusplus-plain.svg"
-                ]
-            },
-            {
-                "title": "Fortran95",
-                "description": "",
-                "level": 85,
-                "badges": [
-                    "/assets/images/devIcons/fortran-logo.png"
-                ]
-            }
+  {
+    "categoryTitle": "Languages",
+    "skills": [
+      {
+        "title": "Python",
+        "description": "",
+        "level": 98,
+        "badges": ["/assets/images/devIcons/python-plain.svg"]
+      },
+      {
+        "title": "JavaScript/NodeJS",
+        "description": "",
+        "level": 85,
+        "badges": [
+          "/assets/images/devIcons/javascript-plain.svg",
+          "/assets/images/devIcons/typescript-plain.svg",
+          "/assets/images/devIcons/nodejs-plain.svg"
         ]
-    },
-    {
-        "categoryTitle": "Full-Stack",
-        "skills": [
-            {
-                "title": "React Native",
-                "description": "",
-                "level": 75,
-                "badges": [
-                    "/assets/images/devIcons/react-original.svg"
-                ]
-            },
-            {
-                "title": "HTML + CSS",
-                "description": "",
-                "level": 88,
-                "badges": [
-                    "/assets/images/devIcons/html5-plain.svg",
-                    "./assets/images/devIcons/css3-plain.svg"
-                ]
-            },
-            {
-                "title": "Qt",
-                "description": "",
-                "level": 65,
-                "badges": [
-                    "/assets/images/devIcons/qt-logo.png"
-                ]
-            }
+      },
+      {
+        "title": "C++",
+        "description": "",
+        "level": 75,
+        "badges": ["/assets/images/devIcons/cplusplus-plain.svg"]
+      },
+      {
+        "title": "Fortran95",
+        "description": "",
+        "level": 85,
+        "badges": ["/assets/images/devIcons/fortran-logo.png"]
+      }
+    ]
+  },
+  {
+    "categoryTitle": "Full-Stack",
+    "skills": [
+      {
+        "title": "React Native",
+        "description": "",
+        "level": 75,
+        "badges": ["/assets/images/devIcons/react-original.svg"]
+      },
+      {
+        "title": "HTML + CSS",
+        "description": "",
+        "level": 88,
+        "badges": [
+          "/assets/images/devIcons/html5-plain.svg",
+          "./assets/images/devIcons/css3-plain.svg"
         ]
-    },
-    {
-        "categoryTitle": "Platforms",
-        "skills": [
-            {
-                "title": "Docker",
-                "description": "",
-                "level": 75,
-                "badges": [
-                    "/assets/images/devIcons/docker-plain.svg"
-                ]
-            },
-            {
-                "title": "GNU/Linux",
-                "description": "",
-                "level": 97,
-                "badges": [
-                    "/assets/images/devIcons/ubuntu-plain.svg"
-                ]
-            }
-        ]
-    },
-    {
-        "categoryTitle": "High-Performance Computing",
-        "skills": [
-            {
-                "title": "OpenMPI",
-                "description": "",
-                "level": 75,
-                "badges": [
-                    "/assets/images/devIcons/open-mpi-logo.png"
-                ]
-            },
-            {
-                "title": "LAMMPS",
-                "description": "",
-                "level": 95,
-                "badges": []
-            }
-        ]
-    }
+      },
+      {
+        "title": "Qt",
+        "description": "",
+        "level": 65,
+        "badges": ["/assets/images/devIcons/qt-logo.png"]
+      }
+    ]
+  },
+  {
+    "categoryTitle": "Platforms",
+    "skills": [
+      {
+        "title": "Docker",
+        "description": "",
+        "level": 75,
+        "badges": ["/assets/images/devIcons/docker-plain.svg"]
+      },
+      {
+        "title": "GNU/Linux",
+        "description": "",
+        "level": 97,
+        "badges": ["/assets/images/devIcons/ubuntu-plain.svg"]
+      }
+    ]
+  },
+  {
+    "categoryTitle": "High-Performance Computing",
+    "skills": [
+      {
+        "title": "OpenMPI",
+        "description": "",
+        "level": 75,
+        "badges": ["/assets/images/devIcons/open-mpi-logo.png"]
+      },
+      {
+        "title": "LAMMPS",
+        "description": "",
+        "level": 95,
+        "badges": []
+      }
+    ]
+  }
 ]
