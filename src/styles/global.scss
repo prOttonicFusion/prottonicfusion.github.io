@@ -1,14 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
 // Colors
-$banner-heading-color: #fff !default;
-$banner-bg-color: #159957 !default;
-$banner-bg-color-secondary: #155799 !default;
-
-$section-headings-color: #159957 !default;
+$primary-accent-color: #159957 !default;
+$secondary-accent-color: #155799 !default;
 $body-text-color: #606c71 !default;
 $body-link-color: #1e6bb8 !default;
 $blockquote-text-color: #819198 !default;
+
+$banner-heading-color: #fff !default;
+$banner-bg-color: $primary-accent-color !default;
+$banner-bg-color-secondary: $secondary-accent-color !default;
 
 $code-bg-color: #f3f6fa !default;
 $code-text-color: #567482 !default;
@@ -201,7 +202,7 @@ a {
       }
 
       .custom-nav-link {
-        color: $section-headings-color;
+        color: $primary-accent-color;
 
         // Gaps between nav items excluding the last one
         &:not(:last-child) {
@@ -343,7 +344,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: $primary-accent-color;
   }
 
   p {
