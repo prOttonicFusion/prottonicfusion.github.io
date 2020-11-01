@@ -547,13 +547,18 @@ a {
   background-color: #fff;
 }
 
-.nav-link.active {
-  color: #fff;
-}
-
 .skills-container {
   display: inline;
   margin-top: 15px;
+
+  .nav-link {
+    color: $secondary-accent-color;
+  }
+
+  .nav-link.active {
+    color: #fff;
+    background-color: $secondary-accent-color;
+  }
 }
 
 .skill-description-container {
