@@ -42,7 +42,7 @@ const SkillSheet = (props) => {
 }
 
 const Skills = () => (
-  <Grid pt={100} pb={100} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="skils">
+  <Grid pt={100} pb={100} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="skills">
     <Box>
       <SkillsMDX />
     </Box>
