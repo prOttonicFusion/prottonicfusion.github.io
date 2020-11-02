@@ -3,21 +3,21 @@
         "title": "Software Developer",
         "time": "2020 - present",
         "place": "Fjuul",
-        "description": null,
-        "direction": "direction-l"
+        "description": "General full stack stuff",
+        "itemClass": "timeline-normal"
     },
     {
         "title": "Research Assistant",
         "time": "2017 - present",
         "place": "Univ. of Helsinki, Accelerator Lab",
         "description": null,
-        "direction": "direction-r"
+        "itemClass": "timeline-inverted"
     },
     {
         "title": "BSc in Physics",
         "time": "2018",
         "place": "University of Helsinki",
         "description": null,
-        "direction": "direction-l"
+        "itemClass": "timeline-normal"
     }
 ]
