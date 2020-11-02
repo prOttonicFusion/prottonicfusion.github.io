@@ -9,20 +9,16 @@ import "../styles/timeline.scss"
 const TimelineItem = ({ eventData }) => {
   return (
     <li className={eventData.itemClass}>
-      <div class="timeline-badge">
-        <i class="glyphicon glyphicon-check"></i>
+      <div className="timeline-badge">
+        <i className="glyphicon glyphicon-check"></i>
       </div>
-      <div class="timeline-panel">
-        <div class="timeline-heading">
-          <h4 class="timeline-title">{eventData.title}</h4>
-          <p class="timeline-place-name">@ {eventData.place}</p>
-          <p>
-            <small class="timeline-time">
-              {eventData.time}
-            </small>
-          </p>
+      <div className="timeline-panel">
+        <div className="timeline-heading">
+          <h4 className="timeline-title">{eventData.title}</h4>
+          <div className="timeline-detail-text timeline-place">@ {eventData.place}</div>
+          <div className="timeline-detail-text timeline-date">{eventData.time}</div>
         </div>
-        <div class="timeline-body">
+        <div className="timeline-body">
           <p>{eventData.description}</p>
         </div>
       </div>
@@ -31,12 +27,12 @@ const TimelineItem = ({ eventData }) => {
 }
 
 const Timeline = () => (
-  <Grid pt={30} pb={30} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="skills">
+  <Grid pt={30} pb={30} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="timeline">
     <Box>
       <TimelineMDX />
     </Box>
     <div className="timeline-container">
-      <ul class="timeline">
+      <ul className="timeline">
         {timelineData.map((data) => (
           <TimelineItem eventData={data} />
         ))}
