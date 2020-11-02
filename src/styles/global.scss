@@ -1,49 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-
-// Colors
-$primary-accent-color: #159957 !default;
-$secondary-accent-color: #155799 !default;
-$body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
-$blockquote-text-color: #819198 !default;
-
-$banner-heading-color: #fff !default;
-$banner-bg-color: $primary-accent-color !default;
-$banner-bg-color-secondary: $secondary-accent-color !default;
-
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
-
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
-
-// Sizes
-$base-font-size: 16px !default;
-$base-font-weight: 400 !default;
-$small-font-size: $base-font-size * 0.875 !default;
-
-// Breakpoints
-$large-breakpoint: 64em !default;
-$medium-breakpoint: 42em !default;
-
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
+@import "variables.scss";
 
 body {
   padding: 0;
