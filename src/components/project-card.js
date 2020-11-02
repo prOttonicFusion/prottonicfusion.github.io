@@ -1,5 +1,4 @@
 import React from "react"
-import { Image } from "theme-ui"
 import { Card } from "react-bootstrap"
 import SocialIcon from "./social-icon"
 import "../styles/global.scss"

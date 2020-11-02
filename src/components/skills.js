@@ -13,7 +13,7 @@ const SkillItem = (props) => {
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
           {badges.map((badge) => (
-            <img src={badge} className="skill-badge" height={"15px"} key={badge} />
+            <img src={badge} className="skill-badge" height={"15px"} alt={"Skill badge"} key={badge} />
           ))}
         </span>
       </Col>
