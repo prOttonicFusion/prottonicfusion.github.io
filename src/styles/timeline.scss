@@ -79,7 +79,6 @@
   }
 
   .timeline > li > .timeline-badge {
-    color: #fff;
     width: 22px;
     height: 22px;
     line-height: 50px;
@@ -89,12 +88,11 @@
     top: 30px;
     left: 50%;
     margin-left: -11px;
-    background-color: $secondary-accent-color;
+    background-color: #fff;
     z-index: 100;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-radius: 50%;
+    border: solid $secondary-accent-color;
+    border-width: 5px;
   }
 
   .timeline > li.timeline-inverted > .timeline-panel {
