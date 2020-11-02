@@ -37,6 +37,12 @@ $medium-breakpoint: 42em !default;
   }
 }
 
+@mixin mediumAndSmall {
+  @media screen and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
 @mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
