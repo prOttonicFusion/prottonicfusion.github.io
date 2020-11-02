@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Image, Box, NavLink } from "theme-ui"
+import { Container, Image, Box } from "theme-ui"
 import profilePic from "../assets/images/profile.jpg"
 import BannerMDX from "../sections/banner"
 import NavMenu from "./nav-menu"

@@ -1,6 +1,6 @@
 import React from "react"
 import AboutMDX from "../sections/about"
-import { Grid, Box, Image } from "theme-ui"
+import { Grid, Box } from "theme-ui"
 import "../styles/global.scss"
 
 const About = () => (

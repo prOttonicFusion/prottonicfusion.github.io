@@ -1,5 +1,5 @@
 import React from "react"
-import { Image } from "theme-ui"
+import { Card } from "react-bootstrap"
 import SocialIcon from "./social-icon"
 import "../styles/global.scss"
 
@@ -12,15 +12,13 @@ const ProjectCard = ({
   link,
   documentation,
 }) => (
-  <div className="card" style={{ width: "18rem" }}>
-    <div className="card-body">
-      <Image className="card-img-top" src={image} alt="Card image cap"></Image>
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-      </div>
-    </div>
-    <div className="card-footer text-center">
+  <Card style={{ width: "18rem" }}>
+    <Card.Img variant="top" src={image} />
+    <Card.Body>
+      <Card.Title>{title}</Card.Title>
+      <Card.Text>{description}</Card.Text>
+    </Card.Body>
+    <Card.Footer>
       {github && (
         <SocialIcon
           service="github"
@@ -43,8 +41,8 @@ const ProjectCard = ({
         ></SocialIcon>
       )}
       {link && <SocialIcon service="" url={link} label="WebSite"></SocialIcon>}
-    </div>
-  </div>
+    </Card.Footer>
+  </Card>
 )
 
 export default ProjectCard

@@ -25,7 +25,7 @@ module.exports = {
         name: "email",
         label: "E-mail",
         url: "mailto: otto.lindblom@gmail.com",
-      }
+      },
     ],
     menuLinks: [
       {
@@ -35,6 +35,10 @@ module.exports = {
       {
         name: "Projects",
         link: "#projects",
+      },
+      {
+        name: "Skills",
+        link: "#skills",
       },
       {
         name: "Contact",
