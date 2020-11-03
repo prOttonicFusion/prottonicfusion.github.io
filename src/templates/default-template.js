@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import About from "../components/about"
 import Projects from "../components/projects"
-import Skills from "../components/skills"
+import BriefCV from "../components/brief-cv"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 import { Divider, Image, Box } from "theme-ui"
@@ -32,7 +32,7 @@ const DefaultTemplate = ({ location }) => (
       <Divider />
       <Projects />
       <Divider />
-      <Skills />
+      <BriefCV />
       <Divider />
       <Contact />
       <Divider />
