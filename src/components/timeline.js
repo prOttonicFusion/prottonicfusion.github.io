@@ -1,7 +1,6 @@
 import React from "react"
 import TimelineMDX from "../sections/timeline"
 import { Grid, Box } from "theme-ui"
-import { Tab, Row, Col, Nav } from "react-bootstrap"
 import timelineData from "../data/timeline.json"
 import "../styles/global.scss"
 import "../styles/timeline.scss"
@@ -15,7 +14,9 @@ const TimelineItem = ({ eventData }) => {
       <div className="timeline-panel">
         <div className="timeline-heading">
           <h4 className="timeline-title">{eventData.title}</h4>
-          <div className="timeline-detail-text timeline-place">@ {eventData.place}</div>
+          <div className="timeline-detail-text timeline-place">
+            @ {eventData.place}
+          </div>
           <div className="timeline-detail-text timeline-date">{eventData.time}</div>
         </div>
         <div className="timeline-body">
@@ -34,7 +35,7 @@ const Timeline = () => (
     <div className="timeline-container">
       <ul className="timeline">
         {timelineData.map((data) => (
-          <TimelineItem eventData={data} />
+          <TimelineItem eventData={data} key={data.title + data.time} />
         ))}
       </ul>
     </div>
