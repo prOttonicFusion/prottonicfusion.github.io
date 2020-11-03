@@ -85,7 +85,12 @@ a {
     padding: 1.5rem 1rem;
   }
 
-  nav {
+  .site-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+
     @include large {
       margin-bottom: 1.5rem;
     }
@@ -97,6 +102,15 @@ a {
     @include small {
       margin-bottom: 0.5rem;
     }
+  }
+
+  .site-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -1px;
+    float: left;
+    text-decoration: none;
   }
 
   .site-nav {
@@ -185,7 +199,6 @@ a {
       }
       .custom-nav-link {
         display: block;
-        padding: 10px 10px;
 
         &:last-child {
           margin-bottom: 10px;
@@ -237,9 +250,22 @@ a {
   border-radius: 50%;
   background-color: #fff;
   padding: 4px;
-  height: 180px;
-  width: 180px;
   margin-bottom: 10px;
+
+  @include large {
+    height: 250px;
+    width: 250px;
+  }
+
+  @include medium {
+    height: 180px;
+    width: 180px;
+  }
+
+  @include small {
+    height: 180px;
+    width: 180px;
+  }
 }
 
 .main-content {
