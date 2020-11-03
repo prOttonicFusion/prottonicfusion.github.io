@@ -13,7 +13,7 @@ export default function Home({ data }) {
     <DefaultTemplate
       location="/"
       image={profilePic}
-      header={data.mdx.frontmatter.title}
+      title={data.mdx.frontmatter.title}
       description={data.mdx.frontmatter.description}
     >
       <SEO title="Home" />
@@ -28,7 +28,7 @@ export default function Home({ data }) {
 
 export const pageQuery = graphql`
   query IndexPageQuery {
-    mdx(fileAbsolutePath: {regex: "/index.mdx/"}) {
+    mdx(fileAbsolutePath: { regex: "/index.mdx/" }) {
       frontmatter {
         description
         title
