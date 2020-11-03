@@ -13,7 +13,13 @@ const SkillItem = (props) => {
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
           {badges.map((badge) => (
-            <img src={badge} className="skill-badge" height={"15px"} alt={"Skill badge"} key={badge} />
+            <img
+              src={badge}
+              className="skill-badge"
+              height={"15px"}
+              alt={"Skill badge"}
+              key={badge}
+            />
           ))}
         </span>
       </Col>
@@ -47,10 +53,7 @@ const Skills = () => (
       <SkillsMDX />
     </Box>
     <div className="skills-container">
-      <Tab.Container
-        id="left-tabs-example"
-        defaultActiveKey="0"
-      >
+      <Tab.Container id="left-tabs-example" defaultActiveKey="0">
         <Row>
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">

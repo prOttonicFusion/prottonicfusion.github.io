@@ -111,6 +111,15 @@ a {
     letter-spacing: -1px;
     float: left;
     text-decoration: none;
+    padding-top: 18px;
+
+    @include small {
+      position: absolute;
+      top: 9px;
+      left: 15px;
+      padding-top: 0;
+      font-size: 20px;
+    }
   }
 
   .site-nav {
