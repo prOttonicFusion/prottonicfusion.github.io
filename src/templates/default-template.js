@@ -3,22 +3,23 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Footer from "../components/footer"
 import { Divider, Image, Box } from "theme-ui"
-import profilePic from "../assets/images/profile.jpg"
-import BannerMDX from "../sections/banner"
 
-const DefaultTemplate = ({ children, location }) => (
+const DefaultTemplate = ({ children, location, header, description, image }) => (
   <>
     <Banner location={location}>
-      <Image
-        src={profilePic}
-        sx={{
-          maxWidth: "20%",
-          minWidth: "200px",
-        }}
-        className={"profile-pic"}
-      />
+      {image && (
+        <Image
+          src={image}
+          sx={{
+            maxWidth: "20%",
+            minWidth: "200px",
+          }}
+          className={"profile-pic"}
+        />
+      )}
       <Box>
-        <BannerMDX />
+        <h1>{header}</h1>
+        <p>{description}</p>
       </Box>
     </Banner>
     <Layout>

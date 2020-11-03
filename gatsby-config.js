@@ -46,5 +46,15 @@ module.exports = {
       },
     ],
   },
-  plugins: ["gatsby-plugin-mdx", "gatsby-plugin-sass"],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/sections/`,
+      },
+    },
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sass",
+  ],
 }
