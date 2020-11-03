@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const NavMenu = () => (
+const NavMenu = ({ location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -18,7 +18,12 @@ const NavMenu = () => (
       }
     `}
     render={(data) => (
-      <div>
+      <div className="site-nav-container">
+        {location !== "/" && (
+          <a className="site-title" href={data.site.siteMetadata.siteUrl}>
+            {data.site.siteMetadata.title}
+          </a>
+        )}
         <nav className="site-nav">
           <input type="checkbox" id="nav-trigger" className="nav-trigger" />
           <label htmlFor="nav-trigger">
