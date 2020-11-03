@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-const NavMenu = () => (
+const NavMenu = ({ location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {

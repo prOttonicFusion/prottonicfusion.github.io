@@ -11,9 +11,9 @@ import profilePic from "../assets/images/profile.jpg"
 import BannerMDX from "../sections/banner"
 import SEO from "../components/seo"
 
-const DefaultTemplate = () => (
+const DefaultTemplate = ({ location }) => (
   <>
-    <Banner>
+    <Banner location={location}>
       <Image
         src={profilePic}
         sx={{

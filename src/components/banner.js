@@ -3,9 +3,9 @@ import { Container } from "theme-ui"
 import NavMenu from "./nav-menu"
 import "../styles/global.scss"
 
-const Banner = ({ children }) => (
+const Banner = ({ children, location }) => (
   <Container className={"page-banner"}>
-    <NavMenu />
+    <NavMenu location={location} />
     {children}
   </Container>
 )
