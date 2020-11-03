@@ -187,6 +187,7 @@ a {
         // Gaps between nav items excluding the last one
         &:not(:last-child) {
           margin-right: 20px;
+          margin-bottom: 20px;
         }
       }
 
