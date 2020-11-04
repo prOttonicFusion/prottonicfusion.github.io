@@ -7,13 +7,7 @@ import { Divider, Image, Box } from "theme-ui"
 const DefaultTemplate = ({ children, location, title, description, image }) => (
   <>
     <Banner location={location}>
-      {image && (
-        <Image
-          src={image}
-          height={250}
-          className={"profile-pic"}
-        />
-      )}
+      {image && <Image src={image} height={250} className={"profile-pic"} />}
       <Box>
         <h1>{title}</h1>
         <p>{description}</p>
