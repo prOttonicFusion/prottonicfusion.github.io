@@ -72,17 +72,24 @@ a {
     $banner-bg-color-secondary,
     $banner-bg-color
   );
+  background-image: url(../assets/images/hero-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include large {
     padding: 0 4rem 4rem 4rem;
+    height: 500px;
   }
 
   @include medium {
     padding: 0 4rem 2rem 4rem;
+    height: 500px;
   }
 
   @include small {
     padding: 1.5rem 1rem;
+    height: 400px;
   }
 
   .site-nav-container {
