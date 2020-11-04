@@ -1,6 +1,5 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
-import { Grid, Box } from "theme-ui"
 import { Tab, Row, Col, Nav } from "react-bootstrap"
 import skillsData from "../data/skills.json"
 import "../styles/global.scss"
@@ -48,10 +47,10 @@ const SkillSheet = (props) => {
 }
 
 const Skills = () => (
-  <Grid pt={30} pb={30} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="skills">
-    <Box>
+  <div style={{padding: "30px 4px"}} id="skills">
+    <div>
       <SkillsMDX />
-    </Box>
+    </div>
     <div className="skills-container">
       <Tab.Container id="left-tabs-example" defaultActiveKey="0">
         <Row>
@@ -76,7 +75,7 @@ const Skills = () => (
         </Row>
       </Tab.Container>
     </div>
-  </Grid>
+  </div>
 )
 
 export default Skills
