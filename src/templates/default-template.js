@@ -4,7 +4,7 @@ import Banner from "../components/banner"
 import Footer from "../components/footer"
 import { Divider, Image, Box } from "theme-ui"
 
-const DefaultTemplate = ({ children, location, header, description, image }) => (
+const DefaultTemplate = ({ children, location, title, description, image }) => (
   <>
     <Banner location={location}>
       {image && (
@@ -18,7 +18,7 @@ const DefaultTemplate = ({ children, location, header, description, image }) => 
         />
       )}
       <Box>
-        <h1>{header}</h1>
+        <h1>{title}</h1>
         <p>{description}</p>
       </Box>
     </Banner>
