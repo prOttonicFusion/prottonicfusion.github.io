@@ -10,10 +10,7 @@ const DefaultTemplate = ({ children, location, title, description, image }) => (
       {image && (
         <Image
           src={image}
-          sx={{
-            maxWidth: "20%",
-            minWidth: "200px",
-          }}
+          height={250}
           className={"profile-pic"}
         />
       )}
