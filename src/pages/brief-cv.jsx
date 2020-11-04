@@ -1,7 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 import DefaultTemplate from "../templates/default-template"
-import BriefCV from "../components/brief-cv"
+import BriefCVMDX from "../sections/brief-cv"
+import { Box } from "theme-ui"
+import Skills from "../components/skills"
+import Timeline from "../components/timeline"
 import SEO from "../components/seo"
 
 export default function BriefCVPage({ data }) {
@@ -12,7 +15,11 @@ export default function BriefCVPage({ data }) {
       description={data.mdx.frontmatter.description}
     >
       <SEO title="Brief CV" />
-      <BriefCV />
+      <Box>
+        <BriefCVMDX />
+      </Box>
+      <Skills />
+      <Timeline />
     </DefaultTemplate>
   )
 }
