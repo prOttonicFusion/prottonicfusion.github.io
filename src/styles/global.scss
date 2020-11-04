@@ -513,8 +513,8 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: $banner-bg-color-secondary; // IE8
-    fill: $banner-bg-color-secondary;
+    color: $primary-accent-color; // IE8
+    fill: $primary-accent-color;
     transform: scale(1.25);
     transition: color 0.5s, transform 0.2s ease-out;
   }
