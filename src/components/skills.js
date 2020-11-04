@@ -3,12 +3,13 @@ import SkillsMDX from "../sections/skills"
 import { Tab, Row, Col, Nav } from "react-bootstrap"
 import skillsData from "../data/skills.json"
 import "../styles/global.scss"
+import "../styles/skills.scss"
 
 const SkillItem = (props) => {
   const { name, badges, level } = props
   return (
-    <Row className="skill-item">
-      <Col className="skill-description-container">
+    <div className="skill-item">
+      <Row className="skill-description-container">
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
           {badges.map((badge) => (
@@ -21,13 +22,13 @@ const SkillItem = (props) => {
             />
           ))}
         </span>
-      </Col>
-      <Col className="skill-level-container">
+      </Row>
+      <Row className="skill-level-container">
         <span className="progress-bar">
           <span className="progress" style={{ width: `${level}%` }}></span>
         </span>
-      </Col>
-    </Row>
+      </Row>
+    </div>
   )
 }
 
