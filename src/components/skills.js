@@ -1,6 +1,5 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
-import { Tab, Row, Col, Nav } from "react-bootstrap"
 import skillsData from "../data/skills.json"
 import "../styles/global.scss"
 import "../styles/skills.scss"
