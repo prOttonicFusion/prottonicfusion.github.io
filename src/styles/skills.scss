@@ -72,25 +72,43 @@
 .progress-bar {
   background-color: #eeeeee;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   margin: 3px;
-  height: 16px;
-  width: 200px;
   max-width: 100%;
 }
 
 .progress {
-  // background: #15767a;
-  // background: -webkit-linear-gradient(to bottom, #1dcf79, #10595c);
-  // background: linear-gradient(to bottom, #1dcf79, #10595c);
   background-color: #15767a;
   border-radius: 3px;
-  height: 16px;
   width: 0;
   transition: width 0.5s ease-in;
 }
 
-@media screen and (max-width: 500px) {
+@include large {
+  .progress {
+    height: 18px;
+  }
+
+  .progress-bar {
+    width: 300px;
+  }
+}
+
+@include medium {
+  .progress {
+    height: 18px;
+  }
+
+  .progress-bar {
+    width: 200px;
+  }
+}
+
+@include small {
+  .progress {
+    height: 16px;
+  }
+
   .progress-bar {
     width: 100px;
   }
