@@ -30,11 +30,11 @@ module.exports = {
     menuLinks: [
       {
         name: "About",
-        link: "#about",
+        link: "/#about",
       },
       {
         name: "Projects",
-        link: "#projects",
+        link: "/#projects",
       },
       {
         name: "Brief CV",
@@ -42,7 +42,7 @@ module.exports = {
       },
       {
         name: "Contact",
-        link: "#contact",
+        link: "/#contact",
       },
     ],
   },
