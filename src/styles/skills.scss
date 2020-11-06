@@ -10,7 +10,6 @@
 
 .skill-description-container {
   background-color: #fff;
-  padding-right: 10px;
   text-align: left;
 
   @include small {
@@ -57,6 +56,8 @@
   @include small {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
   }
 }
 
@@ -70,6 +71,8 @@
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .progress {
