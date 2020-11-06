@@ -22,10 +22,8 @@ const SkillItem = (props) => {
           ))}
         </span>
       </div>
-      <div className="skill-level-container">
-        <span className="progress-bar">
-          <span className="progress" style={{ width: `${level}%` }}></span>
-        </span>
+      <div className="progress-bar">
+        <span className="progress" style={{ width: `${level}%` }}></span>
       </div>
     </div>
   )

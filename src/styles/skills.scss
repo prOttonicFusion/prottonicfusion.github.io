@@ -11,10 +11,6 @@
 .skill-description-container {
   background-color: #fff;
   text-align: left;
-
-  @include small {
-    text-align: center;
-  }
 }
 
 .skill-badge {
@@ -108,6 +104,6 @@
   }
 
   .progress-bar {
-    width: 150px;
+    width: 75vw;
   }
 }
