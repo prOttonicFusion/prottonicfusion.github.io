@@ -1,7 +1,6 @@
 @import "variables.scss";
 
 .skills-container {
-  display: inline;
   margin-top: 15px;
 }
 
@@ -12,6 +11,11 @@
 .skill-description-container {
   background-color: #fff;
   padding-right: 10px;
+  text-align: left;
+
+  @include small {
+    text-align: center;
+  }
 }
 
 .skill-badge {
@@ -32,44 +36,44 @@
   font-weight: 400;
   text-align: left;
   margin-bottom: 10px;
+
+  @include small {
+    text-align: center;
+  }
 }
 
 .category-skills-container {
-  margin: 0 auto;
 
   @include large {
-    column-count: 2;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   @include medium {
-    column-count: 2;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   @include small {
-    column-count: 1;
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 
 .skill-item {
-  margin-bottom: 10px;
-  text-align: left;
+  margin: 3px auto;
   break-inside: avoid;
-}
-
-.skill-level-container {
-  display: inline;
 }
 
 .progress-bar {
   background-color: #eeeeee;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-  margin: 3px;
   max-width: 100%;
 }
 
 .progress {
-  background-color: #15767a;
+  background-color: $secondary-accent-color;
   border-radius: 3px;
   width: 0;
   transition: width 0.5s ease-in;
@@ -101,6 +105,6 @@
   }
 
   .progress-bar {
-    width: 100px;
+    width: 150px;
   }
 }
