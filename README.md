@@ -1,4 +1,4 @@
-# Sample Gatsby site
+# My Personal Homepage
 
 ## Prerequisites
 
