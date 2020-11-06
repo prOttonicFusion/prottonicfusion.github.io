@@ -1,5 +1,10 @@
 # My Personal Homepage
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/prOttonicFusion/prOttonicFusion.github.io/Build%20and%20deploy%20Jekyll%20site%20to%20GitHub%20Pages)
+![Website](https://img.shields.io/website?down_color=red&down_message=down&label=status&up_color=success&up_message=online&url=https%3A%2F%2Fprottonicfusion.github.io)
+
+Visible at https://prottonicfusion.github.io/
+
 ## Prerequisites
 
 Install Gatsby using
