@@ -8,7 +8,6 @@ const NavMenu = ({ location }) => (
         site {
           siteMetadata {
             title
-            siteUrl
             menuLinks {
               name
               link
@@ -20,7 +19,7 @@ const NavMenu = ({ location }) => (
     render={(data) => (
       <div className="site-nav-container">
         {location !== "/" && (
-          <a className="site-title" href={data.site.siteMetadata.siteUrl}>
+          <a className="site-title" href={"/"}>
             {data.site.siteMetadata.title}
           </a>
         )}
