@@ -5,7 +5,7 @@
 Install Gatsby using
 
 ```
-npm i -g gatsby
+npm i -g gatsby-cli
 ```
 
 ## 🚀 Local development setup
