@@ -58,8 +58,12 @@
 }
 
 .skill-item {
-  margin: 3px auto;
+  margin: 0 auto 16px auto;
   break-inside: avoid;
+
+  @include small {
+    margin-bottom: 14px;
+  }
 }
 
 .progress-bar {
