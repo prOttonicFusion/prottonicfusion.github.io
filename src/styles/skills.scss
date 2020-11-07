@@ -1,0 +1,109 @@
+@import "variables.scss";
+
+.skills-container {
+  margin-top: 15px;
+}
+
+.skill-title {
+  font-size: 15px;
+}
+
+.skill-description-container {
+  background-color: #fff;
+  text-align: left;
+}
+
+.skill-badge {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #fff;
+  height: 15px;
+  margin: 0 3px;
+}
+
+.skill-category {
+  margin-bottom: 25px;
+}
+
+.skill-category-title {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+
+  @include mediumAndSmall {
+    text-align: center;
+  }
+}
+
+.category-skills-container {
+
+  @include large {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @include medium {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @include small {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.skill-item {
+  margin: 3px auto;
+  break-inside: avoid;
+}
+
+.progress-bar {
+  background-color: #eeeeee;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress {
+  background-color: $secondary-accent-color;
+  border-radius: 3px;
+  width: 0;
+  transition: width 0.5s ease-in;
+}
+
+@include large {
+  .progress {
+    height: 18px;
+  }
+
+  .progress-bar {
+    width: 350px;
+  }
+}
+
+@include medium {
+  .progress {
+    height: 18px;
+  }
+
+  .progress-bar {
+    width: 250px;
+  }
+}
+
+@include small {
+  .progress {
+    height: 16px;
+  }
+
+  .progress-bar {
+    width: 75vw;
+  }
+}

@@ -1,15 +1,14 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
-import { Grid, Box } from "theme-ui"
-import { Tab, Row, Col, Nav } from "react-bootstrap"
 import skillsData from "../data/skills.json"
 import "../styles/global.scss"
+import "../styles/skills.scss"
 
 const SkillItem = (props) => {
   const { name, badges, level } = props
   return (
-    <Row className="skill-item">
-      <Col className="skill-description-container">
+    <div className="skill-item">
+      <div className="skill-description-container">
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
           {badges.map((badge) => (
@@ -22,61 +21,47 @@ const SkillItem = (props) => {
             />
           ))}
         </span>
-      </Col>
-      <Col className="skill-level-container">
-        <span className="progress-bar">
-          <span className="progress" style={{ width: `${level}%` }}></span>
-        </span>
-      </Col>
-    </Row>
+      </div>
+      <div className="progress-bar">
+        <span className="progress" style={{ width: `${level}%` }}></span>
+      </div>
+    </div>
   )
 }
 
-const SkillSheet = (props) => {
+const SkillCategory = ({ skills, title }) => {
   return (
-    <div className={"skill-sheet"}>
-      {props.skills.map((skill) => (
-        <SkillItem
-          name={skill.title}
-          level={skill.level}
-          badges={skill.badges}
-          key={skill.title}
-        />
-      ))}
+    <div className={"skill-category"}>
+      <div className="skill-category-title">{title}</div>
+      <div className="category-skills-container">
+        {skills.map((skill) => (
+          <SkillItem
+            name={skill.title}
+            level={skill.level}
+            badges={skill.badges}
+            key={skill.title}
+          />
+        ))}
+      </div>
     </div>
   )
 }
 
 const Skills = () => (
-  <Grid pt={30} pb={30} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="skills">
-    <Box>
+  <div style={{ padding: "30px 4px" }} id="skills">
+    <div>
       <SkillsMDX />
-    </Box>
-    <div className="skills-container">
-      <Tab.Container id="left-tabs-example" defaultActiveKey="0">
-        <Row>
-          <Col sm={3}>
-            <Nav variant="pills" className="flex-column">
-              {skillsData.map((category, index) => (
-                <Nav.Item key={category.categoryTitle}>
-                  <Nav.Link eventKey={index}>{category.categoryTitle}</Nav.Link>
-                </Nav.Item>
-              ))}
-            </Nav>
-          </Col>
-          <Col sm={9}>
-            <Tab.Content>
-              {skillsData.map((category, index) => (
-                <Tab.Pane eventKey={index} key={category.categoryTitle}>
-                  <SkillSheet skills={category.skills} />
-                </Tab.Pane>
-              ))}
-            </Tab.Content>
-          </Col>
-        </Row>
-      </Tab.Container>
     </div>
-  </Grid>
+    <div className="skills-container">
+      {skillsData.map((category) => (
+        <SkillCategory
+          title={category.categoryTitle}
+          skills={category.skills}
+          key={category.categoryTitle}
+        />
+      ))}
+    </div>
+  </div>
 )
 
 export default Skills
