@@ -32,7 +32,7 @@
   text-align: left;
   margin-bottom: 10px;
 
-  @include small {
+  @include mediumAndSmall {
     text-align: center;
   }
 }
@@ -84,7 +84,7 @@
   }
 
   .progress-bar {
-    width: 300px;
+    width: 350px;
   }
 }
 
@@ -94,7 +94,7 @@
   }
 
   .progress-bar {
-    width: 200px;
+    width: 250px;
   }
 }
 
