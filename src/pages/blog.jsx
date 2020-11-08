@@ -19,7 +19,7 @@ export default function Blog({ data }) {
           <small>
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
-          <p>{post.excerpt}</p>
+          <p>{post.frontmatter.excerpt}</p>
         </article>
       ))}
     </DefaultTemplate>
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
           author
           title
           date(formatString: "DD-MM-yyyy")
-          description
+          excerpt
         }
       }
     }
