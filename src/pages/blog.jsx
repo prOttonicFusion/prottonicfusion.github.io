@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import DefaultTemplate from "../templates/default-template"
+import BlogPostCard from "../components/blog/blog-post-card"
 import "../styles/global.scss"
 import "../styles/blog.scss"
 
@@ -14,18 +15,18 @@ export default function Blog({ data }) {
       description={data.page.frontmatter.description}
     >
       <h1>My blog posts</h1>
-
-      {posts.map((post) => (
-        <article key={post.title + post.date}>
-          <h2>
-            <a href={"/" + post.slug}>{post.frontmatter.title}</a>
-          </h2>
-          <small>
-            {post.frontmatter.author}, {post.frontmatter.date}
-          </small>
-          <p>{post.frontmatter.excerpt}</p>
-        </article>
-      ))}
+      <div className="post-cards-container">
+        {posts.map((post) => (
+          <BlogPostCard
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+            author={post.frontmatter.author}
+            excerpt={post.frontmatter.excerpt}
+            url={"/" + post.slug}
+            key={post.frontmatter.date + post.frontmatter.title}
+          />
+        ))}
+      </div>
     </DefaultTemplate>
   )
 }

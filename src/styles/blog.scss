@@ -1,17 +1,58 @@
 @import "variables.scss";
 
 .post-body {
-    text-align: left;
+  text-align: left;
 }
 
 .post-info {
-    font-size: 16px;
+  font-size: 16px;
 
-    @include small {
-        font-size: 14px;
-    }
+  @include small {
+    font-size: 14px;
+  }
 }
 
 .post-date {
-    font-style: italic;
+  font-style: italic;
+}
+
+.post-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.post-card {
+  margin: 0 15px 15px 15px;
+  padding: 10px;
+  border: 0.5px solid $body-text-color;
+  border-radius: 3px;
+  width: 40%;
+
+  @include small {
+      width: 80%;
+  }
+}
+
+.post-card-title {
+  font-size: 28px;
+
+  @include small {
+    font-size: 24px;
+  }
+}
+
+.post-card-info {
+  font-size: 14px;
+  color: $blockquote-text-color;
+
+  @include small {
+    font-size: 12px;
+  }
+}
+
+.post-card-excerpt {
+  margin-top: 12px;
 }
