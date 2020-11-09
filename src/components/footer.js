@@ -14,6 +14,7 @@ const Footer = () => (
               label
               url
             }
+            author
           }
         }
       }
@@ -31,7 +32,7 @@ const Footer = () => (
           ))}
         </div>
         <div className="copyright-container">
-          {new Date().getFullYear()} &copy; prOttonicFusion
+          {new Date().getFullYear()} &copy; {data.site.siteMetadata.author}
         </div>
       </div>
     )}

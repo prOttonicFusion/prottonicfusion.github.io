@@ -8,8 +8,8 @@ module.exports = {
   siteMetadata: {
     title: `Otto Lindblom`,
     siteUrl: `https://prottonicfusion.github.io`,
-    description: `My personal homepage`,
-    author: `prOttonicFusion`,
+    description: `Otto Lindblom's personal homepage`,
+    author: `Otto Lindblom`,
     contactOptions: [
       {
         name: "github",
@@ -59,6 +59,14 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/src/blog/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-LNHKYL8TP0", // Google Analytics / GA
+        ],
       },
     },
     "gatsby-plugin-mdx",
