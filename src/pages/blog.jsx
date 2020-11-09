@@ -15,7 +15,9 @@ export default function Blog({ data }) {
 
       {posts.map((post) => (
         <article key={post.title + post.date}>
-          <h2><a href={"/" + post.slug}>{post.frontmatter.title}</a></h2>
+          <h2>
+            <a href={"/" + post.slug}>{post.frontmatter.title}</a>
+          </h2>
           <small>
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
