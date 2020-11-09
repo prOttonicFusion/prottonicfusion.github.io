@@ -9,7 +9,7 @@ module.exports = {
     title: `Otto Lindblom`,
     siteUrl: `https://prottonicfusion.github.io`,
     description: `My personal homepage`,
-    author: `prOttonicFusion`,
+    author: `Otto Lindblom`,
     contactOptions: [
       {
         name: "github",
