@@ -6,23 +6,26 @@ import "../styles/global.scss"
 import "../styles/blog.scss"
 
 export default function BlogPost({ data }) {
-  const post = data.mdx
+  const post = data.post
 
   return (
     <DefaultTemplate
       location={"/" + post.slug}
-      title={post.frontmatter.title}
-      description={
+      title={data.page.frontmatter.title}
+      description={data.page.frontmatter.description}
+    >
+      <div>
+        {/** TODO: Add blog navigation menu (more posts, next, ...) */}
+        <h2>{post.frontmatter.title}</h2>
         <p>
           <span className="post-info">
             {post.frontmatter.author},{" "}
             <span className="post-date">{post.frontmatter.date}</span>
           </span>
         </p>
-      }
-    >
-      <div className="post-body">
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <div className="post-body">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </div>
       </div>
     </DefaultTemplate>
   )
@@ -30,7 +33,7 @@ export default function BlogPost({ data }) {
 
 export const query = graphql`
   query BlogQuery($slug: String!) {
-    mdx(slug: { eq: $slug }) {
+    post: mdx(slug: { eq: $slug }) {
       body
       frontmatter {
         title
@@ -38,6 +41,12 @@ export const query = graphql`
         date(fromNow: true)
       }
       slug
+    }
+    page: mdx(fileAbsolutePath: { regex: "/blog.mdx/" }) {
+      frontmatter {
+        description
+        title
+      }
     }
   }
 `

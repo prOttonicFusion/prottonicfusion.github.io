@@ -5,7 +5,8 @@
 }
 
 .post-info {
-  font-size: 16px;
+  font-size: 15px;
+  color: $blockquote-text-color;
 
   @include small {
     font-size: 14px;
