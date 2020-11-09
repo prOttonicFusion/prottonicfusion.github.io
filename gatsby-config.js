@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Otto Lindblom`,
     siteUrl: `https://prottonicfusion.github.io`,
-    description: `My personal homepage`,
+    description: `Otto Lindblom's personal homepage`,
     author: `Otto Lindblom`,
     contactOptions: [
       {
