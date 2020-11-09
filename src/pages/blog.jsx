@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import DefaultTemplate from "../templates/default-template"
+import "../styles/global.scss"
+import "../styles/blog.scss"
 
 export default function Blog({ data }) {
   const { posts } = data.blog
@@ -35,7 +37,7 @@ export const pageQuery = graphql`
         frontmatter {
           author
           title
-          date(formatString: "DD-MM-yyyy")
+          date(fromNow: true)
           excerpt
         }
         slug
