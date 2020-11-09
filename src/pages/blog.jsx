@@ -15,7 +15,7 @@ export default function Blog({ data }) {
 
       {posts.map((post) => (
         <article key={post.title + post.date}>
-          <h2>{post.frontmatter.title}</h2>
+          <h2><a href={"/" + post.slug}>{post.frontmatter.title}</a></h2>
           <small>
             {post.frontmatter.author}, {post.frontmatter.date}
           </small>
@@ -36,6 +36,7 @@ export const pageQuery = graphql`
           date(formatString: "DD-MM-yyyy")
           excerpt
         }
+        slug
       }
     }
     page: mdx(fileAbsolutePath: { regex: "/blog.mdx/" }) {
