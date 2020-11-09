@@ -36,6 +36,11 @@
   }
 }
 
+.post-card-description {
+    display: flex;
+    flex-direction: column;
+}
+
 .post-card-title {
   font-size: 28px;
 
@@ -47,6 +52,7 @@
 .post-card-info {
   font-size: 14px;
   color: $blockquote-text-color;
+  justify-self: end;
 
   @include small {
     font-size: 12px;
