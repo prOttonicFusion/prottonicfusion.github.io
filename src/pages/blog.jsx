@@ -14,7 +14,6 @@ export default function Blog({ data }) {
       title={data.page.frontmatter.title}
       description={data.page.frontmatter.description}
     >
-      <h1>My blog posts</h1>
       <div className="post-cards-container">
         {posts.map((post) => (
           <BlogPostCard

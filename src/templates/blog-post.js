@@ -15,6 +15,9 @@ export default function BlogPost({ data }) {
       description={data.page.frontmatter.description}
     >
       <div>
+      <div className="blog-controls">
+        <span>‹ <a href="/blog">Back</a></span>
+      </div>
         {/** TODO: Add blog navigation menu (more posts, next, ...) */}
         <h2>{post.frontmatter.title}</h2>
         <p>

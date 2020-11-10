@@ -33,13 +33,13 @@
   width: 40%;
 
   @include small {
-      width: 80%;
+    width: 80%;
   }
 }
 
 .post-card-description {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card-title {
@@ -62,4 +62,17 @@
 
 .post-card-excerpt {
   margin-top: 12px;
+}
+
+.blog-controls {
+  display: flex;
+  a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
 }
