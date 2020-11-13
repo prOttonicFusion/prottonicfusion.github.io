@@ -4,7 +4,7 @@
     "icon": "",
     "projects": [
       {
-        "name": "Parallel Genetic Optimization",
+        "name": "Parallel Genetic Optimizer",
         "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP). Written in C++, using Open MPI.",
         "github": "prOttonicFusion/parallel-genetic-optimization",
         "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png"
@@ -17,7 +17,7 @@
       },
       {
         "name": "This site!",
-        "description": "Built using Gatsby & hosted on GitHub Pages",
+        "description": "Built using Gatsby + React and hosted on GitHub Pages",
         "github": "prOttonicFusion/prOttonicFusion.github.io",
         "image": "/assets/images/project-covers/Gatsby_Monogram.png"
       },
@@ -26,6 +26,12 @@
         "description": "The homepage of Oiva Hankinta",
         "wordpress": "https://oivahankinta.fi",
         "image": "/assets/images/project-covers/oiva-screenshot.png"
+      },
+      {
+        "name": "GitHub Contributions CLI",
+        "description": "A command line tool for tracking your daily contributions on GitHub",
+        "github": "prOttonicFusion/github-contributions-cli",
+        "image": "/assets/images/project-covers/contributions-cli.png"
       }
     ]
   }
