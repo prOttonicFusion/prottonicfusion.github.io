@@ -47,7 +47,7 @@
         "level": 88,
         "badges": [
           "/assets/images/devIcons/html5-plain.svg",
-          "./assets/images/devIcons/css3-plain.svg"
+          "/assets/images/devIcons/css3-plain.svg"
         ]
       },
       {
