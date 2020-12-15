@@ -1,5 +1,6 @@
 # My Personal Homepage
 
+![Gatsby version](https://img.shields.io/github/package-json/dependency-version/prottonicfusion/prottonicfusion.github.io/gatsby)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/prOttonicFusion/prOttonicFusion.github.io/Gatsby%20Deploy)
 ![Website](https://img.shields.io/website?down_color=red&down_message=down&label=status&up_color=success&up_message=online&url=https%3A%2F%2Fprottonicfusion.github.io)
 
