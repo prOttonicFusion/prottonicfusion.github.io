@@ -4,16 +4,10 @@
     "icon": "",
     "projects": [
       {
-        "name": "Parallel Genetic Optimizer",
-        "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP). Written in C++, using Open MPI.",
-        "github": "prOttonicFusion/parallel-genetic-optimization",
-        "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png"
-      },
-      {
-        "name": "Darker+",
-        "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
-        "github": "prOttonicFusion/vscode-darker-plus",
-        "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
+        "name": "Spectrograph",
+        "description": "Visualize movies and other videos as color spectrums based on the primary colors of each frame",
+        "github": "https://github.com/prOttonicFusion/spectrograph",
+        "image": "/assets/images/project-covers/spectrograph.png"
       },
       {
         "name": "This site!",
@@ -22,16 +16,28 @@
         "image": "/assets/images/project-covers/Gatsby_Monogram.png"
       },
       {
-        "name": "Oivahankinta.fi",
-        "description": "The homepage of Oiva Hankinta",
-        "wordpress": "https://oivahankinta.fi",
-        "image": "/assets/images/project-covers/oiva-screenshot.png"
+        "name": "Darker+",
+        "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
+        "github": "prOttonicFusion/vscode-darker-plus",
+        "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
       },
       {
         "name": "GitHub Contributions CLI",
         "description": "A command line tool for tracking your daily contributions on GitHub",
         "github": "prOttonicFusion/github-contributions-cli",
         "image": "/assets/images/project-covers/contributions-cli.png"
+      },
+      {
+        "name": "Oivahankinta.fi",
+        "description": "The homepage of Oiva Hankinta",
+        "wordpress": "https://oivahankinta.fi",
+        "image": "/assets/images/project-covers/oiva-screenshot.png"
+      },
+      {
+        "name": "Parallel Genetic Optimizer",
+        "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP). Written in C++, using Open MPI for parallelization",
+        "github": "prOttonicFusion/parallel-genetic-optimization",
+        "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png"
       }
     ]
   }
