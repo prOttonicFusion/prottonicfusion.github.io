@@ -18,16 +18,18 @@ const ProjectCard = ({
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
-      {keywords && (
-        <Card.Text>
-          {keywords.map((keyword, index) => (
-            <span>
-              {index ? ", " : ""}
-              <a href={keyword.url}>{keyword.label}</a>
-            </span>
-          ))}
-        </Card.Text>
-      )}
+      <div className="project-keyword-container">
+        {keywords && (
+          <Card.Text>
+            {keywords.map((keyword, index) => (
+              <span>
+                {index ? ", " : ""}
+                <a href={keyword.url}>{keyword.label}</a>
+              </span>
+            ))}
+          </Card.Text>
+        )}
+      </div>
     </Card.Body>
     <Card.Footer>
       {github && (
