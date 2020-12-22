@@ -11,12 +11,23 @@ const ProjectCard = ({
   github,
   link,
   documentation,
+  keywords,
 }) => (
   <Card style={{ width: "18rem" }}>
     <Card.Img variant="top" src={image} />
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
+      {keywords && (
+        <Card.Text>
+          {keywords.map((keyword, index) => (
+            <span>
+              {index ? ", " : ""}
+              <a href={keyword.url}>{keyword.label}</a>
+            </span>
+          ))}
+        </Card.Text>
+      )}
     </Card.Body>
     <Card.Footer>
       {github && (
