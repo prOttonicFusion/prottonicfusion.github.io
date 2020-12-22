@@ -18,6 +18,7 @@ import pythonLogo from "../assets/devIcons/python-plain.svg"
 import qtLogo from "../assets/devIcons/qt-logo.png"
 import reactLogo from "../assets/devIcons/react-original.svg"
 import rustLogo from "../assets/devIcons/rust-plain.svg"
+import swiftLogo from "../assets/devIcons/swift-plain.svg"
 import typescriptLogo from "../assets/devIcons/typescript-plain.svg"
 import ubuntuLogo from "../assets/devIcons/ubuntu-plain.svg"
 import wordpressLogo from "../assets/devIcons/wordpress-plain.svg"
@@ -77,6 +78,9 @@ const selectIcon = (tool) => {
 
     case "rust":
       return rustLogo
+
+    case "swift":
+      return swiftLogo
 
     case "typescript":
       return typescriptLogo
