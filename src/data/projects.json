@@ -6,7 +6,7 @@
       {
         "name": "Spectrograph",
         "description": "Visualize movies and other videos as color spectrums based on the primary colors of each frame",
-        "github": "https://github.com/prOttonicFusion/spectrograph",
+        "github": "prOttonicFusion/spectrograph",
         "image": "/assets/images/project-covers/spectrograph.png"
       },
       {
@@ -14,6 +14,12 @@
         "description": "Built using Gatsby + React and hosted on GitHub Pages",
         "github": "prOttonicFusion/prOttonicFusion.github.io",
         "image": "/assets/images/project-covers/Gatsby_Monogram.png"
+      },
+      {
+        "name": "NSFoundationCoding",
+        "description": "A package for encoding Swift objects into NSFoundation containers and vice versa",
+        "github": "fjuul/NSFoundationCoding",
+        "image": "/assets/images/project-covers/fjuul.png"
       },
       {
         "name": "Darker+",
