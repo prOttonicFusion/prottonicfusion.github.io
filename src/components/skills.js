@@ -1,24 +1,20 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
 import skillsData from "../data/skills.json"
+import devIcon from "./dev-icon"
 import "../styles/global.scss"
 import "../styles/skills.scss"
+import DevIcon from "./dev-icon"
 
 const SkillItem = (props) => {
-  const { name, badges, level } = props
+  const { name, devIcons, level } = props
   return (
     <div className="skill-item">
       <div className="skill-description-container">
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
-          {badges.map((badge) => (
-            <img
-              src={badge}
-              className="skill-badge"
-              height={"15px"}
-              alt={"Skill badge"}
-              key={badge}
-            />
+          {devIcons.map((tool) => (
+            <DevIcon tool={tool} />
           ))}
         </span>
       </div>
@@ -38,7 +34,7 @@ const SkillCategory = ({ skills, title }) => {
           <SkillItem
             name={skill.title}
             level={skill.level}
-            badges={skill.badges}
+            devIcons={skill.devIcons}
             key={skill.title}
           />
         ))}
