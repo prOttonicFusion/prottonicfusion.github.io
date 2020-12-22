@@ -2,6 +2,7 @@ import React from "react"
 import "../styles/global.scss"
 import cppLogo from "../assets/devIcons/cplusplus-plain.svg"
 import cssLogo from "../assets/devIcons/css3-plain.svg"
+import devIconLogo from "../assets/devIcons/devicon.svg"
 import dockerLogo from "../assets/devIcons/docker-plain.svg"
 import fortranLogo from "../assets/devIcons/fortran-logo.png"
 import gimpLogo from "../assets/devIcons/gimp-plain.svg"
@@ -92,15 +93,15 @@ const selectIcon = (tool) => {
       return wordpressLogo
 
     default:
-      return ""
+      return devIconLogo
   }
 }
 
-const DevIcon = ({ tool }) => (
+const DevIcon = ({ tool, height }) => (
   <img
     src={selectIcon(tool)}
     className="dev-icon"
-    height={"15px"}
+    height={height ? height : "15px"}
     alt={"Dev icon"}
   />
 )
