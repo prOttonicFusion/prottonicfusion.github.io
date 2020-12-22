@@ -6,29 +6,35 @@
         "title": "Python",
         "description": "",
         "level": 100,
-        "badges": ["/assets/images/devIcons/python-plain.svg"]
+        "devIcons": [
+          "python"
+        ]
       },
       {
         "title": "JavaScript/NodeJS",
         "description": "",
         "level": 95,
-        "badges": [
-          "/assets/images/devIcons/javascript-plain.svg",
-          "/assets/images/devIcons/typescript-plain.svg",
-          "/assets/images/devIcons/nodejs-plain.svg"
+        "devIcons": [
+          "javascript",
+          "typescript",
+          "nodejs"
         ]
       },
       {
         "title": "C++",
         "description": "",
         "level": 65,
-        "badges": ["/assets/images/devIcons/cplusplus-plain.svg"]
+        "devIcons": [
+          "c++"
+        ]
       },
       {
         "title": "Fortran95",
         "description": "",
         "level": 80,
-        "badges": ["/assets/images/devIcons/fortran-logo.png"]
+        "devIcons": [
+          "fortran"
+        ]
       }
     ]
   },
@@ -39,22 +45,26 @@
         "title": "React Native",
         "description": "",
         "level": 80,
-        "badges": ["/assets/images/devIcons/react-original.svg"]
+        "devIcons": [
+          "react"
+        ]
       },
       {
         "title": "HTML + CSS",
         "description": "",
         "level": 90,
-        "badges": [
-          "/assets/images/devIcons/html5-plain.svg",
-          "/assets/images/devIcons/css3-plain.svg"
+        "devIcons": [
+          "html",
+          "css"
         ]
       },
       {
         "title": "Qt",
         "description": "",
         "level": 60,
-        "badges": ["/assets/images/devIcons/qt-logo.png"]
+        "devIcons": [
+          "qt"
+        ]
       }
     ]
   },
@@ -65,13 +75,17 @@
         "title": "Docker",
         "description": "",
         "level": 75,
-        "badges": ["/assets/images/devIcons/docker-plain.svg"]
+        "devIcons": [
+          "docker"
+        ]
       },
       {
         "title": "GNU/Linux",
         "description": "",
         "level": 100,
-        "badges": ["/assets/images/devIcons/ubuntu-plain.svg"]
+        "devIcons": [
+          "ubuntu"
+        ]
       }
     ]
   },
@@ -82,13 +96,15 @@
         "title": "OpenMPI",
         "description": "",
         "level": 75,
-        "badges": ["/assets/images/devIcons/open-mpi-logo.png"]
+        "devIcons": [
+          "openmpi"
+        ]
       },
       {
         "title": "LAMMPS",
         "description": "",
         "level": 95,
-        "badges": []
+        "devIcons": []
       }
     ]
   }
