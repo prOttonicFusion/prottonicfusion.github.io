@@ -18,7 +18,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "bootstrap": "^4.5.3",
-    "gatsby": "^2.27.0",
+    "gatsby": "^2.29.2",
     "gatsby-plugin-google-gtag": "^2.3.0",
     "gatsby-plugin-mdx": "^1.5.0",
     "gatsby-plugin-sass": "^2.6.0",
