@@ -16,24 +16,24 @@
     "lint:fix": "eslint --ext .js,.jsx src --fix"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.21",
+    "@mdx-js/mdx": "^1.6.22",
     "bootstrap": "^4.5.3",
-    "gatsby": "^2.27.0",
-    "gatsby-plugin-google-gtag": "^2.3.0",
-    "gatsby-plugin-mdx": "^1.5.0",
-    "gatsby-plugin-sass": "^2.6.0",
-    "gatsby-plugin-theme-ui": "^0.3.4",
-    "gatsby-source-filesystem": "^2.6.1",
+    "gatsby": "^2.29.2",
+    "gatsby-plugin-google-gtag": "^2.5.0",
+    "gatsby-plugin-mdx": "^1.7.1",
+    "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-source-filesystem": "^2.8.1",
     "node-sass": "^4.14.1",
-    "react": "^16.14.0",
+    "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.14.0",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "theme-ui": "^0.3.4"
+    "theme-ui": "^0.3.5"
   },
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.1"
   },
   "repository": {
     "type": "git",
