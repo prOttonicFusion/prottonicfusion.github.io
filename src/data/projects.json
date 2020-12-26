@@ -16,6 +16,14 @@
           {
             "label": "Pillow",
             "url": "https://pillow.readthedocs.io/"
+          },
+          {
+            "label": "Pil",
+            "url": "https://pillow.readthedocs.io/"
+          },
+          {
+            "label": "Pillow",
+            "url": "https://pillow.readthedocs.io/"
           }
         ]
       },

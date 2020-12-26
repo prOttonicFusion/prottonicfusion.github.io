@@ -18,14 +18,13 @@ const ProjectCard = ({
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
-      <div className="project-keyword-container">
+      <div className="project-keywords-container">
         {keywords && (
           <Card.Text>
             {keywords.map((keyword, index) => (
-              <span>
-                {index ? ", " : ""}
+              <div className="project-keyword">
                 <a href={keyword.url}>{keyword.label}</a>
-              </span>
+              </div>
             ))}
           </Card.Text>
         )}
