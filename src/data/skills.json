@@ -6,35 +6,25 @@
         "title": "Python",
         "description": "",
         "level": 100,
-        "devIcons": [
-          "python"
-        ]
+        "devIcons": ["python"]
       },
       {
         "title": "JavaScript/NodeJS",
         "description": "",
         "level": 95,
-        "devIcons": [
-          "javascript",
-          "typescript",
-          "nodejs"
-        ]
+        "devIcons": ["javascript", "typescript", "nodejs"]
       },
       {
         "title": "C++",
         "description": "",
         "level": 65,
-        "devIcons": [
-          "c++"
-        ]
+        "devIcons": ["c++"]
       },
       {
         "title": "Fortran95",
         "description": "",
         "level": 80,
-        "devIcons": [
-          "fortran"
-        ]
+        "devIcons": ["fortran"]
       }
     ]
   },
@@ -45,26 +35,19 @@
         "title": "React Native",
         "description": "",
         "level": 80,
-        "devIcons": [
-          "react"
-        ]
+        "devIcons": ["react"]
       },
       {
         "title": "HTML + CSS",
         "description": "",
         "level": 90,
-        "devIcons": [
-          "html",
-          "css"
-        ]
+        "devIcons": ["html", "css"]
       },
       {
         "title": "Qt",
         "description": "",
         "level": 60,
-        "devIcons": [
-          "qt"
-        ]
+        "devIcons": ["qt"]
       }
     ]
   },
@@ -75,17 +58,13 @@
         "title": "Docker",
         "description": "",
         "level": 75,
-        "devIcons": [
-          "docker"
-        ]
+        "devIcons": ["docker"]
       },
       {
         "title": "GNU/Linux",
         "description": "",
         "level": 100,
-        "devIcons": [
-          "ubuntu"
-        ]
+        "devIcons": ["ubuntu"]
       }
     ]
   },
@@ -96,9 +75,7 @@
         "title": "OpenMPI",
         "description": "",
         "level": 75,
-        "devIcons": [
-          "openmpi"
-        ]
+        "devIcons": ["openmpi"]
       },
       {
         "title": "LAMMPS",

@@ -14,7 +14,7 @@ const SkillItem = (props) => {
         <span className="skill-title">{name}</span>
         <span className="skill-badge-container">
           {devIcons.map((tool) => (
-            <DevIcon tool={tool} />
+            <DevIcon tool={tool} key={tool} />
           ))}
         </span>
       </div>
