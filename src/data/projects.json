@@ -10,16 +10,7 @@
         "image": "/assets/images/project-covers/spectrograph.png",
         "keywords": [
           {
-            "label": "Python",
-            "devIcon": "python"
-          },
-          {
-            "label": "Pillow",
-            "url": "https://pillow.readthedocs.io/"
-          },
-          {
-            "label": "Pil",
-            "url": "https://pillow.readthedocs.io/"
+            "label": "Python"
           },
           {
             "label": "Pillow",
@@ -38,8 +29,7 @@
             "url": "https://www.gatsbyjs.com/"
           },
           {
-            "label": "React",
-            "devIcon": "react"
+            "label": "React"
           }
         ]
       },
@@ -50,8 +40,7 @@
         "image": "/assets/images/project-covers/fjuul.png",
         "keywords": [
           {
-            "label": "Swift",
-            "devIcon": "swift"
+            "label": "Swift"
           }
         ]
       },
@@ -68,8 +57,7 @@
         "image": "/assets/images/project-covers/contributions-cli.png",
         "keywords": [
           {
-            "label": "Python",
-            "devIcon": "python"
+            "label": "Python"
           }
         ]
       },
@@ -77,7 +65,12 @@
         "name": "Oivahankinta.fi",
         "description": "The homepage of Oiva Hankinta",
         "wordpress": "https://oivahankinta.fi",
-        "image": "/assets/images/project-covers/oiva-screenshot.png"
+        "image": "/assets/images/project-covers/oiva-screenshot.png",
+        "keywords": [
+          {
+            "label": "WordPress"
+          }
+        ]
       },
       {
         "name": "Parallel Genetic Optimizer",
@@ -86,12 +79,10 @@
         "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png",
         "keywords": [
           {
-            "label": "C++",
-            "devIcon": "c++"
+            "label": "C++"
           },
           {
-            "label": "OpenMPI",
-            "devIcon": "openmpi"
+            "label": "OpenMPI"
           }
         ]
       }
