@@ -541,6 +541,22 @@ a {
   display: inline-block;
 }
 
+.project-keywords-container {
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.project-keyword {
+  border-style: solid;
+  border-color: #81888f;
+  border-width: 1.5px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 4px 4px;
+}
+
 .card-footer {
   background-color: #fff;
 }

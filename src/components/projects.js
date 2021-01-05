@@ -28,6 +28,7 @@ const Projects = () => (
           documentation={project.documentation}
           link={project.link}
           key={project.name}
+          keywords={project.keywords}
         ></ProjectCard>
       )
     })}

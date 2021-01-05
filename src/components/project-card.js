@@ -3,6 +3,16 @@ import { Card } from "react-bootstrap"
 import SocialIcon from "./social-icon"
 import "../styles/global.scss"
 
+const ProjectKeywords = ({ keywords }) => (
+  <Card.Text>
+    {keywords.map((keyword, index) => (
+      <div className="project-keyword">
+        <a href={keyword.url}>{keyword.label}</a>
+      </div>
+    ))}
+  </Card.Text>
+)
+
 const ProjectCard = ({
   title,
   image,
@@ -11,12 +21,18 @@ const ProjectCard = ({
   github,
   link,
   documentation,
+  keywords,
 }) => (
   <Card style={{ width: "18rem" }}>
     <Card.Img variant="top" src={image} />
     <Card.Body>
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
+      <div className="project-keywords-container">
+        {keywords && (
+          <ProjectKeywords keywords={keywords} />
+        )}
+      </div>
     </Card.Body>
     <Card.Footer>
       {github && (
