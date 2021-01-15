@@ -18,13 +18,13 @@
     "time": "2017 - present",
     "place": "Univ. of Helsinki Accelerator Lab",
     "description": null,
-    "itemClass": "timeline-inverted"
+    "itemClass": "timeline-normal"
   },
   {
     "title": "BSc in Physics",
     "time": "2018",
     "place": "University of Helsinki",
     "description": null,
-    "itemClass": "timeline-normal"
+    "itemClass": "timeline-inverted"
   }
 ]
