@@ -14,10 +14,15 @@ const TimelineItem = ({ eventData }) => {
       <div className="timeline-panel">
         <div className="timeline-heading">
           <h4 className="timeline-title">{eventData.title}</h4>
-          <div className="timeline-detail-text timeline-place">
-            @ {eventData.place}
-          </div>
-          <div className="timeline-detail-text timeline-date">{eventData.time}</div>
+          <span className="timeline-detail-container">
+            <span className="timeline-detail-text timeline-place">
+              {eventData.place}
+            </span>
+            <span className="timeline-detail-text timeline-spacer">|</span>
+            <span className="timeline-detail-text timeline-date">
+              {eventData.time}
+            </span>
+          </span>
         </div>
         <div className="timeline-body">
           <p>{eventData.description}</p>

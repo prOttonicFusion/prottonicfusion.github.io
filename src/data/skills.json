@@ -34,13 +34,13 @@
       {
         "title": "React Native",
         "description": "",
-        "level": 80,
+        "level": 85,
         "devIcons": ["react"]
       },
       {
         "title": "HTML + CSS",
         "description": "",
-        "level": 90,
+        "level": 95,
         "devIcons": ["html", "css"]
       },
       {
