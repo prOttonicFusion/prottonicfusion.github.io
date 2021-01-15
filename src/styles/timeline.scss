@@ -191,8 +191,19 @@
   }
 }
 
+.timeline-detail-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timeline-spacer {
+  margin: 0 5px;
+}
+
 .timeline-detail-text {
   font-size: 16px;
+  align-self: baseline;
 
   @include medium {
     font-size: 14px;
