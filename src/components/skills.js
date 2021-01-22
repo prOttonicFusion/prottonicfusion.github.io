@@ -1,7 +1,6 @@
 import React from "react"
 import SkillsMDX from "../sections/skills"
 import skillsData from "../data/skills.json"
-import devIcon from "./dev-icon"
 import "../styles/global.scss"
 import "../styles/skills.scss"
 import DevIcon from "./dev-icon"

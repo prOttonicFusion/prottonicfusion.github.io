@@ -29,9 +29,7 @@ const ProjectCard = ({
       <Card.Title>{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
       <div className="project-keywords-container">
-        {keywords && (
-          <ProjectKeywords keywords={keywords} />
-        )}
+        {keywords && <ProjectKeywords keywords={keywords} />}
       </div>
     </Card.Body>
     <Card.Footer>
