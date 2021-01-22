@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/global.scss"
+import { Tooltip, OverlayTrigger } from "react-bootstrap"
 import cppLogo from "../assets/devIcons/cplusplus-plain.svg"
 import cssLogo from "../assets/devIcons/css3-plain.svg"
 import devIconLogo from "../assets/devIcons/devicon.svg"
@@ -114,12 +115,22 @@ const selectIcon = (tool) => {
 }
 
 const DevIcon = ({ tool, height }) => (
-  <img
-    src={selectIcon(tool)}
-    className="dev-icon"
-    height={height ? height : "15px"}
-    alt={"Dev icon"}
-  />
+  <OverlayTrigger
+    key={tool}
+    placement="bottom"
+    overlay={
+      <Tooltip>
+        Tooltip text
+    </Tooltip>
+    }
+  >
+    <img
+      src={selectIcon(tool)}
+      className="dev-icon"
+      height={height ? height : "15px"}
+      alt={"Dev icon"}
+    />
+  </OverlayTrigger>
 )
 
 export default DevIcon
