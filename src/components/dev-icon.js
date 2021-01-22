@@ -32,111 +32,111 @@ import postgresLogo from "../assets/devIcons/postgresql-plain.svg"
 const iconData = {
   "c++": {
     icon: cppLogo,
-    label: "C++"
+    label: "C++",
   },
-  "css": {
+  css: {
     icon: cssLogo,
-    label: "CSS"
+    label: "CSS",
   },
-  "default": {
+  default: {
     icon: devIconLogo,
-    label: ""
+    label: "",
   },
-  "docker": {
+  docker: {
     icon: dockerLogo,
-    label: "Docker"
+    label: "Docker",
   },
-  "fortran": {
+  fortran: {
     icon: fortranLogo,
-    label: "Fortran95"
+    label: "Fortran95",
   },
-  "gimp": {
+  gimp: {
     icon: gimpLogo,
-    label: "GIMP"
+    label: "GIMP",
   },
-  "github": {
+  github: {
     icon: gitHubLogo,
-    label: "GitHub"
+    label: "GitHub",
   },
-  "html": {
+  html: {
     icon: htmlLogo,
-    label: "HTML"
+    label: "HTML",
   },
-  "illustrator": {
+  illustrator: {
     icon: illustratorLogo,
-    label: "Adobe Illustrator"
+    label: "Adobe Illustrator",
   },
-  "inkscape": {
+  inkscape: {
     icon: inkscapeLogo,
-    label: "InkScape"
+    label: "InkScape",
   },
-  "javascript": {
+  javascript: {
     icon: javascriptLogo,
-    label: "JavaScript"
+    label: "JavaScript",
   },
-  "lammps": {
+  lammps: {
     icon: lammpsLogo,
-    label: "LAMMPS"
+    label: "LAMMPS",
   },
-  "mac": {
+  mac: {
     icon: macLogo,
-    label: "macOs"
+    label: "macOs",
   },
-  "mysql": {
+  mysql: {
     icon: mysqlLogo,
-    label: "MySQL"
+    label: "MySQL",
   },
-  "nodejs": {
+  nodejs: {
     icon: nodejsLogo,
-    label: "node.js"
+    label: "node.js",
   },
-  "openmpi": {
+  openmpi: {
     icon: openmpiLogo,
-    label: "OpenMPI"
+    label: "OpenMPI",
   },
-  "photoshop": {
+  photoshop: {
     icon: photoshopLogo,
-    label: "Adobe Photoshop"
+    label: "Adobe Photoshop",
   },
-  "python": {
+  python: {
     icon: pythonLogo,
-    label: "Python"
+    label: "Python",
   },
-  "qt": {
+  qt: {
     icon: qtLogo,
-    label: "QT"
+    label: "QT",
   },
-  "react": {
+  react: {
     icon: reactLogo,
-    label: "React/React Native"
+    label: "React/React Native",
   },
-  "rust": {
+  rust: {
     icon: rustLogo,
-    label: "Rust"
+    label: "Rust",
   },
-  "sqlite": {
+  sqlite: {
     icon: sqliteLogo,
-    label: "SQLite"
+    label: "SQLite",
   },
-  "swift": {
+  swift: {
     icon: swiftLogo,
-    label: "Swift"
+    label: "Swift",
   },
-  "typescript": {
+  typescript: {
     icon: typescriptLogo,
-    label: "TypeScript"
+    label: "TypeScript",
   },
-  "ubuntu": {
+  ubuntu: {
     icon: ubuntuLogo,
-    label: "Ubuntu/Linux"
+    label: "Ubuntu/Linux",
   },
-  "wordpress": {
+  wordpress: {
     icon: wordpressLogo,
-    label: "WordPress"
+    label: "WordPress",
   },
-  "postgresql": {
+  postgresql: {
     icon: postgresLogo,
-    label: "PostgreSQL"
+    label: "PostgreSQL",
   },
 }
 
@@ -147,11 +147,7 @@ const DevIcon = ({ tool, height }) => {
     <OverlayTrigger
       key={tool}
       placement="bottom"
-      overlay={
-        <Tooltip>
-          {label}
-    </Tooltip>
-      }
+      overlay={<Tooltip>{label}</Tooltip>}
     >
       <img
         src={icon}
