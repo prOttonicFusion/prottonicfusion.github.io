@@ -12,6 +12,7 @@ import illustratorLogo from "../assets/devIcons/illustrator-plain.svg"
 import inkscapeLogo from "../assets/devIcons/inkscape-plain.svg"
 import javascriptLogo from "../assets/devIcons/javascript-plain.svg"
 import lammpsLogo from "../assets/devIcons/LAMMPS-logo.png"
+import mysqlLogo from "../assets/devIcons/mysql-plain.svg"
 import nodejsLogo from "../assets/devIcons/nodejs-plain.svg"
 import openmpiLogo from "../assets/devIcons/open-mpi-logo.png"
 import photoshopLogo from "../assets/devIcons/photoshop-plain.svg"
@@ -19,10 +20,12 @@ import pythonLogo from "../assets/devIcons/python-plain.svg"
 import qtLogo from "../assets/devIcons/qt-logo.png"
 import reactLogo from "../assets/devIcons/react-original.svg"
 import rustLogo from "../assets/devIcons/rust-plain.svg"
+import sqliteLogo from "../assets/devIcons/sqlite.svg"
 import swiftLogo from "../assets/devIcons/swift-plain.svg"
 import typescriptLogo from "../assets/devIcons/typescript-plain.svg"
 import ubuntuLogo from "../assets/devIcons/ubuntu-plain.svg"
 import wordpressLogo from "../assets/devIcons/wordpress-plain.svg"
+import postgresLogo from "../assets/devIcons/postgresql-plain.svg"
 
 const selectIcon = (tool) => {
   switch (tool) {
@@ -59,6 +62,9 @@ const selectIcon = (tool) => {
     case "lammps":
       return lammpsLogo
 
+    case "mysql":
+      return mysqlLogo
+
     case "nodejs":
       return nodejsLogo
 
@@ -67,6 +73,9 @@ const selectIcon = (tool) => {
 
     case "photoshop":
       return photoshopLogo
+
+    case "postgresql":
+      return postgresLogo
 
     case "python":
       return pythonLogo
@@ -79,6 +88,9 @@ const selectIcon = (tool) => {
 
     case "rust":
       return rustLogo
+
+    case "sqlite":
+      return sqliteLogo
 
     case "swift":
       return swiftLogo
