@@ -11,7 +11,7 @@
       {
         "title": "JavaScript/NodeJS",
         "description": "",
-        "level": 95,
+        "level": 100,
         "devIcons": ["javascript", "typescript", "nodejs"]
       },
       {
@@ -40,7 +40,7 @@
       {
         "title": "HTML + CSS",
         "description": "",
-        "level": 95,
+        "level": 100,
         "devIcons": ["html", "css"]
       },
       {
@@ -48,6 +48,12 @@
         "description": "",
         "level": 60,
         "devIcons": ["qt"]
+      },
+      {
+        "title": "Databases/SQL",
+        "description": "",
+        "level": 85,
+        "devIcons": ["postgresql", "sqlite"]
       }
     ]
   },
@@ -61,10 +67,10 @@
         "devIcons": ["docker"]
       },
       {
-        "title": "GNU/Linux",
+        "title": "Unix/Linux",
         "description": "",
         "level": 100,
-        "devIcons": ["ubuntu"]
+        "devIcons": ["mac", "ubuntu"]
       }
     ]
   },

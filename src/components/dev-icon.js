@@ -12,6 +12,7 @@ import illustratorLogo from "../assets/devIcons/illustrator-plain.svg"
 import inkscapeLogo from "../assets/devIcons/inkscape-plain.svg"
 import javascriptLogo from "../assets/devIcons/javascript-plain.svg"
 import lammpsLogo from "../assets/devIcons/LAMMPS-logo.png"
+import macLogo from "../assets/devIcons/apple.svg"
 import mysqlLogo from "../assets/devIcons/mysql-plain.svg"
 import nodejsLogo from "../assets/devIcons/nodejs-plain.svg"
 import openmpiLogo from "../assets/devIcons/open-mpi-logo.png"
@@ -61,6 +62,9 @@ const selectIcon = (tool) => {
 
     case "lammps":
       return lammpsLogo
+
+    case "mac":
+      return macLogo
 
     case "mysql":
       return mysqlLogo
