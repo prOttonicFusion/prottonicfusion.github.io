@@ -29,108 +29,138 @@ import ubuntuLogo from "../assets/devIcons/ubuntu-plain.svg"
 import wordpressLogo from "../assets/devIcons/wordpress-plain.svg"
 import postgresLogo from "../assets/devIcons/postgresql-plain.svg"
 
-const selectIcon = (tool) => {
-  switch (tool) {
-    case "c++":
-      return cppLogo
-
-    case "css":
-      return cssLogo
-
-    case "docker":
-      return dockerLogo
-
-    case "fortran":
-      return fortranLogo
-
-    case "gimp":
-      return gimpLogo
-
-    case "github":
-      return gitHubLogo
-
-    case "html":
-      return htmlLogo
-
-    case "illustrator":
-      return illustratorLogo
-
-    case "inkscape":
-      return inkscapeLogo
-
-    case "javascript":
-      return javascriptLogo
-
-    case "lammps":
-      return lammpsLogo
-
-    case "mac":
-      return macLogo
-
-    case "mysql":
-      return mysqlLogo
-
-    case "nodejs":
-      return nodejsLogo
-
-    case "openmpi":
-      return openmpiLogo
-
-    case "photoshop":
-      return photoshopLogo
-
-    case "postgresql":
-      return postgresLogo
-
-    case "python":
-      return pythonLogo
-
-    case "qt":
-      return qtLogo
-
-    case "react":
-      return reactLogo
-
-    case "rust":
-      return rustLogo
-
-    case "sqlite":
-      return sqliteLogo
-
-    case "swift":
-      return swiftLogo
-
-    case "typescript":
-      return typescriptLogo
-
-    case "ubuntu":
-      return ubuntuLogo
-
-    case "wordpess":
-      return wordpressLogo
-
-    default:
-      return devIconLogo
-  }
+const iconData = {
+  "c++": {
+    icon: cppLogo,
+    label: "C++"
+  },
+  "css": {
+    icon: cssLogo,
+    label: "CSS"
+  },
+  "default": {
+    icon: devIconLogo,
+    label: ""
+  },
+  "docker": {
+    icon: dockerLogo,
+    label: "Docker"
+  },
+  "fortran": {
+    icon: fortranLogo,
+    label: "Fortran95"
+  },
+  "gimp": {
+    icon: gimpLogo,
+    label: "GIMP"
+  },
+  "github": {
+    icon: gitHubLogo,
+    label: "GitHub"
+  },
+  "html": {
+    icon: htmlLogo,
+    label: "HTML"
+  },
+  "illustrator": {
+    icon: illustratorLogo,
+    label: "Adobe Illustrator"
+  },
+  "inkscape": {
+    icon: inkscapeLogo,
+    label: "InkScape"
+  },
+  "javascript": {
+    icon: javascriptLogo,
+    label: "JavaScript"
+  },
+  "lammps": {
+    icon: lammpsLogo,
+    label: "LAMMPS"
+  },
+  "mac": {
+    icon: macLogo,
+    label: "macOs"
+  },
+  "mysql": {
+    icon: mysqlLogo,
+    label: "MySQL"
+  },
+  "nodejs": {
+    icon: nodejsLogo,
+    label: "node.js"
+  },
+  "openmpi": {
+    icon: openmpiLogo,
+    label: "OpenMPI"
+  },
+  "photoshop": {
+    icon: photoshopLogo,
+    label: "Adobe Photoshop"
+  },
+  "python": {
+    icon: pythonLogo,
+    label: "Python"
+  },
+  "qt": {
+    icon: qtLogo,
+    label: "QT"
+  },
+  "react": {
+    icon: reactLogo,
+    label: "React/React Native"
+  },
+  "rust": {
+    icon: rustLogo,
+    label: "Rust"
+  },
+  "sqlite": {
+    icon: sqliteLogo,
+    label: "SQLite"
+  },
+  "swift": {
+    icon: swiftLogo,
+    label: "Swift"
+  },
+  "typescript": {
+    icon: typescriptLogo,
+    label: "TypeScript"
+  },
+  "ubuntu": {
+    icon: ubuntuLogo,
+    label: "Ubuntu/Linux"
+  },
+  "wordpress": {
+    icon: wordpressLogo,
+    label: "WordPress"
+  },
+  "postgresql": {
+    icon: postgresLogo,
+    label: "PostgreSQL"
+  },
 }
 
-const DevIcon = ({ tool, height }) => (
-  <OverlayTrigger
-    key={tool}
-    placement="bottom"
-    overlay={
-      <Tooltip>
-        Tooltip text
+const DevIcon = ({ tool, height }) => {
+  const { icon, label } = tool in iconData ? iconData[tool] : iconData["default"]
+
+  return (
+    <OverlayTrigger
+      key={tool}
+      placement="bottom"
+      overlay={
+        <Tooltip>
+          {label}
     </Tooltip>
-    }
-  >
-    <img
-      src={selectIcon(tool)}
-      className="dev-icon"
-      height={height ? height : "15px"}
-      alt={"Dev icon"}
-    />
-  </OverlayTrigger>
-)
+      }
+    >
+      <img
+        src={icon}
+        className="dev-icon"
+        height={height ? height : "15px"}
+        alt={"Dev icon"}
+      />
+    </OverlayTrigger>
+  )
+}
 
 export default DevIcon
