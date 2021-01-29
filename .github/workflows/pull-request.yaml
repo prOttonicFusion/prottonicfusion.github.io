@@ -7,7 +7,7 @@ jobs:
   cancel-previous:
     runs-on: ubuntu-latest
     steps:
-    - uses: rokroskar/workflow-run-cleanup-action@v0.2.2
+    - uses: rokroskar/workflow-run-cleanup-action@035a48f84b47e111d72cf492a513179c92cd29ed  #v0.3.0
       env:
         GITHUB_TOKEN: "${{ secrets.ACCESS_TOKEN }}"
 
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: enriikke/gatsby-gh-pages-action@854578ae3c66828334442d16ef54ef814f3a410a  #v2.1.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages-test
