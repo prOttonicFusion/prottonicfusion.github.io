@@ -36,3 +36,4 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages-test
+          gatsby-args: --no-color
