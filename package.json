@@ -13,7 +13,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "lint": "eslint --ext .js,.jsx src",
-    "lint:fix": "eslint --ext .js,.jsx src --fix"
+    "lint:fix": "eslint --ext .js,.jsx src --fix",
+    "update:browserslist": "npx browserslist@latest --update-db"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
