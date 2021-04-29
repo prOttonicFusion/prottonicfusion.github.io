@@ -26,7 +26,7 @@ const ProjectCard = ({
   <Card
     style={{
       width: "18rem",
-      margin: "1.25rem"
+      margin: "1.25rem",
     }}
   >
     <Card.Img variant="top" src={image} />

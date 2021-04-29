@@ -12,6 +12,7 @@ const DefaultTemplate = ({ children, location, title, description, image }) => (
           height={"250px"}
           width={"250px"}
           className={"profile-pic"}
+          alt="Me"
         />
       )}
       <div>
