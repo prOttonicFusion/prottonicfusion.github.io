@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Footer from "../components/footer"
-import { Divider, Image, Box } from "theme-ui"
+import { Divider, Image } from "theme-ui"
 
 const DefaultTemplate = ({ children, location, title, description, image }) => (
   <>
@@ -15,10 +15,10 @@ const DefaultTemplate = ({ children, location, title, description, image }) => (
           className={"profile-pic"}
         />
       )}
-      <Box>
+      <div>
         <h1>{title}</h1>
         <p>{description}</p>
-      </Box>
+      </div>
     </Banner>
     <Layout>
       {children}

@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import DefaultTemplate from "../templates/default-template"
 import BriefCVMDX from "../sections/brief-cv"
-import { Box } from "theme-ui"
 import Skills from "../components/skills"
 import Timeline from "../components/timeline"
 import SEO from "../components/seo"
@@ -15,9 +14,9 @@ export default function BriefCVPage({ data }) {
       description={data.mdx.frontmatter.description}
     >
       <SEO title="Brief CV" />
-      <Box>
+      <div>
         <BriefCVMDX />
-      </Box>
+      </div>
       <Skills />
       <Timeline />
     </DefaultTemplate>

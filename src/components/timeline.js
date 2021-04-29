@@ -1,6 +1,6 @@
 import React from "react"
 import TimelineMDX from "../sections/timeline"
-import { Grid, Box } from "theme-ui"
+import { Grid } from "theme-ui"
 import timelineData from "../data/timeline.json"
 import "../styles/global.scss"
 import "../styles/timeline.scss"
@@ -34,9 +34,9 @@ const TimelineItem = ({ eventData }) => {
 
 const Timeline = () => (
   <Grid pt={30} pb={30} pl={4} pr={4} columns={[1, 1, 1, 1, 2]} id="timeline">
-    <Box>
+    <div>
       <TimelineMDX />
-    </Box>
+    </div>
     <div className="timeline-container">
       <ul className="timeline">
         {timelineData.map((data) => (
