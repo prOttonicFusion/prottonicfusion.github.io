@@ -290,7 +290,7 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 3rem 4rem;
+    padding: 3rem 1.25rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
@@ -537,8 +537,14 @@ a {
 }
 
 .project-cards-container {
-  text-align: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+
+   @include small {
+     justify-content: center;
+   }
 }
 
 .project-keywords-container {
@@ -568,4 +574,8 @@ a {
   background: #fff;
   height: 15px;
   margin: 0 3px;
+}
+
+.section-container {
+  padding: 100px 0;
 }

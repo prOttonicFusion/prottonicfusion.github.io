@@ -23,7 +23,12 @@ const ProjectCard = ({
   documentation,
   keywords,
 }) => (
-  <Card style={{ width: "18rem" }}>
+  <Card
+    style={{
+      width: "18rem",
+      margin: "1.25rem"
+    }}
+  >
     <Card.Img variant="top" src={image} />
     <Card.Body>
       <Card.Title>{title}</Card.Title>
