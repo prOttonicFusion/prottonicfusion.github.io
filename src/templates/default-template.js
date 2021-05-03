@@ -2,27 +2,27 @@ import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Footer from "../components/footer"
-import { Divider, Image, Box } from "theme-ui"
 
 const DefaultTemplate = ({ children, location, title, description, image }) => (
   <>
     <Banner location={location}>
       {image && (
-        <Image
+        <img
           src={image}
           height={"250px"}
           width={"250px"}
           className={"profile-pic"}
+          alt="Me"
         />
       )}
-      <Box>
+      <div>
         <h1>{title}</h1>
         <p>{description}</p>
-      </Box>
+      </div>
     </Banner>
     <Layout>
       {children}
-      <Divider />
+      <hr />
       <Footer />
     </Layout>
   </>

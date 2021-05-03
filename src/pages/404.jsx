@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Footer from "../components/footer"
-import { Divider } from "theme-ui"
 import SEO from "../components/seo"
 import "../styles/global.scss"
 
@@ -15,7 +14,7 @@ export default function ErrorPage() {
       <Layout>
         <SEO title="Error" />
         <p>There doesn't seem to be a page here... 🤔 </p>
-        <Divider />
+        <hr />
         <Footer />
       </Layout>
     </>
