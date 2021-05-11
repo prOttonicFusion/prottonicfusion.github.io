@@ -364,6 +364,7 @@ a {
     background-color: $code-bg-color;
     border: solid 1px $border-color;
     border-radius: 0.3rem;
+    text-align: left;
 
     > code {
       padding: 0;
@@ -401,6 +402,7 @@ a {
     display: inline;
     max-width: initial;
     padding: 0;
+    padding-left: 1.8rem;
     margin: 0;
     overflow: initial;
     line-height: inherit;

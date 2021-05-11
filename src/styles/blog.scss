@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+.post-body {
+  text-align: left;
+}
+
+.post-info {
+  font-size: 15px;
+  color: $blockquote-text-color;
+
+  @include small {
+    font-size: 14px;
+  }
+}
+
+.post-date {
+  font-style: italic;
+}
+
+.post-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.post-card {
+  margin: 0 15px 15px 15px;
+  padding: 10px;
+  border: 0.5px solid $body-text-color;
+  border-radius: 3px;
+  width: 40%;
+
+  @include small {
+    width: 80%;
+  }
+}
+
+.post-card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card-title {
+  font-size: 28px;
+
+  @include small {
+    font-size: 24px;
+  }
+}
+
+.post-card-info {
+  font-size: 14px;
+  color: $blockquote-text-color;
+  justify-self: end;
+
+  @include small {
+    font-size: 12px;
+  }
+}
+
+.post-card-excerpt {
+  margin-top: 12px;
+}
+
+.blog-controls {
+  display: flex;
+  a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+}
