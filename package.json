@@ -19,8 +19,8 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "bootstrap": "^4.6.0",
-    "gatsby": "^3.4.0",
+    "bootstrap": "^5.0.0",
+    "gatsby": "^3.5.0",
     "gatsby-plugin-google-gtag": "^3.4.0",
     "gatsby-plugin-mdx": "^2.4.0",
     "gatsby-plugin-sass": "^4.4.0",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "eslint-config-react-app": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.3.0"
   },
   "repository": {
     "type": "git",
