@@ -170,16 +170,8 @@ a {
 
       .nav-menu-icon {
         display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
+        padding-top: 2.5px;
         text-align: center;
-
-        > svg path {
-          fill: #444d56;
-        }
       }
 
       .custom-nav-link {
@@ -209,7 +201,7 @@ a {
       .trigger {
         padding-top: 20px;
       }
-      
+
       .custom-nav-link {
         display: block;
         text-align: left;
