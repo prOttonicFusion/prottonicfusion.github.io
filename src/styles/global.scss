@@ -209,8 +209,10 @@ a {
       .trigger {
         padding-top: 20px;
       }
+      
       .custom-nav-link {
         display: block;
+        text-align: left;
 
         &:last-child {
           margin-bottom: 10px;
