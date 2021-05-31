@@ -24,7 +24,7 @@
     "gatsby-core-utils": "^2.6.0",
     "gatsby-plugin-google-gtag": "^3.6.0",
     "gatsby-plugin-mdx": "^2.6.0",
-    "gatsby-plugin-sass": "^4.5.0",
+    "gatsby-plugin-sass": "^4.6.0",
     "gatsby-source-filesystem": "^3.6.0",
     "node-sass": "^6.0.0",
     "react": "^17.0.2",
