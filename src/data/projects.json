@@ -1,91 +1,91 @@
 [
-  {
-    "name": "",
-    "icon": "",
-    "projects": [
-      {
-        "name": "Spectrograph",
-        "description": "Visualize movies and other videos as color spectrums based on the primary colors of each frame",
-        "github": "prOttonicFusion/spectrograph",
-        "image": "/assets/images/project-covers/spectrograph.png",
-        "keywords": [
-          {
-            "label": "Python"
-          },
-          {
-            "label": "Pillow",
-            "url": "https://pillow.readthedocs.io/"
-          }
+    {
+        "name": "",
+        "icon": "",
+        "projects": [
+            {
+                "name": "Spectrograph",
+                "description": "Visualize movies and other videos as color spectrums based on the primary colors of each frame",
+                "github": "prOttonicFusion/spectrograph",
+                "image": "/assets/images/project-covers/spectrograph.png",
+                "keywords": [
+                    {
+                        "label": "Python"
+                    },
+                    {
+                        "label": "Pillow",
+                        "url": "https://pillow.readthedocs.io/"
+                    }
+                ]
+            },
+            {
+                "name": "This site!",
+                "description": "Built using Gatsby and hosted on GitHub Pages",
+                "github": "prOttonicFusion/prOttonicFusion.github.io",
+                "image": "/assets/images/project-covers/Gatsby_Monogram.png",
+                "keywords": [
+                    {
+                        "label": "GatsbyJS",
+                        "url": "https://www.gatsbyjs.com/"
+                    },
+                    {
+                        "label": "React"
+                    }
+                ]
+            },
+            {
+                "name": "NSFoundationCoding",
+                "description": "A package for encoding Swift objects into NSFoundation containers and vice versa",
+                "github": "fjuul/NSFoundationCoding",
+                "image": "/assets/images/project-covers/fjuul.png",
+                "keywords": [
+                    {
+                        "label": "Swift"
+                    }
+                ]
+            },
+            {
+                "name": "Darker+",
+                "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
+                "github": "prOttonicFusion/vscode-darker-plus",
+                "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
+            },
+            {
+                "name": "GitHub Contributions CLI",
+                "description": "A command line tool for tracking your daily contributions on GitHub",
+                "github": "prOttonicFusion/github-contributions-cli",
+                "image": "/assets/images/project-covers/contributions-cli.png",
+                "keywords": [
+                    {
+                        "label": "Python"
+                    }
+                ]
+            },
+            {
+                "name": "Oivahankinta.fi",
+                "description": "The homepage of Oiva Hankinta",
+                "wordpress": "https://oivahankinta.fi",
+                "image": "/assets/images/project-covers/oiva-screenshot.png",
+                "keywords": [
+                    {
+                        "label": "WordPress"
+                    }
+                ]
+            },
+            {
+                "name": "Parallel Genetic Optimizer",
+                "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP)",
+                "github": "prOttonicFusion/parallel-genetic-optimization",
+                "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png",
+                "keywords": [
+                    {
+                        "label": "C++"
+                    },
+                    {
+                        "label": "OpenMPI"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "name": "This site!",
-        "description": "Built using Gatsby and hosted on GitHub Pages",
-        "github": "prOttonicFusion/prOttonicFusion.github.io",
-        "image": "/assets/images/project-covers/Gatsby_Monogram.png",
-        "keywords": [
-          {
-            "label": "GatsbyJS",
-            "url": "https://www.gatsbyjs.com/"
-          },
-          {
-            "label": "React"
-          }
-        ]
-      },
-      {
-        "name": "NSFoundationCoding",
-        "description": "A package for encoding Swift objects into NSFoundation containers and vice versa",
-        "github": "fjuul/NSFoundationCoding",
-        "image": "/assets/images/project-covers/fjuul.png",
-        "keywords": [
-          {
-            "label": "Swift"
-          }
-        ]
-      },
-      {
-        "name": "Darker+",
-        "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
-        "github": "prOttonicFusion/vscode-darker-plus",
-        "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
-      },
-      {
-        "name": "GitHub Contributions CLI",
-        "description": "A command line tool for tracking your daily contributions on GitHub",
-        "github": "prOttonicFusion/github-contributions-cli",
-        "image": "/assets/images/project-covers/contributions-cli.png",
-        "keywords": [
-          {
-            "label": "Python"
-          }
-        ]
-      },
-      {
-        "name": "Oivahankinta.fi",
-        "description": "The homepage of Oiva Hankinta",
-        "wordpress": "https://oivahankinta.fi",
-        "image": "/assets/images/project-covers/oiva-screenshot.png",
-        "keywords": [
-          {
-            "label": "WordPress"
-          }
-        ]
-      },
-      {
-        "name": "Parallel Genetic Optimizer",
-        "description": "A parallel genetic solver for the Traveling Salesman Problem (TSP)",
-        "github": "prOttonicFusion/parallel-genetic-optimization",
-        "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png",
-        "keywords": [
-          {
-            "label": "C++"
-          },
-          {
-            "label": "OpenMPI"
-          }
-        ]
-      }
-    ]
-  }
+    }
 ]

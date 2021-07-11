@@ -1,5 +1,5 @@
-import React from "react"
-import "../styles/global.scss"
+import '../styles/global.scss'
+import React from 'react'
 
 const Layout = ({ children }) => <div className="main-content">{children}</div>
 

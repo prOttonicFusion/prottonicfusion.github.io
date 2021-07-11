@@ -1,94 +1,121 @@
 [
-  {
-    "categoryTitle": "Languages",
-    "skills": [
-      {
-        "title": "Python",
-        "description": "",
-        "level": 100,
-        "devIcons": ["python"]
-      },
-      {
-        "title": "JavaScript/NodeJS",
-        "description": "",
-        "level": 100,
-        "devIcons": ["javascript", "typescript", "nodejs"]
-      },
-      {
-        "title": "C++",
-        "description": "",
-        "level": 65,
-        "devIcons": ["c++"]
-      },
-      {
-        "title": "Fortran95",
-        "description": "",
-        "level": 80,
-        "devIcons": ["fortran"]
-      }
-    ]
-  },
-  {
-    "categoryTitle": "Full-Stack",
-    "skills": [
-      {
-        "title": "React Native",
-        "description": "",
-        "level": 85,
-        "devIcons": ["react"]
-      },
-      {
-        "title": "HTML + CSS",
-        "description": "",
-        "level": 100,
-        "devIcons": ["html", "css"]
-      },
-      {
-        "title": "Qt",
-        "description": "",
-        "level": 60,
-        "devIcons": ["qt"]
-      },
-      {
-        "title": "Databases/SQL",
-        "description": "",
-        "level": 85,
-        "devIcons": ["postgresql", "sqlite"]
-      }
-    ]
-  },
-  {
-    "categoryTitle": "Platforms",
-    "skills": [
-      {
-        "title": "Docker",
-        "description": "",
-        "level": 75,
-        "devIcons": ["docker"]
-      },
-      {
-        "title": "Unix/Linux",
-        "description": "",
-        "level": 100,
-        "devIcons": ["mac", "ubuntu"]
-      }
-    ]
-  },
-  {
-    "categoryTitle": "High-Performance Computing",
-    "skills": [
-      {
-        "title": "OpenMPI",
-        "description": "",
-        "level": 75,
-        "devIcons": ["openmpi"]
-      },
-      {
-        "title": "LAMMPS",
-        "description": "",
-        "level": 95,
-        "devIcons": []
-      }
-    ]
-  }
+    {
+        "categoryTitle": "Languages",
+        "skills": [
+            {
+                "title": "Python",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "python"
+                ]
+            },
+            {
+                "title": "JavaScript/NodeJS",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "javascript",
+                    "typescript",
+                    "nodejs"
+                ]
+            },
+            {
+                "title": "C++",
+                "description": "",
+                "level": 65,
+                "devIcons": [
+                    "c++"
+                ]
+            },
+            {
+                "title": "Fortran95",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "fortran"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "Full-Stack",
+        "skills": [
+            {
+                "title": "React Native",
+                "description": "",
+                "level": 85,
+                "devIcons": [
+                    "react"
+                ]
+            },
+            {
+                "title": "HTML + CSS",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "html",
+                    "css"
+                ]
+            },
+            {
+                "title": "Qt",
+                "description": "",
+                "level": 60,
+                "devIcons": [
+                    "qt"
+                ]
+            },
+            {
+                "title": "Databases/SQL",
+                "description": "",
+                "level": 85,
+                "devIcons": [
+                    "postgresql",
+                    "sqlite"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "Platforms",
+        "skills": [
+            {
+                "title": "Docker",
+                "description": "",
+                "level": 75,
+                "devIcons": [
+                    "docker"
+                ]
+            },
+            {
+                "title": "Unix/Linux",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "mac",
+                    "ubuntu"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "High-Performance Computing",
+        "skills": [
+            {
+                "title": "OpenMPI",
+                "description": "",
+                "level": 75,
+                "devIcons": [
+                    "openmpi"
+                ]
+            },
+            {
+                "title": "LAMMPS",
+                "description": "",
+                "level": 95,
+                "devIcons": []
+            }
+        ]
+    }
 ]

@@ -1,13 +1,13 @@
-import React from "react"
-import ContactMDX from "../sections/contact"
-import "../styles/global.scss"
+import '../styles/global.scss'
+import React from 'react'
+import ContactMDX from '../sections/contact'
 
-const Contact = () => (
-  <div className="section-container" id="contact">
-    <div>
-      <ContactMDX />
+const Contact = () =>
+    <div className="section-container" id="contact">
+        <div>
+            <ContactMDX />
+        </div>
     </div>
-  </div>
-)
+
 
 export default Contact
