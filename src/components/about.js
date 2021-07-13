@@ -1,13 +1,13 @@
-import React from "react"
-import AboutMDX from "../sections/about"
-import "../styles/global.scss"
+import '../styles/global.scss'
+import React from 'react'
+import AboutMDX from '../sections/about'
 
-const About = () => (
-  <div className="section-container" id="about">
-    <div>
-      <AboutMDX />
+const About = () =>
+    <div className="section-container" id="about">
+        <div>
+            <AboutMDX />
+        </div>
     </div>
-  </div>
-)
+
 
 export default About
