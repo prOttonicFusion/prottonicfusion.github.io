@@ -85,6 +85,17 @@
                         "label": "OpenMPI"
                     }
                 ]
+            },
+            {
+                "name": "Orbital Motion Simulator",
+                "description": "A Velocity Verlet integrator for simulating planetary orbits",
+                "github": "prOttonicFusion/orbital-motion-simulator",
+                "image": "",
+                "keywords": [
+                    {
+                        "label": "Fortran"
+                    }
+                ]
             }
         ]
     }
