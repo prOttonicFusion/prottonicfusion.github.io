@@ -21,7 +21,7 @@
     "bootstrap": "^5.0.2",
     "gatsby": "^3.9.1",
     "gatsby-core-utils": "^2.10.0",
-    "gatsby-plugin-google-gtag": "^3.9.0",
+    "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-mdx": "^2.9.0",
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-source-filesystem": "^3.9.0",
