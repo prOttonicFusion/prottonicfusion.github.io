@@ -17,4 +17,5 @@ module.exports = {
     setupFiles: ['<rootDir>/loadershim.js'],
     watchPathIgnorePatterns: ['\\.gql\\.json$'],
     watchPlugins: ['gatsby-plugin-testing/jest-plugin'],
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node', 'mdx'],
 }
