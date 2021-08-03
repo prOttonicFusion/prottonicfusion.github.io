@@ -15,26 +15,6 @@
     "lint:fix": "eslint --ext .js,.jsx src --fix",
     "update:browserslist": "npx browserslist@latest --update-db"
   },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "roots": [
-      "<rootDir>",
-      "<rootDir>/src"
-    ],
-    "modulePaths": [
-      "<rootDir>",
-      "<rootDir>/src"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/"
-    ],
-    "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest"
-    },
-    "moduleNameMapper": {
-      "^.+\\.(css|less|scss)$": "babel-jest"
-    }
-  },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -44,7 +24,9 @@
     "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-mdx": "^2.10.1",
     "gatsby-plugin-sass": "^4.10.0",
+    "gatsby-plugin-testing": "^0.3.5",
     "gatsby-source-filesystem": "^3.10.0",
+    "jest-jasmine2": "^27.0.6",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
