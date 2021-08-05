@@ -10,7 +10,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "lint": "eslint --ext .js,.jsx src",
     "lint:fix": "eslint --ext .js,.jsx src --fix",
     "update:browserslist": "npx browserslist@latest --update-db"
@@ -24,7 +24,9 @@
     "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-mdx": "^2.10.1",
     "gatsby-plugin-sass": "^4.10.0",
+    "gatsby-plugin-testing": "^0.3.5",
     "gatsby-source-filesystem": "^3.10.0",
+    "jest-jasmine2": "^27.0.6",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -32,9 +34,13 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^12.0.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-prottonic": "^1.2.0",
-    "eslint-config-react-app": "^6.0.0"
+    "eslint-config-react-app": "^6.0.0",
+    "jest": "^27.0.6"
   },
   "repository": {
     "type": "git",
