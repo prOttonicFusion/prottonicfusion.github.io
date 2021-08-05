@@ -1,5 +1,6 @@
 import '../styles/global.scss'
 import React from 'react'
+import PropTypes from 'prop-types'
 import NavMenu from './nav-menu'
 
 const Banner = ({ children, location }) =>
@@ -8,5 +9,9 @@ const Banner = ({ children, location }) =>
         {children}
     </div>
 
+Banner.propTypes = {
+    children: PropTypes.node,
+    location: PropTypes.string,
+}
 
 export default Banner

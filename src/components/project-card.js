@@ -1,5 +1,6 @@
 import '../styles/global.scss'
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Card } from 'react-bootstrap'
 import SocialIcon from './social-icon'
 
@@ -39,29 +40,44 @@ const ProjectCard = ({
         </Card.Body>
         <Card.Footer>
             {github &&
-        <SocialIcon
-            service="github"
-            url={`https://github.com/${github}`}
-            label="GitHub"
-        ></SocialIcon>
+                <SocialIcon
+                    service="github"
+                    url={`https://github.com/${github}`}
+                    label="GitHub"
+                ></SocialIcon>
             }
             {wordpress &&
-        <SocialIcon
-            service="wordpress"
-            url={wordpress}
-            label="WordPress"
-        ></SocialIcon>
+                <SocialIcon
+                    service="wordpress"
+                    url={wordpress}
+                    label="WordPress"
+                ></SocialIcon>
             }
             {documentation &&
-        <SocialIcon
-            service="documentation"
-            url={documentation}
-            label="Docs"
-        ></SocialIcon>
+                <SocialIcon
+                    service="documentation"
+                    url={documentation}
+                    label="Docs"
+                ></SocialIcon>
             }
             {link && <SocialIcon service="" url={link} label="WebSite"></SocialIcon>}
         </Card.Footer>
     </Card>
 
+ProjectCard.propTypes = {
+    title: PropTypes.string,
+    image: PropTypes.string,
+    description: PropTypes.string,
+    wordpress: PropTypes.string,
+    github: PropTypes.string,
+    link: PropTypes.string,
+    documentation: PropTypes.string,
+    keywords: PropTypes.arrayOf(
+        PropTypes.shape({
+            label: PropTypes.string.isRequired,
+            url: PropTypes.string.isRequired,
+        }),
+    ),
+}
 
 export default ProjectCard

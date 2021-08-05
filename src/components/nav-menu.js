@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 const NavMenu = ({ location }) => {
@@ -72,6 +73,10 @@ const NavMenu = ({ location }) => {
             }
         />
     )
+}
+
+NavMenu.propTypes = {
+    location: PropTypes.string,
 }
 
 export default NavMenu
