@@ -1,5 +1,6 @@
 import '../styles/global.scss'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const selectIcon = service => {
     switch (service) {
@@ -164,5 +165,10 @@ const SocialIcon = ({ service, url, label }) =>
         </a>
     </span>
 
+SocialIcon.propTypes = {
+    service: PropTypes.string,
+    url: PropTypes.string,
+    label: PropTypes.string,
+}
 
 export default SocialIcon

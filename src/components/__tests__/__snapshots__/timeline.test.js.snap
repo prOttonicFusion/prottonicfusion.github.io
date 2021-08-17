@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline renders timeline correctly 1`] = `
+<div
+  class="section-container"
+  id="timeline"
+>
+  <div>
+    <div>
+      Some content
+    </div>
+  </div>
+  <div
+    class="timeline-container"
+  >
+    <ul
+      class="timeline"
+    >
+      <li
+        class="timeline-normal"
+      >
+        <div
+          class="timeline-badge"
+        >
+          <i
+            class="glyphicon glyphicon-check"
+          />
+        </div>
+        <div
+          class="timeline-panel"
+        >
+          <div
+            class="timeline-heading"
+          >
+            <h4
+              class="timeline-title"
+            >
+              Software Developer
+            </h4>
+            <span
+              class="timeline-detail-container"
+            >
+              <span
+                class="timeline-detail-text timeline-place"
+              >
+                Fjuul
+              </span>
+              <span
+                class="timeline-detail-text timeline-spacer"
+              >
+                |
+              </span>
+              <span
+                class="timeline-detail-text timeline-date"
+              >
+                2020 - present
+              </span>
+            </span>
+          </div>
+          <div
+            class="timeline-body"
+          >
+            <p>
+              Full-stack mobile & web development
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        class="timeline-inverted"
+      >
+        <div
+          class="timeline-badge"
+        >
+          <i
+            class="glyphicon glyphicon-check"
+          />
+        </div>
+        <div
+          class="timeline-panel"
+        >
+          <div
+            class="timeline-heading"
+          >
+            <h4
+              class="timeline-title"
+            >
+              MSc in Computational Materials Physics
+            </h4>
+            <span
+              class="timeline-detail-container"
+            >
+              <span
+                class="timeline-detail-text timeline-place"
+              >
+                University of Helsinki
+              </span>
+              <span
+                class="timeline-detail-text timeline-spacer"
+              >
+                |
+              </span>
+              <span
+                class="timeline-detail-text timeline-date"
+              >
+                2020
+              </span>
+            </span>
+          </div>
+          <div
+            class="timeline-body"
+          >
+            <p />
+          </div>
+        </div>
+      </li>
+      <li
+        class="timeline-normal"
+      >
+        <div
+          class="timeline-badge"
+        >
+          <i
+            class="glyphicon glyphicon-check"
+          />
+        </div>
+        <div
+          class="timeline-panel"
+        >
+          <div
+            class="timeline-heading"
+          >
+            <h4
+              class="timeline-title"
+            >
+              Research Assistant
+            </h4>
+            <span
+              class="timeline-detail-container"
+            >
+              <span
+                class="timeline-detail-text timeline-place"
+              >
+                Univ. of Helsinki Accelerator Lab
+              </span>
+              <span
+                class="timeline-detail-text timeline-spacer"
+              >
+                |
+              </span>
+              <span
+                class="timeline-detail-text timeline-date"
+              >
+                2017 - present
+              </span>
+            </span>
+          </div>
+          <div
+            class="timeline-body"
+          >
+            <p>
+              Molecular dynamics simulations related to fusion materials research
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
+        class="timeline-inverted"
+      >
+        <div
+          class="timeline-badge"
+        >
+          <i
+            class="glyphicon glyphicon-check"
+          />
+        </div>
+        <div
+          class="timeline-panel"
+        >
+          <div
+            class="timeline-heading"
+          >
+            <h4
+              class="timeline-title"
+            >
+              BSc in Physics
+            </h4>
+            <span
+              class="timeline-detail-container"
+            >
+              <span
+                class="timeline-detail-text timeline-place"
+              >
+                University of Helsinki
+              </span>
+              <span
+                class="timeline-detail-text timeline-spacer"
+              >
+                |
+              </span>
+              <span
+                class="timeline-detail-text timeline-date"
+              >
+                2018
+              </span>
+            </span>
+          </div>
+          <div
+            class="timeline-body"
+          >
+            <p />
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

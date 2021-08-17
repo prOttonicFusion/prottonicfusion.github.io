@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import '../styles/global.scss'
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 import cppLogo from '../assets/devIcons/cplusplus-plain.svg'
@@ -157,6 +158,14 @@ const DevIcon = ({ tool, height }) => {
             />
         </OverlayTrigger>
     )
+}
+
+DevIcon.propTypes = {
+    tool: PropTypes.string.isRequired,
+    height: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+    ]),
 }
 
 export default DevIcon
