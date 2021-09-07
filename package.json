@@ -22,7 +22,7 @@
     "gatsby": "^3.12.1",
     "gatsby-core-utils": "^2.12.0",
     "gatsby-plugin-google-gtag": "^3.12.0",
-    "gatsby-plugin-mdx": "^2.12.0",
+    "gatsby-plugin-mdx": "^2.13.0",
     "gatsby-plugin-sass": "^4.12.0",
     "gatsby-plugin-testing": "^0.3.5",
     "gatsby-source-filesystem": "^3.12.0",
@@ -34,7 +34,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
     "@testing-library/react": "^12.0.0",
     "babel-eslint": "^10.1.0",
