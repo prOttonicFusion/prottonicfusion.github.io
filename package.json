@@ -20,7 +20,7 @@
     "@mdx-js/react": "^1.6.22",
     "bootstrap": "^5.1.0",
     "gatsby": "^3.12.1",
-    "gatsby-core-utils": "^2.12.0",
+    "gatsby-core-utils": "^2.13.0",
     "gatsby-plugin-google-gtag": "^3.12.0",
     "gatsby-plugin-mdx": "^2.12.0",
     "gatsby-plugin-sass": "^4.12.0",
