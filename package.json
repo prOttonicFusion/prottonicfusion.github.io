@@ -21,7 +21,7 @@
     "bootstrap": "^5.1.0",
     "gatsby": "^3.12.1",
     "gatsby-core-utils": "^2.13.0",
-    "gatsby-plugin-google-gtag": "^3.12.0",
+    "gatsby-plugin-google-gtag": "^3.13.0",
     "gatsby-plugin-mdx": "^2.13.0",
     "gatsby-plugin-sass": "^4.12.0",
     "gatsby-plugin-testing": "^0.3.5",
