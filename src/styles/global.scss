@@ -571,5 +571,38 @@ a {
 }
 
 .section-container {
-  padding: 100px 0;
+  padding: 60px 0;
+
+  @include small {
+    padding: 25px 0;
+  }
+}
+
+#publications {
+  margin-bottom: 50px;
+}
+
+.publication-cards-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.publication-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-card-details-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.publication-card-item {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.publication-card-journal {
+  font-style: italic;
 }
