@@ -19,10 +19,10 @@ const Footer = () =>
             }
           }
         `}
-        render={data =>
+        render={(data) =>
             <div className={'site-footer'}>
                 <div className={'social-icon-container'}>
-                    {data.site.siteMetadata.contactOptions.map(contactOption =>
+                    {data.site.siteMetadata.contactOptions.map((contactOption) =>
                         <SocialIcon
                             service={contactOption.name}
                             url={contactOption.url}

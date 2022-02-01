@@ -24,7 +24,7 @@ const NavMenu = ({ location }) => {
                     }
                 }
             `}
-            render={data =>
+            render={(data) =>
                 <div className="site-nav-container">
                     {location !== '/' &&
                         <a className="site-title" href={'/'}>
@@ -58,7 +58,7 @@ const NavMenu = ({ location }) => {
                         </label>
 
                         <div className="trigger">
-                            {data.site.siteMetadata.menuLinks.map(menuLink =>
+                            {data.site.siteMetadata.menuLinks.map((menuLink) =>
                                 <a
                                     className="custom-nav-link"
                                     href={menuLink.link}

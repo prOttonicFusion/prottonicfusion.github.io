@@ -38,7 +38,7 @@ const Timeline = () =>
         </div>
         <div className="timeline-container">
             <ul className="timeline">
-                {timelineData.map(data =>
+                {timelineData.map((data) =>
                     <TimelineItem eventData={data} key={data.title + data.time} />,
                 )}
             </ul>

@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
 
-const DefaultTemplate = ({ children, location, title, description, image }) => (
+const DefaultTemplate = ({ children, location, title, description, image }) =>
     <>
         <Banner location={location}>
             {image &&
@@ -27,7 +27,7 @@ const DefaultTemplate = ({ children, location, title, description, image }) => (
             <Footer />
         </Layout>
     </>
-)
+
 
 DefaultTemplate.propTypes = {
     children: PropTypes.node,

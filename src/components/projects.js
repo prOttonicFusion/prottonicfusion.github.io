@@ -16,7 +16,7 @@ const Projects = () =>
         <ProjectsMDX />
 
         <div className="project-cards-container">
-            {projectList[0].projects.map(project => {
+            {projectList[0].projects.map((project) => {
                 return (
                     <ProjectCard
                         title={project.name}

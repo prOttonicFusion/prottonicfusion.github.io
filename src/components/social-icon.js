@@ -2,7 +2,7 @@ import '../styles/global.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const selectIcon = service => {
+const selectIcon = (service) => {
     switch (service) {
     case 'github':
         return (
