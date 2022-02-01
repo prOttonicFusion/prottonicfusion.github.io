@@ -4,6 +4,7 @@ import DefaultTemplate from '../templates/default-template'
 import BriefCVMDX from '../sections/brief-cv'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
+import Publications from '../components/publications'
 import SEO from '../components/seo'
 
 export default function BriefCVPage({ data }) {
@@ -19,6 +20,7 @@ export default function BriefCVPage({ data }) {
             </div>
             <Skills />
             <Timeline />
+            <Publications />
         </DefaultTemplate>
     )
 }
