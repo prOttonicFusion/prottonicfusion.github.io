@@ -62,13 +62,20 @@
                 ]
             },
             {
-                "name": "Oivahankinta.fi",
-                "description": "The homepage of Oiva Hankinta",
-                "wordpress": "https://oivahankinta.fi",
-                "image": "/assets/images/project-covers/oiva-screenshot.png",
+                "name": "Emiliaqvist.com",
+                "description": "The website of Finnish pop-soul artist Emilia Qvist",
+                "link": "https://emiliaqvist.com",
+                "image": "/assets/images/project-covers/emilia-qvist-homepage.png",
                 "keywords": [
                     {
-                        "label": "WordPress"
+                        "label": "GatsbyJS",
+                        "url": "https://www.gatsbyjs.com/"
+                    },
+                    {
+                        "label": "React"
+                    },
+                    {
+                        "label": "Google Cloud"
                     }
                 ]
             },
@@ -83,6 +90,17 @@
                     },
                     {
                         "label": "OpenMPI"
+                    }
+                ]
+            },
+            {
+                "name": "Oivahankinta.fi",
+                "description": "The website of Oiva Hankinta",
+                "wordpress": "https://oivahankinta.fi",
+                "image": "/assets/images/project-covers/oiva-screenshot.png",
+                "keywords": [
+                    {
+                        "label": "WordPress"
                     }
                 ]
             },
