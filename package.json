@@ -25,13 +25,13 @@
     "gatsby-plugin-mdx": "^3.6.0",
     "gatsby-plugin-sass": "^5.5.0",
     "gatsby-plugin-testing": "^0.3.5",
-    "gatsby-source-filesystem": "^4.6.0",
+    "gatsby-source-filesystem": "^4.8.1",
     "jest-jasmine2": "^27.4.6",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "sass": "^1.49.0"
+    "sass": "^1.49.8"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.10",
