@@ -22,7 +22,7 @@
     "gatsby": "^4.6.1",
     "gatsby-core-utils": "^3.6.0",
     "gatsby-plugin-google-gtag": "^4.5.0",
-    "gatsby-plugin-mdx": "^3.6.0",
+    "gatsby-plugin-mdx": "^3.12.1",
     "gatsby-plugin-sass": "^5.5.0",
     "gatsby-plugin-testing": "^0.3.5",
     "gatsby-source-filesystem": "^4.6.0",
