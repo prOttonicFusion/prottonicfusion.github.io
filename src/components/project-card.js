@@ -30,10 +30,14 @@ const ProjectCard = ({
             margin: '1.25rem',
         }}
     >
-        <Card.Img variant="top" src={image} />
-        <Card.Body>
-            <Card.Title>{title}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+        <div className="project-image-container">
+            <Card.Img variant="top" src={image} className="project-image" />
+        </div>
+        <Card.Body className="project-card-body">
+            <div className="project-description-container">
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{description}</Card.Text>
+            </div>
             <div className="project-keywords-container">
                 {keywords && <ProjectKeywords keywords={keywords} />}
             </div>

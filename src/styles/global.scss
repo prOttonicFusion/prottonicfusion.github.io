@@ -541,7 +541,20 @@ a {
    }
 }
 
+.project-image-container {
+  @include mediumAndLarge {
+    height: 200px;
+  }
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .project-keywords-container {
+  margin-top: 12px;
   text-align: center;
   font-style: normal;
   font-size: 15px;
