@@ -5,23 +5,31 @@ exports[`Project card renders card correctly with GitHub icon 1`] = `
   class="card"
   style="width: 18rem; margin: 1.25rem;"
 >
-  <img
-    class="card-img-top"
-    src="/path/to/the/image.png"
-  />
   <div
-    class="card-body"
+    class="project-image-container"
+  >
+    <img
+      class="card-img-top project-image"
+      src="/path/to/the/image.png"
+    />
+  </div>
+  <div
+    class="project-card-body card-body"
   >
     <div
-      class="card-title h5"
+      class="project-description-container"
     >
-      Some title
+      <div
+        class="card-title h5"
+      >
+        Some title
+      </div>
+      <p
+        class="card-text"
+      >
+        My GitHub project
+      </p>
     </div>
-    <p
-      class="card-text"
-    >
-      My GitHub project
-    </p>
     <div
       class="project-keywords-container"
     />
