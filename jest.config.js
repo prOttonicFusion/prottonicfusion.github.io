@@ -22,9 +22,14 @@ module.exports = {
     globals: {
         __PATH_PREFIX__: '',
     },
-    testURL: 'http://localhost',
     setupFiles: ['<rootDir>/loadershim.js'],
     watchPathIgnorePatterns: ['\\.gql\\.json$'],
     watchPlugins: ['gatsby-plugin-testing/jest-plugin'],
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node', 'mdx'],
+    fakeTimers: {
+        enableGlobally: false,
+    },
+    testEnvironmentOptions: {
+        url: 'http://localhost',
+    }
 }
