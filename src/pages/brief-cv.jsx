@@ -6,6 +6,7 @@ import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Publications from '../components/publications'
 import SEO from '../components/seo'
+import SkillsChart from '../components/skills-chart'
 
 export default function BriefCVPage({ data }) {
     return (
@@ -18,7 +19,7 @@ export default function BriefCVPage({ data }) {
             <div>
                 <BriefCVMDX />
             </div>
-            <Skills />
+            <SkillsChart />
             <Timeline />
             <Publications />
         </DefaultTemplate>
