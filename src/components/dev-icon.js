@@ -2,147 +2,120 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import '../styles/global.scss'
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
-import cppLogo from '../assets/devIcons/cplusplus-plain.svg'
-import cssLogo from '../assets/devIcons/css3-plain.svg'
-import devIconLogo from '../assets/devIcons/devicon.svg'
-import dockerLogo from '../assets/devIcons/docker-plain.svg'
-import fortranLogo from '../assets/devIcons/fortran-logo.png'
-import gimpLogo from '../assets/devIcons/gimp-plain.svg'
-import gitHubLogo from '../assets/devIcons/gitHub.svg'
-import htmlLogo from '../assets/devIcons/html5-plain.svg'
-import illustratorLogo from '../assets/devIcons/illustrator-plain.svg'
-import inkscapeLogo from '../assets/devIcons/inkscape-plain.svg'
-import javascriptLogo from '../assets/devIcons/javascript-plain.svg'
-import lammpsLogo from '../assets/devIcons/LAMMPS-logo.png'
-import macLogo from '../assets/devIcons/apple.svg'
-import mysqlLogo from '../assets/devIcons/mysql-plain.svg'
-import nodejsLogo from '../assets/devIcons/nodejs-plain.svg'
-import openmpiLogo from '../assets/devIcons/open-mpi-logo.png'
-import photoshopLogo from '../assets/devIcons/photoshop-plain.svg'
-import pythonLogo from '../assets/devIcons/python-plain.svg'
-import qtLogo from '../assets/devIcons/qt-logo.png'
-import reactLogo from '../assets/devIcons/react-original.svg'
-import rustLogo from '../assets/devIcons/rust-plain.svg'
-import sqliteLogo from '../assets/devIcons/sqlite.svg'
-import swiftLogo from '../assets/devIcons/swift-plain.svg'
-import typescriptLogo from '../assets/devIcons/typescript-plain.svg'
-import ubuntuLogo from '../assets/devIcons/ubuntu-plain.svg'
-import wordpressLogo from '../assets/devIcons/wordpress-plain.svg'
-import postgresLogo from '../assets/devIcons/postgresql-plain.svg'
 
-const iconData = {
+export const iconsByName = {
     'c++': {
-        icon: cppLogo,
+        icon: '/assets/devIcons/cplusplus-plain.svg',
         label: 'C++',
     },
     css: {
-        icon: cssLogo,
+        icon: '/assets/devIcons/css3-plain.svg',
         label: 'CSS',
     },
     default: {
-        icon: devIconLogo,
+        icon: '/assets/devIcons/devicon.svg',
         label: '',
     },
     docker: {
-        icon: dockerLogo,
+        icon: '/assets/devIcons/docker-plain.svg',
         label: 'Docker',
     },
     fortran: {
-        icon: fortranLogo,
+        icon: '/assets/devIcons/fortran-logo.png',
         label: 'Fortran95',
     },
     gimp: {
-        icon: gimpLogo,
+        icon: '/assets/devIcons/gimp-plain.svg',
         label: 'GIMP',
     },
     github: {
-        icon: gitHubLogo,
+        icon: '/assets/devIcons/gitHub.svg',
         label: 'GitHub',
     },
     html: {
-        icon: htmlLogo,
+        icon: '/assets/devIcons/html5-plain.svg',
         label: 'HTML',
     },
     illustrator: {
-        icon: illustratorLogo,
+        icon: '/assets/devIcons/illustrator-plain.svg',
         label: 'Adobe Illustrator',
     },
     inkscape: {
-        icon: inkscapeLogo,
+        icon: '/assets/devIcons/inkscape-plain.svg',
         label: 'InkScape',
     },
     javascript: {
-        icon: javascriptLogo,
+        icon: '/assets/devIcons/javascript-plain.svg',
         label: 'JavaScript',
     },
     lammps: {
-        icon: lammpsLogo,
+        icon: '/assets/devIcons/LAMMPS-logo.png',
         label: 'LAMMPS',
     },
     mac: {
-        icon: macLogo,
+        icon: '/assets/devIcons/apple.svg',
         label: 'macOs',
     },
     mysql: {
-        icon: mysqlLogo,
+        icon: '/assets/devIcons/mysql-plain.svg',
         label: 'MySQL',
     },
     nodejs: {
-        icon: nodejsLogo,
+        icon: '/assets/devIcons/nodejs-plain.svg',
         label: 'node.js',
     },
     openmpi: {
-        icon: openmpiLogo,
+        icon: '/assets/devIcons/open-mpi-logo.png',
         label: 'OpenMPI',
     },
     photoshop: {
-        icon: photoshopLogo,
+        icon: '/assets/devIcons/photoshop-plain.svg',
         label: 'Adobe Photoshop',
     },
     python: {
-        icon: pythonLogo,
+        icon: '/assets/devIcons/python-plain.svg',
         label: 'Python',
     },
     qt: {
-        icon: qtLogo,
+        icon: '/assets/devIcons/qt-logo.png',
         label: 'QT',
     },
     react: {
-        icon: reactLogo,
+        icon: '/assets/devIcons/react-original.svg',
         label: 'React/React Native',
     },
     rust: {
-        icon: rustLogo,
+        icon: '/assets/devIcons/rust-plain.svg',
         label: 'Rust',
     },
     sqlite: {
-        icon: sqliteLogo,
+        icon: '/assets/devIcons/sqlite.svg',
         label: 'SQLite',
     },
     swift: {
-        icon: swiftLogo,
+        icon: '/assets/devIcons/swift-plain.svg',
         label: 'Swift',
     },
     typescript: {
-        icon: typescriptLogo,
+        icon: '/assets/devIcons/typescript-plain.svg',
         label: 'TypeScript',
     },
     ubuntu: {
-        icon: ubuntuLogo,
+        icon: '/assets/devIcons/ubuntu-plain.svg',
         label: 'Ubuntu/Linux',
     },
     wordpress: {
-        icon: wordpressLogo,
+        icon: '/assets/devIcons/wordpress-plain.svg',
         label: 'WordPress',
     },
     postgresql: {
-        icon: postgresLogo,
+        icon: '/assets/devIcons/postgresql-plain.svg',
         label: 'PostgreSQL',
     },
 }
 
 const DevIcon = ({ tool, height }) => {
-    const { icon, label } = tool in iconData ? iconData[tool] : iconData['default']
+    const { icon, label } = tool in iconsByName ? iconsByName[tool] : iconsByName['default']
 
     return (
         <OverlayTrigger
