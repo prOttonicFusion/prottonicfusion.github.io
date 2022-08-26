@@ -8,3 +8,6 @@ updates:
     # Check the npm registry for updates every week (on Mondays)
     schedule:
       interval: "weekly"
+    # Request a review from these users
+    reviewers:
+      - "prOttonicFusion"
