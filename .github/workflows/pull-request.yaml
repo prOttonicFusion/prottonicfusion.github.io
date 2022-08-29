@@ -2,15 +2,11 @@ name: Pull Request
 
 on: pull_request
 
+concurrency: 
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
-
-  cancel-previous:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: rokroskar/workflow-run-cleanup-action@ee1451b869ba1e381729b3d40489997021f0d562  #v0.3.3
-      env:
-        GITHUB_TOKEN: "${{ secrets.ACCESS_TOKEN }}"
-
   test:
     runs-on: ubuntu-latest
     steps:
