@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import HamburgerMenuIcon from './icons/hamburger-menu'
+import XIcon from './icons/x'
 
 const NavMenu = ({ location }) => {
 
@@ -35,25 +37,8 @@ const NavMenu = ({ location }) => {
                         <input type="checkbox" id="nav-trigger" className="nav-trigger" onClick={toggleMenuState} />
                         <label htmlFor="nav-trigger">
                             <span className="nav-menu-icon">
-                                {!state.menuIsOpen &&
-                                    // https://heroicons.com/
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20" fill="#424242">
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"
-                                        />
-                                    </svg>
-                                }
-                                {state.menuIsOpen &&
-                                    // https://heroicons.com/
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 20 20" fill="#424242">
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                }
+                                {!state.menuIsOpen && <HamburgerMenuIcon />}
+                                {state.menuIsOpen && <XIcon />}
                             </span>
                         </label>
 
