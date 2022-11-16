@@ -23,7 +23,7 @@ const NavMenu = ({ location }) =>
                 }
             `}
         render={(data) =>
-            <Navbar expand="lg" variant="dark" bg="none" className="site-nav">
+            <Navbar expand="md" variant="dark" bg="none" className="site-nav">
                 <Container fluid>
                     {location !== '/' &&
                             <Navbar.Brand className="site-title" href={'/'}>{data.site.siteMetadata.title}</Navbar.Brand>
@@ -36,12 +36,9 @@ const NavMenu = ({ location }) =>
                         aria-labelledby={'offcanvasNavbarLabel-expand'}
                         placement="top"
                         restoreFocus={false}
+                        style={{ height: 'fit-content' }}
                     >
-                        <Offcanvas.Header closeButton>
-                            {/* <Offcanvas.Title id={'offcanvasNavbarLabel-expand'}>
-                                    Offcanvas
-                                </Offcanvas.Title> */}
-                        </Offcanvas.Header>
+                        <Offcanvas.Header closeButton />
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 {data.site.siteMetadata.menuLinks.map(

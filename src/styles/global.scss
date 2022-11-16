@@ -144,7 +144,7 @@ a {
       color: $body-text-color;
     }
     
-    @include large {
+    @include mediumAndLarge {
       text-align: right;
       margin-left: auto;
       background: none;
