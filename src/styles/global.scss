@@ -77,12 +77,12 @@ a {
   }
 
   @include medium {
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 2rem 2rem 2rem;
     background-image: url(../assets/images/hero/hero-image.jpg);
   }
 
   @include small {
-    padding: 1.5rem 1rem;
+    padding: 0 1.2rem 1rem 1.2rem;
     background-image: url(../assets/images/hero/hero-image.jpg);
   }
 
@@ -110,108 +110,51 @@ a {
     font-weight: 400;
     font-size: 24px;
     letter-spacing: -1px;
-    float: left;
     text-decoration: none;
-    padding-top: 18px;
 
     @include small {
-      position: absolute;
-      top: 9px;
-      left: 15px;
-      padding-top: 3px;
       font-size: 18px;
     }
   }
 
   .site-nav {
-    text-align: right;
-    margin-left: auto;
+    padding-top: 20px;
 
-    .nav-trigger {
-      display: none;
+    .nav-toggle {
+      margin-left: auto;
+      border: #ffffffa8 solid 2px;
     }
 
-    .nav-menu-icon {
-      display: none;
+    .nav-toggle-icon {
+      fill: #fff;
     }
 
     .custom-nav-link {
-      color: #ffffff;
+      color: $primary-accent-color;
+    }
 
-      // Gaps between nav items excluding the last one
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+    .custom-nav-link {
+      display: block;
+      text-align: left;
+      margin-right: 10px;
+      margin-left: 10px;
     }
 
     .custom-nav-link:hover {
-      color: #fff;
+      color: $body-text-color;
     }
-
-    @include small {
-      position: absolute;
-      top: 9px;
-      right: 5px;
-      background-color: #ffffff;
-      border: 1px solid #a1a1a1;
-      border-radius: 5px;
+    
+    @include mediumAndLarge {
       text-align: right;
-      z-index: 9999;
-
-      label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 2;
-        cursor: pointer;
-        margin-bottom: 0;
-      }
-
-      .nav-menu-icon {
-        display: block;
-        padding-top: 2.5px;
-        text-align: center;
-      }
-
+      margin-left: auto;
+      background: none;
+      
       .custom-nav-link {
-        color: $primary-accent-color;
-
-        // Gaps between nav items excluding the last one
-        &:not(:last-child) {
-          margin-right: 20px;
-          margin-bottom: 20px;
-        }
+        color: #fff;
       }
-
+      
       .custom-nav-link:hover {
-        color: $body-text-color;
-      }
-
-      input ~ .trigger {
-        clear: both;
-        display: none;
-      }
-
-      input:checked ~ .trigger {
-        display: block;
-        padding-bottom: 5px;
-      }
-
-      .trigger {
-        padding-top: 20px;
-      }
-
-      .custom-nav-link {
-        display: block;
-        text-align: left;
-
-        &:last-child {
-          margin-bottom: 10px;
-          margin-right: 20px;
-        }
-        margin-right: 10px;
-        margin-left: 10px;
+        color: #fff;
       }
     }
   }

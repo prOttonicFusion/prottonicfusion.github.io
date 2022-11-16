@@ -1,17 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Offcanvas from 'react-bootstrap/Offcanvas'
+import HamburgerMenuIcon from './icons/hamburger-menu'
 
-const NavMenu = ({ location }) => {
-
-    const [state, setState] = useState({ menuIsOpen: false })
-
-    const toggleMenuState = () =>
-        setState({ ...state, menuIsOpen: !state.menuIsOpen })
-
-    return (
-        <StaticQuery
-            query={graphql`
+const NavMenu = ({ location }) =>
+    <StaticQuery
+        query={graphql`
                 query SiteTitleQuery {
                     site {
                         siteMetadata {
@@ -24,56 +22,43 @@ const NavMenu = ({ location }) => {
                     }
                 }
             `}
-            render={(data) =>
-                <div className="site-nav-container">
+        render={(data) =>
+            <Navbar expand="md" variant="dark" bg="none" className="site-nav" collapseOnSelect>
+                <Container fluid>
                     {location !== '/' &&
-                        <a className="site-title" href={'/'}>
-                            {data.site.siteMetadata.title}
-                        </a>
+                            <Navbar.Brand className="site-title" href={'/'}>{data.site.siteMetadata.title}</Navbar.Brand>
                     }
-                    <nav className="site-nav">
-                        <input type="checkbox" id="nav-trigger" className="nav-trigger" onClick={toggleMenuState} />
-                        <label htmlFor="nav-trigger">
-                            <span className="nav-menu-icon">
-                                {!state.menuIsOpen &&
-                                    // https://heroicons.com/
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 20 20" fill="#424242">
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"
-                                        />
-                                    </svg>
-                                }
-                                {state.menuIsOpen &&
-                                    // https://heroicons.com/
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 20 20" fill="#424242">
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                }
-                            </span>
-                        </label>
+                    <Navbar.Toggle aria-controls={'offcanvasNavbar-expand'} className="nav-toggle">
+                        <HamburgerMenuIcon className="nav-toggle-icon" width="32px" height="32px" />
+                    </Navbar.Toggle>
+                    <Navbar.Offcanvas
+                        id={'offcanvasNavbar-expand'}
+                        aria-labelledby={'offcanvasNavbarLabel-expand'}
+                        placement="top"
+                        restoreFocus={false}
+                        style={{ height: 'fit-content' }}
+                    >
+                        <Offcanvas.Header closeButton />
+                        <Offcanvas.Body>
+                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                                {data.site.siteMetadata.menuLinks.map(
+                                    (menuLink) =>
+                                        <Nav.Link
+                                            className="custom-nav-link"
+                                            href={menuLink.link}
+                                            key={menuLink.name}
+                                        >
+                                            {menuLink.name}
+                                        </Nav.Link>,
+                                )}
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                </Container>
+            </Navbar>
+        }
+    />
 
-                        <div className="trigger">
-                            {data.site.siteMetadata.menuLinks.map((menuLink) =>
-                                <a
-                                    className="custom-nav-link"
-                                    href={menuLink.link}
-                                    key={menuLink.name}
-                                >
-                                    {menuLink.name}
-                                </a>,
-                            )}
-                        </div>
-                    </nav>
-                </div>
-            }
-        />
-    )
-}
 
 NavMenu.propTypes = {
     location: PropTypes.string,
