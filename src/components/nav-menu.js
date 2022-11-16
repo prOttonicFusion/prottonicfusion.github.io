@@ -23,7 +23,7 @@ const NavMenu = ({ location }) =>
                 }
             `}
         render={(data) =>
-            <Navbar expand="md" variant="dark" bg="none" className="site-nav">
+            <Navbar expand="md" variant="dark" bg="none" className="site-nav" collapseOnSelect>
                 <Container fluid>
                     {location !== '/' &&
                             <Navbar.Brand className="site-title" href={'/'}>{data.site.siteMetadata.title}</Navbar.Brand>
