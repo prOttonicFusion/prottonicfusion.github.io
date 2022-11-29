@@ -27,7 +27,7 @@ export default function BriefCVPage({ data }) {
 
 export const pageQuery = graphql`
   query BriefCVPageQuery {
-    mdx(fileAbsolutePath: { regex: "/brief-cv.mdx/" }) {
+    mdx(internal: {contentFilePath: {regex: "/brief-cv.mdx/"}}) {
       frontmatter {
         description
         title

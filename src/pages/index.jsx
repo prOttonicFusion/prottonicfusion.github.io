@@ -27,7 +27,7 @@ export default function Home({ data }) {
 
 export const pageQuery = graphql`
   query IndexPageQuery {
-    mdx(fileAbsolutePath: { regex: "/index.mdx/" }) {
+    mdx(internal: {contentFilePath: {regex: "/index.mdx/"}}) {
       frontmatter {
         description
         title
