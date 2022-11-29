@@ -480,13 +480,27 @@ a {
   justify-content: left;
 
    @include small {
-     justify-content: center;
+     display: none;
    }
+}
+
+.project-cards-container-mobile {
+  @include large {
+    display: none;
+  }
 }
 
 .project-image-container {
   @include mediumAndLarge {
     height: 200px;
+  }
+}
+
+.project-card {
+  @include small {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-height: 32rem;
   }
 }
 
