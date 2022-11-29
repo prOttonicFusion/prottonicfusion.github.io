@@ -45,23 +45,6 @@
                 ]
             },
             {
-                "name": "Darker+",
-                "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
-                "github": "prOttonicFusion/vscode-darker-plus",
-                "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
-            },
-            {
-                "name": "GitHub Contributions CLI",
-                "description": "A command line tool for tracking your daily contributions on GitHub",
-                "github": "prOttonicFusion/github-contributions-cli",
-                "image": "/assets/images/project-covers/contributions-cli.png",
-                "keywords": [
-                    {
-                        "label": "Python"
-                    }
-                ]
-            },
-            {
                 "name": "Emiliaqvist.com",
                 "description": "The website of Finnish pop-soul artist Emilia Qvist",
                 "link": "https://emiliaqvist.com",
@@ -78,6 +61,23 @@
                         "label": "Google Cloud"
                     }
                 ]
+            },
+            {
+                "name": "GitHub Contributions CLI",
+                "description": "A command line tool for tracking your daily contributions on GitHub",
+                "github": "prOttonicFusion/github-contributions-cli",
+                "image": "/assets/images/project-covers/contributions-cli.png",
+                "keywords": [
+                    {
+                        "label": "Python"
+                    }
+                ]
+            },
+            {
+                "name": "Darker+",
+                "description": "A darker version of the default dark theme for Visual Studio Code, with some additional blue thrown in.",
+                "github": "prOttonicFusion/vscode-darker-plus",
+                "image": "https://raw.githubusercontent.com/prOttonicFusion/vscode-darker-plus/master/screenshot.png"
             },
             {
                 "name": "Parallel Genetic Optimizer",
