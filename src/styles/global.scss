@@ -485,6 +485,9 @@ a {
 }
 
 .project-cards-container-mobile {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+
   @include large {
     display: none;
   }
@@ -501,6 +504,7 @@ a {
     margin-left: auto !important;
     margin-right: auto !important;
     min-height: 32rem;
+    width: 17rem !important;
   }
 }
 
