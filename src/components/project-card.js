@@ -29,6 +29,7 @@ const ProjectCard = ({
             width: '18rem',
             margin: '1.25rem',
         }}
+        className="project-card"
     >
         <div className="project-image-container">
             <Card.Img variant="top" src={image} className="project-image" />

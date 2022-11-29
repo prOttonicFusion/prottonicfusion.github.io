@@ -480,13 +480,32 @@ a {
   justify-content: left;
 
    @include small {
-     justify-content: center;
+     display: none;
    }
+}
+
+.project-cards-container-mobile {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  overflow-x: hidden;
+
+  @include large {
+    display: none;
+  }
 }
 
 .project-image-container {
   @include mediumAndLarge {
     height: 200px;
+  }
+}
+
+.project-card {
+  @include small {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-height: 32rem;
+    width: 17rem !important;
   }
 }
 
