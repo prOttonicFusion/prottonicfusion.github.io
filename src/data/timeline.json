@@ -1,5 +1,12 @@
 [
     {
+        "title": "Software Engineer",
+        "time": "2022 -",
+        "place": "Koherent",
+        "description": "Full-stack web development",
+        "itemClass": "timeline-inverted"
+    },
+    {
         "title": "Software Developer",
         "time": "2020 - 2022",
         "place": "Fjuul",
