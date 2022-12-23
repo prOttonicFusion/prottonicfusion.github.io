@@ -17,6 +17,56 @@ exports[`Timeline renders timeline correctly 1`] = `
       class="timeline"
     >
       <li
+        class="timeline-inverted"
+      >
+        <div
+          class="timeline-badge"
+        >
+          <i
+            class="glyphicon glyphicon-check"
+          />
+        </div>
+        <div
+          class="timeline-panel"
+        >
+          <div
+            class="timeline-heading"
+          >
+            <h4
+              class="timeline-title"
+            >
+              Software Engineer
+            </h4>
+            <span
+              class="timeline-detail-container"
+            >
+              <span
+                class="timeline-detail-text timeline-place"
+              >
+                Koherent
+              </span>
+              <span
+                class="timeline-detail-text timeline-spacer"
+              >
+                |
+              </span>
+              <span
+                class="timeline-detail-text timeline-date"
+              >
+                2022 -
+              </span>
+            </span>
+          </div>
+          <div
+            class="timeline-body"
+          >
+            <p>
+              Full-stack web development
+            </p>
+          </div>
+        </div>
+      </li>
+      <li
         class="timeline-normal"
       >
         <div
