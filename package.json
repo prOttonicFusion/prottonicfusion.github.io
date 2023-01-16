@@ -23,7 +23,7 @@
     "gatsby-core-utils": "^4.2.0",
     "gatsby-plugin-google-gtag": "^5.2.0",
     "gatsby-plugin-mdx": "^5.2.0",
-    "gatsby-plugin-sass": "^6.2.0",
+    "gatsby-plugin-sass": "^6.4.0",
     "gatsby-plugin-testing": "^0.3.5",
     "gatsby-source-filesystem": "^5.2.0",
     "jest-jasmine2": "^29.3.1",
