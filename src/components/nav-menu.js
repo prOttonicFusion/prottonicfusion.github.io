@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
@@ -46,6 +46,7 @@ const NavMenu = ({ location }) => {
                                     <Nav.Link
                                         className="custom-nav-link"
                                         href={menuLink.link}
+                                        as={Link}
                                         key={menuLink.name}
                                     >
                                         {menuLink.name}

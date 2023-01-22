@@ -60,28 +60,24 @@ exports[`Page banner renders child page banner correctly 1`] = `
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#about"
-              href="/#about"
             >
               About
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#projects"
-              href="/#projects"
             >
               Projects
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/brief-cv"
-              href="/brief-cv"
             >
               Brief CV
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#contact"
-              href="/#contact"
             >
               Contact
             </a>
@@ -147,28 +143,24 @@ exports[`Page banner renders root page banner correctly 1`] = `
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#about"
-              href="/#about"
             >
               About
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#projects"
-              href="/#projects"
             >
               Projects
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/brief-cv"
-              href="/brief-cv"
             >
               Brief CV
             </a>
             <a
               class="custom-nav-link nav-link"
               data-rr-ui-event-key="/#contact"
-              href="/#contact"
             >
               Contact
             </a>
