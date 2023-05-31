@@ -6,7 +6,6 @@
     left: 0;
     z-index: 10;
     width: 100%;
-    padding-top: 20px;
 }
 
 .nav-toggle {
@@ -42,20 +41,30 @@
 
 .mobile-nav-header {
     justify-content: end;
-}
-
-.mobile-nav-container, .mobile-nav-header {
     background-color: v.$bg-color;
 }
 
-.mobile-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-
-    .custom-nav-link {
-        margin-top: 10px;
-        margin-bottom: 10px;
+.nav-container, .mobile-nav-header {
+    @include v.small {
+        background-color: v.$bg-color;
     }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    
+    @include v.small {
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+
+        .custom-nav-link {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
 }
