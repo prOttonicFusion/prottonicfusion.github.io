@@ -447,8 +447,10 @@ a {
   margin: 4px 4px;
 }
 
-.card-footer {
-  background-color: #fff;
+.card, .card-footer, .card-body {
+  color: $body-text-color;
+  background-color: $bg-color;
+  border-color: $primary-accent-color;
 }
 
 .dev-icon {
