@@ -21,7 +21,7 @@
 }
 
 .nav-toggle-icon {
-    fill: v.$primary-accent-color;
+    fill: v.$primary-color;
 }
 
 .custom-nav-link {
@@ -29,10 +29,10 @@
     text-align: left;
     margin-right: 10px;
     margin-left: 10px;
-    color: v.$primary-accent-color;
+    color: v.$primary-color;
 
     &:hover {
-        color: v.$primary-accent-color;
+        color: v.$primary-color;
     }
 }
 

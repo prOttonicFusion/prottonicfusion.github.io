@@ -190,7 +190,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $primary-accent-color;
+    color: $primary-color;
   }
 
   p {
@@ -362,8 +362,8 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: $primary-accent-color; // IE8
-    fill: $primary-accent-color;
+    color: $primary-color; // IE8
+    fill: $primary-color;
     transform: scale(1.25);
     transition: color 0.5s, transform 0.2s ease-out;
   }
@@ -450,14 +450,14 @@ a {
 .card, .card-footer, .card-body {
   color: $body-text-color;
   background-color: $bg-color;
-  border-color: $primary-accent-color;
+  border-color: $primary-color;
 }
 
 .dev-icon {
   display: inline;
   white-space: nowrap;
   overflow: hidden;
-  background: #fff;
+  background: none;
   height: 15px;
   margin: 0 3px;
 }
