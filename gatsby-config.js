@@ -29,8 +29,8 @@ module.exports = {
         ],
         menuLinks: [
             {
-                name: 'About',
-                link: '/#about',
+                name: 'Home',
+                link: '/#',
             },
             {
                 name: 'Projects',
