@@ -3,18 +3,19 @@ import PropTypes from 'prop-types'
 import Layout from '../components/layout'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const DefaultTemplate = ({ children, location, title, description, image }) =>
     <>
         <Banner location={location}>
             {image &&
-                <img
-                    src={image}
-                    height={'250px'}
-                    width={'250px'}
-                    className={'profile-pic'}
-                    alt="Me"
-                />
+                <div className="profile-pic-container">
+                    <StaticImage
+                        src={'../assets/images/profile.jpg'}
+                        className={'profile-pic'}
+                        alt="Me"
+                    />
+                </div>
             }
             <div>
                 <h1>{title}</h1>

@@ -57,5 +57,7 @@ module.exports = {
         'gatsby-plugin-mdx',
         'gatsby-plugin-sass',
         'gatsby-plugin-testing',
+        'gatsby-plugin-image',
+        'gatsby-plugin-sharp',
     ],
 }
