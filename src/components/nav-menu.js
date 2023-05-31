@@ -1,3 +1,4 @@
+import '../styles/components/nav-menu.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, useStaticQuery } from 'gatsby'

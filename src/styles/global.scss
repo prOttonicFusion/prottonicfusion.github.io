@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: #1a212f;
 }
 
 a {
@@ -63,139 +64,44 @@ a {
   }
 }
 
-.page-banner {
-  display: grid;
-  grid-template-areas: "content";
-  color: $banner-heading-color;
-  text-align: center;
-  width: 100%;
-  height: clamp(500px, 50vh, 1800px);
-  overflow: hidden;
+.main-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
 
-  .site-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 10px;
-
-    @include large {
-      margin-bottom: 1.5rem;
-    }
-
-    @include medium {
-      margin-bottom: 1rem;
-    }
-
-    @include small {
-      margin-bottom: 0.5rem;
-    }
+  @include large {
+    font-size: 3.25rem;
   }
 
-  .site-title {
-    color: #fff;
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: -1px;
-    text-decoration: none;
-
-    @include small {
-      font-size: 18px;
-    }
+  @include medium {
+    font-size: 2.25rem;
   }
 
-  .site-nav {
-    padding-top: 20px;
+  @include small {
+    font-size: 1.75rem;
+  }
+}
 
-    .nav-toggle {
-      margin-left: auto;
-      border: #ffffffa8 solid 2px;
-    }
+.main-description {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: 0.7;
 
-    .nav-toggle-icon {
-      fill: #fff;
-    }
-
-    .custom-nav-link {
-      color: $primary-accent-color;
-    }
-
-    .custom-nav-link {
-      display: block;
-      text-align: left;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    .custom-nav-link:hover {
-      color: $body-text-color;
-    }
-    
-    @include mediumAndLarge {
-      text-align: right;
-      margin-left: auto;
-      background: none;
-      
-      .custom-nav-link {
-        color: #fff;
-      }
-      
-      .custom-nav-link:hover {
-        color: #fff;
-      }
-    }
+  @include large {
+    font-size: 1.25rem;
   }
 
-  h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    opacity: 0.9;
-
-    @include large {
-      font-size: 3.25rem;
-    }
-
-    @include medium {
-      font-size: 2.25rem;
-    }
-
-    @include small {
-      font-size: 1.75rem;
-    }
+  @include medium {
+    font-size: 1.15rem;
   }
 
-  p {
-    margin-bottom: 2rem;
-    font-weight: normal;
-    opacity: 0.7;
-
-    @include large {
-      font-size: 1.25rem;
-    }
-
-    @include medium {
-      font-size: 1.15rem;
-    }
-
-    @include small {
-      font-size: 1rem;
-    }
+  @include small {
+    font-size: 1rem;
   }
-
+  
   a {
     color: inherit;
   }
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  grid-area: content;
-}
-
-.page-banner-contents {
-  grid-area: content;
-  padding-left: 21px;
-  padding-right: 21px;
 }
 
 .profile-pic-container {

@@ -1,0 +1,41 @@
+@use '../variables.scss' as v;
+
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.nav-toggle {
+    margin-left: auto;
+    border: #ffffffa8 solid 2px;
+  
+    @include v.mediumAndLarge {
+        text-align: right;
+        margin-left: auto;
+        background: none;
+    }
+}
+
+.nav-toggle-icon {
+    fill: #fff;
+}
+
+.custom-nav-link {
+    display: block;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: v.$primary-accent-color;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.custom-nav-link:hover {
+    color: v.$body-text-color;
+}

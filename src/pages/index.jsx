@@ -4,6 +4,7 @@ import Projects from '../components/projects'
 import Contact from '../components/contact'
 import SEO from '../components/seo'
 import Banner from '../components/banner'
+import NavMenu from '../components/nav-menu'
 import IndexMDX from '../sections/index.mdx'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
@@ -15,7 +16,8 @@ import Publications from '../components/publications'
 export default function Home({ data }) {
     return (
         <>
-            <Banner location={'/'}>
+            <NavMenu location={'/'} />
+            <Banner>
                 <div className="profile-pic-container">
                     <StaticImage
                         src={'../assets/images/profile.jpg'}
@@ -25,22 +27,20 @@ export default function Home({ data }) {
                     />
                 </div>
                 <div>
-                    <h1>{data.mdx.frontmatter.title}</h1>
-                    <IndexMDX />
+                    <h1 className="main-title">{data.mdx.frontmatter.title}</h1>
+                    <div className="main-description">
+                        <IndexMDX />
+                    </div>
                 </div>
             </Banner>
             <Layout>
                 <SEO title="Home" />
-                <hr />
                 <Projects />
-                <hr />
                 <Skills />
-                <hr />
                 <Timeline />
-                <hr />
                 <Publications />
-                <hr />
                 <Contact />
+                <hr />
                 <Footer />
             </Layout>
         </>

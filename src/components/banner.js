@@ -1,10 +1,9 @@
-import '../styles/global.scss'
+import '../styles/components/banner.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
-import NavMenu from './nav-menu'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const Banner = ({ children, location }) =>
+const Banner = ({ children }) =>
     <div className="page-banner">
         <StaticImage
             src={'../assets/images/hero/hero-image.jpg'}
@@ -14,14 +13,12 @@ const Banner = ({ children, location }) =>
             alt="Hero Image"
         />
         <div className="page-banner-contents">
-            <NavMenu location={location} />
             {children}
         </div>
     </div>
 
 Banner.propTypes = {
     children: PropTypes.node,
-    location: PropTypes.string,
 }
 
 export default Banner
