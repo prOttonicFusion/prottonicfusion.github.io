@@ -39,9 +39,9 @@ const NavMenu = ({ location }) => {
                     restoreFocus={false}
                     style={{ height: 'fit-content' }}
                 >
-                    <Offcanvas.Header closeButton />
-                    <Offcanvas.Body>
-                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Offcanvas.Header closeButton closeVariant="white" className="mobile-nav-header" />
+                    <Offcanvas.Body className="mobile-nav-container">
+                        <Nav className="mobile-nav" collapseOnSelect>
                             {data.site.siteMetadata.menuLinks.map(
                                 (menuLink) =>
                                     <Nav.Link

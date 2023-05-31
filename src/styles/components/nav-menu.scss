@@ -21,7 +21,7 @@
 }
 
 .nav-toggle-icon {
-    fill: #fff;
+    fill: v.$primary-accent-color;
 }
 
 .custom-nav-link {
@@ -32,10 +32,30 @@
     color: v.$primary-accent-color;
 
     &:hover {
-        color: #fff;
+        color: v.$primary-accent-color;
     }
 }
 
 .custom-nav-link:hover {
     color: v.$body-text-color;
+}
+
+.mobile-nav-header {
+    justify-content: end;
+}
+
+.mobile-nav-container, .mobile-nav-header {
+    background-color: v.$bg-color;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+    .custom-nav-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
