@@ -30,7 +30,10 @@
 
 .page-banner-contents {
     grid-area: content;
-    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -82px;
     padding-left: 21px;
     padding-right: 21px;
 }
