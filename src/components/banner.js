@@ -10,6 +10,7 @@ const Banner = ({ children }) =>
             className={'hero-image'}
             placeholder="dominantColor"
             loading="eager"
+            quality={80}
             alt="Hero Image"
         />
         <div className="page-banner-contents">
