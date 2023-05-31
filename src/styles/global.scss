@@ -180,6 +180,10 @@ a {
       font-size: 1rem;
     }
   }
+
+  a {
+    color: inherit;
+  }
 }
 
 .hero-image {
@@ -190,6 +194,8 @@ a {
 
 .page-banner-contents {
   grid-area: content;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 .profile-pic-container {

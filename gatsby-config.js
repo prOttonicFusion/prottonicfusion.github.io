@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 name: 'Brief CV',
-                link: '/brief-cv',
+                link: '/#brief-cv',
             },
             {
                 name: 'Contact',

@@ -1,27 +1,49 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import DefaultTemplate from '../templates/default-template'
-import About from '../components/about'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
 import SEO from '../components/seo'
-import profilePic from '../assets/images/profile.jpg'
+import Banner from '../components/banner'
+import IndexMDX from '../sections/index.mdx'
+import { StaticImage } from 'gatsby-plugin-image'
+import Layout from '../components/layout'
+import Footer from '../components/footer'
+import Skills from '../components/skills'
+import Timeline from '../components/timeline'
+import Publications from '../components/publications'
 
 export default function Home({ data }) {
     return (
-        <DefaultTemplate
-            location="/"
-            image={profilePic}
-            title={data.mdx.frontmatter.title}
-            description={data.mdx.frontmatter.description}
-        >
-            <SEO title="Home" />
-            <About />
-            <hr />
-            <Projects />
-            <hr />
-            <Contact />
-        </DefaultTemplate>
+        <>
+            <Banner location={'/'}>
+                <div className="profile-pic-container">
+                    <StaticImage
+                        src={'../assets/images/profile.jpg'}
+                        className={'profile-pic'}
+                        loading="eager"
+                        alt="Me"
+                    />
+                </div>
+                <div>
+                    <h1>{data.mdx.frontmatter.title}</h1>
+                    <IndexMDX />
+                </div>
+            </Banner>
+            <Layout>
+                <SEO title="Home" />
+                <hr />
+                <Projects />
+                <hr />
+                <Skills />
+                <hr />
+                <Timeline />
+                <hr />
+                <Publications />
+                <hr />
+                <Contact />
+                <Footer />
+            </Layout>
+        </>
     )
 }
 

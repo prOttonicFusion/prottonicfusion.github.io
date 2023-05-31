@@ -9,6 +9,8 @@ const Banner = ({ children, location }) =>
         <StaticImage
             src={'../assets/images/hero/hero-image.jpg'}
             className={'hero-image'}
+            placeholder="dominantColor"
+            loading="eager"
             alt="Hero Image"
         />
         <div className="page-banner-contents">
