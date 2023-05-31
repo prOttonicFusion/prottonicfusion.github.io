@@ -1,4 +1,4 @@
-@import "variables.scss";
+@use "variables.scss" as v;
 
 .skills-container {
   margin-top: 15px;
@@ -9,7 +9,7 @@
 }
 
 .skill-description-container {
-  background-color: #fff;
+  background-color: v.$bg-color;
   text-align: left;
 }
 
@@ -23,24 +23,24 @@
   text-align: left;
   margin-bottom: 10px;
 
-  @include mediumAndSmall {
+  @include v.mediumAndSmall {
     text-align: center;
   }
 }
 
 .category-skills-container {
 
-  @include large {
+  @include v.large {
     display: grid;
     grid-template-columns: auto auto;
   }
 
-  @include medium {
+  @include v.medium {
     display: grid;
     grid-template-columns: auto auto;
   }
 
-  @include small {
+  @include v.small {
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -52,13 +52,13 @@
   margin: 0 auto 16px auto;
   break-inside: avoid;
 
-  @include small {
+  @include v.small {
     margin-bottom: 14px;
   }
 }
 
 .progress-bar {
-  background-color: #eeeeee;
+  background-color: #c7c7c7;
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
   max-width: 100%;
@@ -67,13 +67,13 @@
 }
 
 .progress {
-  background-color: $secondary-accent-color;
+  background-color: v.$body-link-color;
   border-radius: 3px;
   width: 0;
   transition: width 0.5s ease-in;
 }
 
-@include large {
+@include v.large {
   .progress {
     height: 18px;
   }
@@ -83,7 +83,7 @@
   }
 }
 
-@include medium {
+@include v.medium {
   .progress {
     height: 18px;
   }
@@ -93,7 +93,7 @@
   }
 }
 
-@include small {
+@include v.small {
   .progress {
     height: 16px;
   }
