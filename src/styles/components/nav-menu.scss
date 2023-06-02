@@ -1,22 +1,21 @@
 @use '../variables.scss' as v;
 
 .site-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .nav-toggle {
-    margin-left: auto;
-    border: #ffffffa8 solid 2px;
-  
-    @include v.mediumAndLarge {
-        text-align: right;
-        margin-left: auto;
-        background: none;
-    }
+  margin-left: auto;
+  border: #ffffffa8 solid 2px;
+
+  @include v.md {
+    text-align: right;
+    background: none;
+  }
 }
 
 .nav-toggle-icon {
@@ -24,47 +23,47 @@
 }
 
 .custom-nav-link {
-    display: block;
-    text-align: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    color: v.$primary-color;
+  display: block;
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: v.$primary-color;
 
-    &:hover {
-        color: v.$primary-color;
-    }
+  &:hover {
+    color: v.$primary-color;
+  }
 }
 
 .custom-nav-link:hover {
-    color: v.$body-text-color;
+  color: v.$body-text-color;
 }
 
 .mobile-nav-header {
-    justify-content: end;
-    background-color: v.$bg-color;
+  justify-content: end;
+  background-color: v.$bg-color;
 }
 
 .nav-container, .mobile-nav-header {
-    @include v.small {
-        background-color: v.$bg-color;
-    }
+  background-color: v.$bg-color;
+
+  @include v.sm {
+    background-color: transparent;
+  }
 }
 
 .nav {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+
+  .custom-nav-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @include v.md {
     flex-direction: row;
-    justify-content: end;
-    width: 100%;
-    
-    @include v.small {
-        flex-direction: column;
-        justify-content: end;
-        align-items: end;
-
-        .custom-nav-link {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    }
-
+  }
 }

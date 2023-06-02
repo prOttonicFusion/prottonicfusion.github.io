@@ -24,35 +24,19 @@ $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 
 // Breakpoints
-$large-breakpoint: 992px !default;
-$medium-breakpoint: 768px !default;
+$screen-sm-min: 768px;
+$screen-md-min: 1024px;
+$screen-lg-min: 1366px;
+$screen-xl-min: 1920px;
+$screen-xxl-min: 2560px;
 
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
+// Larger than small
+@mixin sm {@media only screen and (min-width: #{$screen-sm-min}) { @content; }}
+@mixin md {@media only screen and (min-width: #{$screen-md-min}) { @content; }}
+@mixin lg {@media only screen and (min-width: #{$screen-lg-min}) { @content; }}
+@mixin xl {@media only screen and (min-width: #{$screen-xl-min}) { @content; }}
+@mixin xxl {@media only screen and (min-width: #{$screen-xxl-min}) { @content; }}
 
-@mixin mediumAndLarge {
-  @media screen and (min-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin mediumAndSmall {
-  @media screen and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
+// Less than sm
+@mixin ltsm {@media only screen and (max-width: #{$screen-sm-min}) { @content; }}
+@mixin ltmd {@media only screen and (max-width: #{$screen-md-min}) { @content; }}

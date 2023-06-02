@@ -1,4 +1,4 @@
-@use "variables.scss" as v;
+@use "../variables.scss" as v;
 
 .timeline {
   list-style: none;
@@ -19,7 +19,7 @@ $line-left-spacing: 50%;
   left: $line-left-spacing-mobile;
   margin-left: -1.5px;
 
-  @include v.mediumAndLarge {
+  @include v.sm {
     left: $line-left-spacing;
   }
 }
@@ -59,7 +59,7 @@ $line-left-spacing: 50%;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 
-  @include v.mediumAndLarge {
+  @include v.sm {
     width: 46%;
   }
 }
@@ -104,12 +104,12 @@ $line-left-spacing: 50%;
   border: solid v.$secondary-color;
   border-width: 5px;
 
-  @include v.mediumAndLarge {
+  @include v.sm {
     left: $line-left-spacing;
   }
 }
 
-@include v.mediumAndLarge {
+@include v.sm {
   .timeline > li.timeline-item:nth-child(odd) > .timeline-panel {
     float: left;
   }
@@ -131,16 +131,16 @@ $line-left-spacing: 50%;
 
 .timeline-title {
   color: inherit;
-  font-size: 22px;
   margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 2px !important;
 
-  @include v.medium {
+  @include v.md {
     font-size: 18px;
   }
 
-  @include v.small {
-    font-size: 16px;
-    margin-bottom: 2px !important;
+  @include v.lg {
+    font-size: 22px;
   }
 }
 
@@ -155,43 +155,43 @@ $line-left-spacing: 50%;
 }
 
 .timeline-detail-text {
-  font-size: 16px;
   align-self: baseline;
+  font-size: 12px;
+  margin-bottom: 1px !important;
 
-  @include v.medium {
+  @include v.sm {
     font-size: 14px;
   }
 
-  @include v.small {
-    font-size: 12px;
-    margin-bottom: 1px !important;
+  @include v.md {
+    font-size: 16px;
   }
 }
 
 .timeline-date {
   font-style: italic;
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 12px;
+  margin-bottom: 1px !important;
 
-  @include v.medium {
+  @include v.sm {
     font-size: 12px;
   }
 
-  @include v.small {
-    font-size: 12px;
-    margin-bottom: 1px !important;
+  @include v.md {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 }
 
 .timeline-body {
-  font-size: 16px;
-
-  @include v.medium {
+  font-size: 12px;
+  
+  @include v.sm {
     font-size: 14px;
   }
-
-  @include v.small {
-    font-size: 12px;
+  
+  @include v.md {
+    font-size: 16px;
   }
 }
 

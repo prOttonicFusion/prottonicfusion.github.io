@@ -1,72 +1,72 @@
 @use '../variables.scss' as v;
 
-.project-cards-container {
+.project-cards-container {  
+  display: none;
+  
+  @include v.md {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-  
-     @include v.small {
-       display: none;
-     }
+    justify-content: center;
   }
+}
   
-  .project-cards-container-mobile {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    overflow-x: hidden;
-  
-    @include v.large {
-      display: none;
-    }
+.project-cards-container-mobile {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  overflow-x: hidden;
+
+  @include v.md {
+    display: none;
   }
+}
   
-  .project-image-container {
-    @include v.mediumAndLarge {
-      height: 200px;
-    }
+.project-image-container {
+  @include v.md {
+    height: 200px;
   }
+}
   
-  .project-card {
-    width: 18rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 2.75rem;
-    
-    @include v.small {
-      margin-left: auto !important;
-      margin-right: auto !important;
-      min-height: 32rem;
-      width: 17rem !important;
-    }
+.project-card {
+  min-height: 32rem;
+  width: 17rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 1.25rem;
+  margin-bottom: 2.75rem;  
+
+  @include v.md {
+    width: 18rem !important;
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
   }
+}
   
-  .project-card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .project-keywords-container {
-    margin-top: 12px;
-    text-align: center;
-    font-style: normal;
-    font-size: 15px;
-  }
-  
-  .project-keyword {
-    border-style: solid;
-    border-color: #81888f;
-    border-width: 1.5px;
-    border-radius: 10px;
-    display: inline-block;
-    padding: 0px 10px;
-    margin: 4px 4px;
-  }
-  
-  .card, .card-footer, .card-body {
-    color: v.$body-text-color;
-    background-color: v.$bg-color;
-    border: none;
-  }
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-keywords-container {
+  margin-top: 12px;
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.project-keyword {
+  border-style: solid;
+  border-color: #81888f;
+  border-width: 1.5px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 4px 4px;
+}
+
+.card, .card-footer, .card-body {
+  color: v.$body-text-color;
+  background-color: v.$bg-color;
+  border: none;
+}

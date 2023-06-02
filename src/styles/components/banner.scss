@@ -18,12 +18,12 @@
     .site-title {
       color: #fff;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 18px;
       letter-spacing: -1px;
       text-decoration: none;
-  
-      @include v.small {
-        font-size: 18px;
+      
+      @include v.md {
+          font-size: 24px;
       }
     }
 }
