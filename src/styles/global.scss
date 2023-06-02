@@ -136,7 +136,7 @@ a {
   word-wrap: break-word;
   text-align: center;
 
-  :first-child {
+  &:first-child {
     margin-top: 0;
   }
 
@@ -386,71 +386,6 @@ a {
 
 .social-icon-container {
   display: inline-block;
-}
-
-.project-cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-
-   @include small {
-     display: none;
-   }
-}
-
-.project-cards-container-mobile {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-  overflow-x: hidden;
-
-  @include large {
-    display: none;
-  }
-}
-
-.project-image-container {
-  @include mediumAndLarge {
-    height: 200px;
-  }
-}
-
-.project-card {
-  @include small {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    min-height: 32rem;
-    width: 17rem !important;
-  }
-}
-
-.project-card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-keywords-container {
-  margin-top: 12px;
-  text-align: center;
-  font-style: normal;
-  font-size: 15px;
-}
-
-.project-keyword {
-  border-style: solid;
-  border-color: #81888f;
-  border-width: 1.5px;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 0px 10px;
-  margin: 4px 4px;
-}
-
-.card, .card-footer, .card-body {
-  color: $body-text-color;
-  background-color: $bg-color;
-  border-color: #c7c7c7;
 }
 
 .dev-icon {

@@ -1,4 +1,5 @@
 import '../styles/global.scss'
+import '../styles/components/project-card.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Card } from 'react-bootstrap'
@@ -25,10 +26,6 @@ const ProjectCard = ({
     keywords,
 }) =>
     <Card
-        style={{
-            width: '18rem',
-            margin: '1.25rem',
-        }}
         className="project-card"
     >
         <div className="project-image-container">
