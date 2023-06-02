@@ -6,7 +6,7 @@ import timelineData from '../data/timeline.json'
 
 const TimelineItem = ({ eventData }) => {
     return (
-        <li className={eventData.itemClass}>
+        <li className="timeline-item">
             <div className="timeline-badge">
                 <i className="glyphicon glyphicon-check"></i>
             </div>

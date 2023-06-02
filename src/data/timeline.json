@@ -3,8 +3,7 @@
         "title": "Software Engineer",
         "time": "2022 -",
         "place": "Koherent",
-        "description": "Full-stack web development",
-        "itemClass": "timeline-inverted"
+        "description": "Full-stack web development"
     },
     {
         "title": "Software Developer",
@@ -17,21 +16,18 @@
         "title": "MSc in Computational Materials Physics",
         "time": "2020",
         "place": "University of Helsinki",
-        "description": null,
-        "itemClass": "timeline-inverted"
+        "description": null
     },
     {
         "title": "Research Assistant",
         "time": "2017 - present",
         "place": "Univ. of Helsinki Accelerator Lab",
-        "description": "Molecular dynamics simulations related to fusion materials research",
-        "itemClass": "timeline-normal"
+        "description": "Molecular dynamics simulations related to fusion materials research"
     },
     {
         "title": "BSc in Physics",
         "time": "2018",
         "place": "University of Helsinki",
-        "description": null,
-        "itemClass": "timeline-inverted"
+        "description": null
     }
 ]
