@@ -1,22 +1,29 @@
+import '../styles/global.scss'
+import '../styles/pages/404.scss'
 import React from 'react'
 import Layout from '../components/layout'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
-import '../styles/global.scss'
+import NavMenu from '../components/nav-menu'
 
-export default function ErrorPage() {
+const ErrorPage = () => {
     return (
         <>
+            <NavMenu location={'/'} />
             <Banner>
-                <h1>404</h1>
+                <h1 className="main-title">404</h1>
+                <p className="main-description">There doesn't seem to be a page here... :/ </p>
             </Banner>
             <Layout>
-                <SEO title="Error" />
-                <p>There doesn't seem to be a page here... 🤔 </p>
                 <hr />
                 <Footer />
             </Layout>
         </>
     )
 }
+
+export default ErrorPage
+
+export const Head = () => <SEO title="Error" />
+
