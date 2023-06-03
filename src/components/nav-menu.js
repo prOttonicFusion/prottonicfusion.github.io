@@ -4,28 +4,24 @@ import PropTypes from 'prop-types'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 import cx from 'classnames'
 
-const CloseIcon = () =>
+const CloseIcon = ({ className }) =>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className="close-icon"
+        className={className}
         // Icon from https://heroicons.com/
     >
         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
     </svg>
 
-const MenuIcon = () =>
+const MenuIcon = ({ className }) =>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className="hamburger-icon"
+        className={className}
         // Icon from https://heroicons.com/
     >
-        <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
     </svg>
 
 const NavMenu = () => {
@@ -40,7 +36,10 @@ const NavMenu = () => {
                     setIsNavExpanded(!isNavExpanded)
                 }}
             >
-                <MenuIcon />
+                <div className="icon-container">
+                    <MenuIcon className={cx('hamburger-icon', isNavExpanded ? 'hide' : 'show')} />
+                    <CloseIcon className={cx('close-icon', isNavExpanded ? 'show' : 'hide')} />
+                </div>
             </button>
             <div
                 className={cx('nav-menu', {
@@ -50,12 +49,6 @@ const NavMenu = () => {
                 })}
             >
                 <ul>
-                    <li
-                        className="close-menu-button"
-                        onClick={() => setIsNavExpanded(false)}
-                    >
-                        <CloseIcon />
-                    </li>
                     {menuLinks.map(
                         (menuLink) =>
                             <li key={menuLink.name}>

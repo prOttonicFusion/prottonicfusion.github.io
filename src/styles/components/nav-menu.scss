@@ -1,7 +1,5 @@
 @use '../variables.scss' as v;
 
-$mobile-nav-height: 100vh;
-
 .nav-container {
   position: fixed;
   top: 0;
@@ -43,29 +41,37 @@ $mobile-nav-height: 100vh;
   }
 }
 
+$mobile-nav-height: 100vh;
+$mobile-nav-button-size: 45px;
+$mobile-nav-button-top: 20px;
+
 .hamburger {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: $mobile-nav-button-top;
   right: 25px;
+  z-index: 15;
   display: none;
   border: 0;
-  height: 45px;
-  width: 45px;
-  margin-top: 15px;
+  height: $mobile-nav-button-size;
+  width: $mobile-nav-button-size;
   padding: 4px;
   border-radius: 50%;
   background-color: v.$bg-color;
   transition: background-color 0.3s ease-in-out;
 }
 
+.icon-container {
+  display: grid;
+  grid-template-areas: "hamburger-icon";
+  justify-content: center;
+}
+
 .hamburger-icon, .close-icon {
+  grid-area: hamburger-icon;
   stroke: v.$primary-color;
   stroke-width: 1.5px;
   width: 28px;
-}
-
-.close-menu-button {
-  display: none;
+  transition: opacity 0.3s;
 }
 
 .hamburger:hover {
@@ -88,30 +94,27 @@ $mobile-nav-height: 100vh;
     display: block;
   }
 
-  .close-menu-button {
-    display: block;
-    cursor: pointer;
-  }
-
   .nav-menu {
     ul {
       display: none;
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 15;
+      z-index: 14;
       flex-direction: column;
       width: 100%;
       height: $mobile-nav-height;
       background-color: v.$bg-color;
       overflow: hidden;
+      padding-top: $mobile-nav-button-top + $mobile-nav-button-size;
     }
 
     li {
-      text-align: center;
+      text-align: right;
       margin: 0;
       margin-top: 25px;
       margin-bottom: 25px;
+      padding-right: 29px;
 
       &:hover {
         background-color: #eee;
@@ -147,4 +150,12 @@ $mobile-nav-height: 100vh;
       }
     }
   }
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
