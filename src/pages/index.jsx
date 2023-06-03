@@ -1,3 +1,4 @@
+import '../styles/pages/index.scss'
 import React from 'react'
 import { graphql } from 'gatsby'
 import Projects from '../components/projects'

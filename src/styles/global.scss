@@ -60,65 +60,6 @@ a {
   }
 }
 
-.main-title {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  font-size: 1.75rem;
-
-  @include v.md {
-    font-size: 2.25rem;
-  }
-
-  @include v.lg {
-    font-size: 3.25rem;
-  }
-}
-
-.main-description {
-  margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7;
-  font-size: 1rem;
-
-  @include v.md {
-    font-size: 1.15rem;
-  }
-
-  @include v.lg {
-    font-size: 1.25rem;
-  }
-  
-  a {
-    color: inherit;
-  }
-}
-
-.profile-pic-container {
-  height: 180px;
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include v.md {
-    height: 180px;
-    width: 180px;
-  }
-
-  @include v.lg {
-    height: 250px;
-    width: 250px;
-  }
-}
-
-.profile-pic {
-  border-radius: 50%;
-  border: 7px solid #fff;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-}
-
 .main-content {
   word-wrap: break-word;
   text-align: center;
