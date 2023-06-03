@@ -1,0 +1,79 @@
+@use '../variables.scss' as v;
+
+.project-cards-container {  
+  display: none;
+  
+  @include v.md {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+  
+.project-cards-container-mobile {
+  height: 512px;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+  overflow-x: hidden;
+
+  @include v.md {
+    display: none;
+  }
+}
+  
+.project-image-container {
+  @include v.md {
+    height: 200px;
+  }
+}
+
+.project-image {
+  object-fit: contain;
+  height: 100%;
+}
+  
+.project-card {
+  width: clamp(45px, 70%, 275px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 44px;  
+  
+  @include v.md {
+    min-height: 512px;
+    width: 288px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+  
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-keywords-container {
+  margin-top: 12px;
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.project-keyword {
+  border-style: solid;
+  border-color: #81888f;
+  border-width: 1.5px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 4px 4px;
+}
+
+.card, .card-footer, .card-body {
+  color: v.$body-text-color;
+  background-color: v.$bg-color;
+  border: none;
+}

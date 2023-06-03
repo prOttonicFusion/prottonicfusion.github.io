@@ -29,8 +29,8 @@ module.exports = {
         ],
         menuLinks: [
             {
-                name: 'About',
-                link: '/#about',
+                name: 'Home',
+                link: '/#',
             },
             {
                 name: 'Projects',
@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 name: 'Brief CV',
-                link: '/brief-cv',
+                link: '/#skills',
             },
             {
                 name: 'Contact',
@@ -54,16 +54,10 @@ module.exports = {
                 path: `${__dirname}/src/sections/`,
             },
         },
-        {
-            resolve: 'gatsby-plugin-google-gtag',
-            options: {
-                trackingIds: [
-                    'G-LNHKYL8TP0', // Google Analytics / GA
-                ],
-            },
-        },
         'gatsby-plugin-mdx',
         'gatsby-plugin-sass',
         'gatsby-plugin-testing',
+        'gatsby-plugin-image',
+        'gatsby-plugin-sharp',
     ],
 }

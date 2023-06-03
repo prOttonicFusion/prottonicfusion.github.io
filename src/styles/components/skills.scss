@@ -1,0 +1,70 @@
+@use '../variables.scss' as v;
+
+.skills-container {
+  margin-top: 15px;
+}
+
+.skill-title {
+  font-size: 15px;
+}
+
+.skill-description-container {
+  background-color: v.$bg-color;
+  text-align: left;
+}
+
+.skill-category {
+  margin-bottom: 25px;
+}
+
+.skill-category-title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.category-skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+
+  @include v.sm {
+    grid-template-columns: 1fr 1fr;
+    column-gap: clamp(40px, 8%, 200px);
+    $skills-container-padding: clamp(20px, 10%, 190px);
+    padding-left: $skills-container-padding;
+    padding-right: $skills-container-padding;
+  }
+}
+
+.skill-item {
+  width: 100%;
+  margin: 0 auto 14px auto;
+  break-inside: avoid;
+
+  @include v.md {
+    margin-bottom: 16px;
+    width: clamp(100px, 100%, 400px);
+  }
+}
+
+.progress-bar {
+  background-color: #c7c7c7;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  margin-left: auto;
+  margin-right: auto;
+  height: 16px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.progress {
+  background-color: v.$accent-color;
+  border-radius: 3px;
+  width: 0;
+  height: 100%;
+  transition: width 0.5s ease-in;
+}
