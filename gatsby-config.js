@@ -30,7 +30,7 @@ module.exports = {
         menuLinks: [
             {
                 name: 'Home',
-                link: '/#',
+                link: '/#top',
             },
             {
                 name: 'Projects',

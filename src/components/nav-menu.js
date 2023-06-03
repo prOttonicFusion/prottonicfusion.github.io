@@ -1,52 +1,69 @@
 import '../styles/components/nav-menu.scss'
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
-import Offcanvas from 'react-bootstrap/Offcanvas'
-import HamburgerMenuIcon from './icons/hamburger-menu'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
+import cx from 'classnames'
 
-const NavMenu = ({ location }) => {
-    const { title, menuLinks } = useSiteMetadata()
+const CloseIcon = ({ className }) =>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className={className}
+        // Icon from https://heroicons.com/
+    >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+
+const MenuIcon = ({ className }) =>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className={className}
+        // Icon from https://heroicons.com/
+    >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+    </svg>
+
+const NavMenu = () => {
+    const { menuLinks } = useSiteMetadata()
+    const [isNavExpanded, setIsNavExpanded] = useState(undefined)
 
     return (
-        <Navbar expand="md" variant="dark" bg="none" className="site-nav" collapseOnSelect>
-            <Container fluid>
-                {location !== '/' &&
-                    <Navbar.Brand className="site-title" href={'/'}>{title}</Navbar.Brand>
-                }
-                <Navbar.Toggle aria-controls={'offcanvasNavbar-expand'} className="nav-toggle">
-                    <HamburgerMenuIcon className="nav-toggle-icon" width="32px" height="32px" />
-                </Navbar.Toggle>
-                <Navbar.Offcanvas
-                    id={'offcanvasNavbar-expand'}
-                    aria-labelledby={'offcanvasNavbarLabel-expand'}
-                    placement="top"
-                    restoreFocus={false}
-                    style={{ height: 'fit-content' }}
-                >
-                    <Offcanvas.Header closeButton closeVariant="white" className="mobile-nav-header" />
-                    <Offcanvas.Body className="nav-container">
-                        <Nav className="nav">
-                            {menuLinks.map(
-                                (menuLink) =>
-                                    <Nav.Link
-                                        className="custom-nav-link"
-                                        href={menuLink.link}
-                                        as={Link}
-                                        key={menuLink.name}
-                                    >
-                                        {menuLink.name}
-                                    </Nav.Link>,
-                            )}
-                        </Nav>
-                    </Offcanvas.Body>
-                </Navbar.Offcanvas>
-            </Container>
-        </Navbar>
+        <nav className="nav-container">
+            <button
+                className="hamburger"
+                onClick={() => {
+                    setIsNavExpanded(!isNavExpanded)
+                }}
+            >
+                <div className="icon-container">
+                    <MenuIcon className={cx('hamburger-icon', isNavExpanded ? 'hide' : 'show')} />
+                    <CloseIcon className={cx('close-icon', isNavExpanded ? 'show' : 'hide')} />
+                </div>
+            </button>
+            <div
+                className={cx('nav-menu', {
+                    'expanded': isNavExpanded,
+                    // Do not apply collapse animation on initial page load
+                    'collapsed': isNavExpanded === false,
+                })}
+            >
+                <ul>
+                    {menuLinks.map(
+                        (menuLink) =>
+                            <li key={menuLink.name}>
+                                <a
+                                    href={menuLink.link}
+                                    className="nav-menu-link"
+                                    onClick={() => setIsNavExpanded(false)}
+                                >
+                                    {menuLink.name}
+                                </a>
+                            </li>,
+                    )}
+                </ul>
+            </div>
+        </nav>
     )
 }
 

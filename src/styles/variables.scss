@@ -40,3 +40,10 @@ $screen-xxl-min: 2560px;
 // Less than sm
 @mixin ltsm {@media only screen and (max-width: #{$screen-sm-min}) { @content; }}
 @mixin ltmd {@media only screen and (max-width: #{$screen-md-min}) { @content; }}
+
+// Animation preference
+@mixin prefers-no-animations { @media (prefers-reduced-motion: reduce) { @content; } };
+@mixin prefers-animations { @media (prefers-reduced-motion: no-preference) { @content; } };
+
+// Animations & transitions
+$link-hover-tansition-duration: 0.3s !default;

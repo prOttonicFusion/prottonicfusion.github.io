@@ -261,13 +261,15 @@ a {
   margin: 0 6px;
   width: 36px;
   height: 36px;
+  transition-property: color, transform;
+  transition-duration: v.$link-hover-tansition-duration;
+  transition-timing-function: ease-in-out;
 
   &:hover {
     text-decoration: none;
     color: v.$primary-color; // IE8
     fill: v.$primary-color;
-    transform: scale(1.25);
-    transition: color 0.5s, transform 0.2s ease-out;
+    transform: scale(1.2);
   }
 
   @include v.md {

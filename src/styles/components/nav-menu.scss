@@ -1,69 +1,162 @@
 @use '../variables.scss' as v;
 
-.site-nav {
+.nav-container {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 15;
+  display: flex;
+  align-items: center;
   width: 100%;
+  padding-top: 10px;
+  background-color: transparent;
 }
 
-.nav-toggle {
+.nav-menu {
   margin-left: auto;
-  border: #ffffffa8 solid 2px;
 
-  @include v.md {
-    text-align: right;
-    background: none;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 }
 
-.nav-toggle-icon {
-    fill: v.$primary-color;
-}
-
-.custom-nav-link {
+.nav-menu-link {
+  color: v.$body-link-color !important;
+  text-decoration: none;
   display: block;
-  text-align: left;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: v.$primary-color;
+  width: 100%;
 
   &:hover {
-    color: v.$primary-color;
+    text-decoration: underline;
+    color: v.$blockquote-text-color !important;
   }
 }
 
-.custom-nav-link:hover {
-  color: v.$body-text-color;
-}
+$mobile-nav-height: 100vh;
+$mobile-nav-button-size: 45px;
+$mobile-nav-button-top: 20px;
 
-.mobile-nav-header {
-  justify-content: end;
+.hamburger {
+  position: fixed;
+  top: $mobile-nav-button-top;
+  right: 25px;
+  z-index: 15;
+  display: none;
+  border: 0;
+  height: $mobile-nav-button-size;
+  width: $mobile-nav-button-size;
+  padding: 4px;
+  border-radius: 50%;
   background-color: v.$bg-color;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.nav-container, .mobile-nav-header {
-  background-color: v.$bg-color;
+.icon-container {
+  display: grid;
+  grid-template-areas: "hamburger-icon";
+  justify-content: center;
+}
 
-  @include v.sm {
-    background-color: transparent;
+.hamburger-icon, .close-icon {
+  grid-area: hamburger-icon;
+  stroke: v.$primary-color;
+  stroke-width: 1.5px;
+  width: 28px;
+  transition: opacity 0.3s;
+}
+
+.hamburger:hover {
+  background-color: v.$accent-color;
+  transition: background-color v.$link-hover-tansition-duration ease-in-out;
+}
+
+@keyframes menu-expand-animation {
+  0% { height: 0; }
+  100% { height: $mobile-nav-height; }
+}
+
+@keyframes menu-collapse-animation {
+  0% { opacity: 1; height: $mobile-nav-height; }
+  99% { opacity: 0; height: $mobile-nav-height; }
+  100% { opacity: 0; height: 0; }
+}
+
+@include v.ltsm {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    ul {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 14;
+      flex-direction: column;
+      width: 100%;
+      height: $mobile-nav-height;
+      background-color: v.$bg-color;
+      overflow: hidden;
+      padding-top: $mobile-nav-button-top + $mobile-nav-button-size;
+    }
+
+    li {
+      text-align: right;
+      margin: 0;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding-right: 29px;
+
+      &:hover {
+        background-color: v.$accent-color;
+      }
+
+      a {
+        color: v.$primary-color;
+        width: 100%;
+        padding: 24px 0;
+      }
+    }
+  }
+
+  .collapsed {
+    ul {
+      display: block;
+
+      @include v.prefers-animations {
+        animation-name: menu-collapse-animation;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  .expanded {
+    ul {
+      display: block;
+      
+      @include v.prefers-animations {
+        animation-name: menu-expand-animation;
+        animation-duration: 0.3s;
+      }
+    }
   }
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  width: 100%;
+.show {
+  opacity: 1;
+}
 
-  .custom-nav-link {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  @include v.md {
-    flex-direction: row;
-  }
+.hide {
+  opacity: 0;
 }
