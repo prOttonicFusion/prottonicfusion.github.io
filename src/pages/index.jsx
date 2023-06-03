@@ -53,7 +53,7 @@ const Home = ({ data }) => {
 
 export default Home
 
-export const Head = () => <SEO title="Error" />
+export const Head = () => <SEO title="Home" />
 
 export const pageQuery = graphql`
   query IndexPageQuery {

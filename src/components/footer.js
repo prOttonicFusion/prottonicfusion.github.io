@@ -1,28 +1,15 @@
 import '../styles/global.scss'
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import SocialIcon from './social-icon'
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-      query ContactOptionsQuery {
-        site {
-          siteMetadata {
-            contactOptions {
-              name
-              label
-              url
-            }
-            author
-          }
-        }
-      }
-    `)
+    const { contactOptions, author } = useSiteMetadata()
 
     return (
         <div className={'site-footer'}>
             <div className={'social-icon-container'}>
-                {data.site.siteMetadata.contactOptions.map((contactOption) =>
+                {contactOptions.map((contactOption) =>
                     <SocialIcon
                         service={contactOption.name}
                         url={contactOption.url}
@@ -32,7 +19,7 @@ const Footer = () => {
                 )}
             </div>
             <div className="copyright-container">
-                {new Date().getFullYear()} &copy; {data.site.siteMetadata.author}
+                {new Date().getFullYear()} &copy; {author}
             </div>
         </div>
     )
