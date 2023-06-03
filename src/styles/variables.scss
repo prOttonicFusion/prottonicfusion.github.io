@@ -44,3 +44,6 @@ $screen-xxl-min: 2560px;
 // Animation preference
 @mixin prefers-no-animations { @media (prefers-reduced-motion: reduce) { @content; } };
 @mixin prefers-animations { @media (prefers-reduced-motion: no-preference) { @content; } };
+
+// Animations & transitions
+$link-hover-tansition-duration: 0.3s !default;

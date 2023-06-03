@@ -29,7 +29,7 @@
   }
 }
 
-.nav-link {
+.nav-menu-link {
   color: v.$body-link-color !important;
   text-decoration: none;
   display: block;
@@ -76,6 +76,7 @@ $mobile-nav-button-top: 20px;
 
 .hamburger:hover {
   background-color: v.$accent-color;
+  transition: background-color v.$link-hover-tansition-duration ease-in-out;
 }
 
 @keyframes menu-expand-animation {
@@ -117,7 +118,7 @@ $mobile-nav-button-top: 20px;
       padding-right: 29px;
 
       &:hover {
-        background-color: #eee;
+        background-color: v.$accent-color;
       }
 
       a {
