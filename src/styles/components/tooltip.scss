@@ -1,0 +1,31 @@
+@use '../variables.scss' as v;
+
+.tooltip-container {
+  position: relative;
+}
+  
+.tooltip-point {
+  position: absolute;
+  top: -12px;
+  left: 5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: black;
+}
+
+.tooltip-label {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  display: none;
+  color: v.$primary-color;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+
+  &.show {
+    display: block;
+  }
+}

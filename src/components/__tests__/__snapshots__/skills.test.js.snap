@@ -37,12 +37,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Python
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -68,24 +82,66 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  JavaScript
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  TypeScript
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  node.js
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -111,12 +167,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  C++
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -142,12 +212,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Fortran95
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -186,12 +270,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  React/React Native
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -217,18 +315,46 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  HTML
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  CSS
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -254,12 +380,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  QT
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -285,18 +425,46 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  PostgreSQL
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  SQLite
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -335,12 +503,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Docker
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -366,18 +548,46 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  macOs
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Ubuntu/Linux
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div
@@ -416,12 +626,26 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-badge-container"
             >
-              <img
-                alt="Dev icon"
-                class="dev-icon"
-                height="15px"
-                src="test-file-stub"
-              />
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  OpenMPI
+                </div>
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
             </span>
           </div>
           <div

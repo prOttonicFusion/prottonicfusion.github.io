@@ -1,7 +1,7 @@
+import '../styles/components/dev-icon.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
-import '../styles/global.scss'
-import { OverlayTrigger, Tooltip } from 'react-bootstrap'
+import WithTooltip from './tooltip'
 import cppLogo from '../assets/devIcons/cplusplus-plain.svg'
 import cssLogo from '../assets/devIcons/css3-plain.svg'
 import devIconLogo from '../assets/devIcons/devicon.svg'
@@ -145,18 +145,14 @@ const DevIcon = ({ tool, height }) => {
     const { icon, label } = tool in iconData ? iconData[tool] : iconData['default']
 
     return (
-        <OverlayTrigger
-            key={tool}
-            placement="bottom"
-            overlay={<Tooltip>{label}</Tooltip>}
-        >
+        <WithTooltip label={label} className="dev-icon-container">
             <img
                 src={icon}
                 className="dev-icon"
                 height={height ? height : '15px'}
                 alt={'Dev icon'}
             />
-        </OverlayTrigger>
+        </WithTooltip>
     )
 }
 

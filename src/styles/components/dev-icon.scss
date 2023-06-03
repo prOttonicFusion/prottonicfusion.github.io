@@ -1,0 +1,14 @@
+@use '../variables.scss' as v;
+
+.dev-icon-container {
+  display: inline-block;
+}
+
+.dev-icon {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  height: 15px;
+  margin: 0 3px;
+}
