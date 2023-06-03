@@ -1,69 +1,118 @@
 @use '../variables.scss' as v;
 
-.site-nav {
+.nav-container {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
   width: 100%;
+  padding-top: 10px;
+  background-color: transparent;
 }
 
-.nav-toggle {
+.nav-menu {
   margin-left: auto;
-  border: #ffffffa8 solid 2px;
 
-  @include v.md {
-    text-align: right;
-    background: none;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 }
 
-.nav-toggle-icon {
-    fill: v.$primary-color;
-}
-
-.custom-nav-link {
+.nav-link {
+  color: v.$body-link-color !important;
+  text-decoration: none;
   display: block;
-  text-align: left;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: v.$primary-color;
+  width: 100%;
 
   &:hover {
-    color: v.$primary-color;
+    text-decoration: underline;
+    color: v.$blockquote-text-color !important;
   }
 }
 
-.custom-nav-link:hover {
-  color: v.$body-text-color;
-}
-
-.mobile-nav-header {
-  justify-content: end;
+.hamburger {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  display: none;
+  border: 0;
+  height: 45px;
+  width: 45px;
+  margin-top: 15px;
+  padding: 4px;
+  border-radius: 50%;
   background-color: v.$bg-color;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.nav-container, .mobile-nav-header {
-  background-color: v.$bg-color;
-
-  @include v.sm {
-    background-color: transparent;
-  }
+.hamburger-icon, .close-icon {
+  stroke: v.$primary-color;
+  stroke-width: 1.5px;
+  width: 28px;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  width: 100%;
+.close-menu-button {
+  display: none;
+}
 
-  .custom-nav-link {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.hamburger:hover {
+  background-color: v.$accent-color;
+}
+
+@include v.ltsm {
+  .hamburger {
+    display: block;
   }
 
-  @include v.md {
-    flex-direction: row;
+  .close-menu-button {
+    display: block;
+
+  }
+
+  .nav-menu {
+    ul {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 15;
+      width: 100%;
+      height: calc(100vh);
+      background-color: white;
+      border-top: 1px solid black;
+      display: none;
+    }
+
+    li {
+      text-align: center;
+      margin: 0;
+
+      &:hover {
+        background-color: #eee;
+      }
+
+      a {
+        color: black;
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  .expanded {
+    ul {
+      display: block;
+    }
   }
 }
