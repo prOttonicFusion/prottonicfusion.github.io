@@ -30,7 +30,7 @@ const MenuIcon = () =>
 
 const NavMenu = () => {
     const { menuLinks } = useSiteMetadata()
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isNavExpanded, setIsNavExpanded] = useState(undefined)
 
     return (
         <nav className="nav-container">
@@ -42,7 +42,13 @@ const NavMenu = () => {
             >
                 <MenuIcon />
             </button>
-            <div className={cx('nav-menu', { 'expanded': isNavExpanded })}>
+            <div
+                className={cx('nav-menu', {
+                    'expanded': isNavExpanded,
+                    // Do not apply collapse animation on initial page load
+                    'collapsed': isNavExpanded === false,
+                })}
+            >
                 <ul>
                     <li
                         className="close-menu-button"
