@@ -73,13 +73,14 @@ $mobile-nav-height: 100vh;
 }
 
 @keyframes menu-expand-animation {
-  from { opacity: 0; height: 0; }
-  to { opacity: 1; height: $mobile-nav-height; }
+  0% { height: 0; }
+  100% { height: $mobile-nav-height; }
 }
 
 @keyframes menu-collapse-animation {
-  from { opacity: 1; height: $mobile-nav-height; }
-  to { opacity: 0; height: 0; }
+  0% { opacity: 1; height: $mobile-nav-height; }
+  99% { opacity: 0; height: $mobile-nav-height; }
+  100% { opacity: 0; height: 0; }
 }
 
 @include v.ltsm {
