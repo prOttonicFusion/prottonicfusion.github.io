@@ -13,6 +13,7 @@ import Footer from '../components/footer'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Publications from '../components/publications'
+import ClientOnly from '../components/client-only'
 
 export default function Home({ data }) {
     return (
@@ -20,12 +21,14 @@ export default function Home({ data }) {
             <NavMenu location={'/'} />
             <Banner>
                 <div className="profile-pic-container">
-                    <StaticImage
-                        src={'../assets/images/profile.jpg'}
-                        className={'profile-pic'}
-                        loading="eager"
-                        alt="Me"
-                    />
+                    <ClientOnly>
+                        <StaticImage
+                            src={'../assets/images/profile.jpg'}
+                            className={'profile-pic'}
+                            loading="eager"
+                            alt="Me"
+                        />
+                    </ClientOnly>
                 </div>
                 <div>
                     <h1 className="main-title">{data.mdx.frontmatter.title}</h1>
