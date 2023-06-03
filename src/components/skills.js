@@ -1,5 +1,5 @@
 import '../styles/global.scss'
-import '../styles/skills.scss'
+import '../styles/components/skills.scss'
 import React from 'react'
 import SkillsMDX from '../sections/skills'
 import skillsData from '../data/skills.json'
@@ -36,7 +36,7 @@ const SkillCategory = ({ skills, title }) =>
     </div>
 
 const Skills = () =>
-    <div style={{ padding: '30px 4px' }} id="skills">
+    <div id="skills">
         <div>
             <SkillsMDX />
         </div>

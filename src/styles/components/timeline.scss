@@ -1,0 +1,205 @@
+@use "../variables.scss" as v;
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+$line-left-spacing-mobile: 3%;
+$line-left-spacing: 50%;
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 4px;
+  background-color: v.$secondary-color;
+  left: $line-left-spacing-mobile;
+  margin-left: -1.5px;
+
+  @include v.sm {
+    left: $line-left-spacing;
+  }
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 86%;
+  float: right;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+
+  @include v.sm {
+    width: 46%;
+  }
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 0 solid #ccc;
+  border-right: 15px solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 0 solid v.$bg-color;
+  border-right: 14px solid v.$bg-color;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-badge {
+  width: 22px;
+  height: 22px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  left: $line-left-spacing-mobile;
+  margin-left: -11px;
+  background-color: v.$bg-color;
+  z-index: 100;
+  border-radius: 50%;
+  border: solid v.$secondary-color;
+  border-width: 5px;
+
+  @include v.sm {
+    left: $line-left-spacing;
+  }
+}
+
+@include v.sm {
+  .timeline > li.timeline-item:nth-child(odd) > .timeline-panel {
+    float: left;
+  }
+  
+  .timeline > li.timeline-item:nth-child(odd) > .timeline-panel:before {
+    border-left-width: 15px;
+    border-right-width: 0;
+    right: -15px;
+    left: auto;
+  }
+  
+  .timeline > li.timeline-item:nth-child(odd) > .timeline-panel:after {
+    border-left-width: 14px;
+    border-right-width: 0;
+    right: -14px;
+    left: auto;
+  }
+}
+
+.timeline-title {
+  color: inherit;
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 2px !important;
+
+  @include v.md {
+    font-size: 18px;
+  }
+
+  @include v.lg {
+    font-size: 22px;
+  }
+}
+
+.timeline-detail-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timeline-spacer {
+  margin: 0 5px;
+}
+
+.timeline-detail-text {
+  align-self: baseline;
+  font-size: 12px;
+  margin-bottom: 1px !important;
+
+  @include v.sm {
+    font-size: 14px;
+  }
+
+  @include v.md {
+    font-size: 16px;
+  }
+}
+
+.timeline-date {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 1px !important;
+
+  @include v.sm {
+    font-size: 12px;
+  }
+
+  @include v.md {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+.timeline-body {
+  font-size: 12px;
+  
+  @include v.sm {
+    font-size: 14px;
+  }
+  
+  @include v.md {
+    font-size: 16px;
+  }
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}

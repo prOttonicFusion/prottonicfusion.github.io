@@ -32,7 +32,7 @@ const Projects = () =>
             )}
         </div>
         <Carousel
-            variant="dark"
+            variant="light"
             interval={null}
             controls={true}
             indicators={false}

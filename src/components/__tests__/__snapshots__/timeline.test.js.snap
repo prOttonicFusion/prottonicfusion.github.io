@@ -17,7 +17,7 @@ exports[`Timeline renders timeline correctly 1`] = `
       class="timeline"
     >
       <li
-        class="timeline-inverted"
+        class="timeline-item"
       >
         <div
           class="timeline-badge"
@@ -67,7 +67,7 @@ exports[`Timeline renders timeline correctly 1`] = `
         </div>
       </li>
       <li
-        class="timeline-normal"
+        class="timeline-item"
       >
         <div
           class="timeline-badge"
@@ -117,7 +117,7 @@ exports[`Timeline renders timeline correctly 1`] = `
         </div>
       </li>
       <li
-        class="timeline-inverted"
+        class="timeline-item"
       >
         <div
           class="timeline-badge"
@@ -165,7 +165,7 @@ exports[`Timeline renders timeline correctly 1`] = `
         </div>
       </li>
       <li
-        class="timeline-normal"
+        class="timeline-item"
       >
         <div
           class="timeline-badge"
@@ -215,7 +215,7 @@ exports[`Timeline renders timeline correctly 1`] = `
         </div>
       </li>
       <li
-        class="timeline-inverted"
+        class="timeline-item"
       >
         <div
           class="timeline-badge"

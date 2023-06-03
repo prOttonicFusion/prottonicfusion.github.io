@@ -29,8 +29,8 @@ module.exports = {
         ],
         menuLinks: [
             {
-                name: 'About',
-                link: '/#about',
+                name: 'Home',
+                link: '/#',
             },
             {
                 name: 'Projects',
@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 name: 'Brief CV',
-                link: '/brief-cv',
+                link: '/#skills',
             },
             {
                 name: 'Contact',

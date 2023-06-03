@@ -1,12 +1,12 @@
 import '../styles/global.scss'
-import '../styles/timeline.scss'
+import '../styles/components/timeline.scss'
 import React from 'react'
 import TimelineMDX from '../sections/timeline'
 import timelineData from '../data/timeline.json'
 
 const TimelineItem = ({ eventData }) => {
     return (
-        <li className={eventData.itemClass}>
+        <li className="timeline-item">
             <div className="timeline-badge">
                 <i className="glyphicon glyphicon-check"></i>
             </div>

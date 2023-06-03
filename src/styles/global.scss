@@ -1,5 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-@import "variables.scss";
+@use './variables.scss' as v;
+@import '~bootstrap/scss/bootstrap';
 
 body {
   padding: 0;
@@ -7,11 +7,12 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  color: v.$body-text-color;
+  background-color: v.$bg-color;
 }
 
 a {
-  color: $body-link-color;
+  color: v.$body-link-color;
   text-decoration: none;
 
   &:hover {
@@ -20,8 +21,8 @@ a {
 }
 
 .btn {
-  display: inline-block;
-  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -29,6 +30,14 @@ a {
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+
+  + .btn {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 
   &:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -41,214 +50,36 @@ a {
     margin-left: 1rem;
   }
 
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
+  @include v.md {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
+  @include v.lg {
+    padding: 0.75rem 1rem;
   }
-}
-
-.page-banner {
-  display: grid;
-  grid-template-areas: "content";
-  color: $banner-heading-color;
-  text-align: center;
-  width: 100%;
-  height: clamp(500px, 50vh, 1800px);
-  overflow: hidden;
-
-  .site-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 10px;
-
-    @include large {
-      margin-bottom: 1.5rem;
-    }
-
-    @include medium {
-      margin-bottom: 1rem;
-    }
-
-    @include small {
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  .site-title {
-    color: #fff;
-    font-weight: 400;
-    font-size: 24px;
-    letter-spacing: -1px;
-    text-decoration: none;
-
-    @include small {
-      font-size: 18px;
-    }
-  }
-
-  .site-nav {
-    padding-top: 20px;
-
-    .nav-toggle {
-      margin-left: auto;
-      border: #ffffffa8 solid 2px;
-    }
-
-    .nav-toggle-icon {
-      fill: #fff;
-    }
-
-    .custom-nav-link {
-      color: $primary-accent-color;
-    }
-
-    .custom-nav-link {
-      display: block;
-      text-align: left;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-
-    .custom-nav-link:hover {
-      color: $body-text-color;
-    }
-    
-    @include mediumAndLarge {
-      text-align: right;
-      margin-left: auto;
-      background: none;
-      
-      .custom-nav-link {
-        color: #fff;
-      }
-      
-      .custom-nav-link:hover {
-        color: #fff;
-      }
-    }
-  }
-
-  h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    opacity: 0.9;
-
-    @include large {
-      font-size: 3.25rem;
-    }
-
-    @include medium {
-      font-size: 2.25rem;
-    }
-
-    @include small {
-      font-size: 1.75rem;
-    }
-  }
-
-  p {
-    margin-bottom: 2rem;
-    font-weight: normal;
-    opacity: 0.7;
-
-    @include large {
-      font-size: 1.25rem;
-    }
-
-    @include medium {
-      font-size: 1.15rem;
-    }
-
-    @include small {
-      font-size: 1rem;
-    }
-  }
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  grid-area: content;
-}
-
-.page-banner-contents {
-  grid-area: content;
-}
-
-.profile-pic-container {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include large {
-    height: 250px;
-    width: 250px;
-  }
-
-  @include medium {
-    height: 180px;
-    width: 180px;
-  }
-
-  @include small {
-    height: 180px;
-    width: 180px;
-  }
-}
-
-.profile-pic {
-  border-radius: 50%;
-  border: 7px solid #fff;
-  height: 100%;
-  width: 100%;
-  margin: auto;
 }
 
 .main-content {
   word-wrap: break-word;
   text-align: center;
+  padding: 20px clamp(25px, 12%, 100px);
+  font-size: 1rem;
+  margin: 0 auto;
 
-  :first-child {
+  ul, ol {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  &:first-child {
     margin-top: 0;
   }
 
-  @include large {
-    max-width: 64rem;
-    padding: 3rem 1.25rem;
-    margin: 0 auto;
+  @include v.md {
+    padding: 30px 45px;
     font-size: 1.1rem;
-  }
-
-  @include medium {
-    padding: 3rem 4rem;
-    font-size: 1.1rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-
-    ul,
-    ol {
-      margin-top: 0;
-      padding-left: 0;
-    }
+    max-width: 1200px;
   }
 
   kbd {
@@ -269,16 +100,11 @@ a {
     max-width: 100%;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $primary-accent-color;
+    color: v.$primary-color;
   }
 
   p {
@@ -289,8 +115,8 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9rem;
-    color: $code-text-color;
-    background-color: $code-bg-color;
+    color: v.$code-text-color;
+    background-color: v.$code-bg-color;
     border-radius: 0.3rem;
   }
 
@@ -299,17 +125,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: v.$code-text-color;
     word-wrap: normal;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    background-color: v.$code-bg-color;
+    border: solid 1px v.$border-color;
     border-radius: 0.3rem;
 
     > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: v.$code-text-color;
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -326,8 +152,7 @@ a {
     }
   }
 
-  .highlight pre,
-  pre {
+  .highlight pre, pre {
     padding: 0.8rem;
     overflow: auto;
     font-size: 0.9rem;
@@ -336,8 +161,7 @@ a {
     -webkit-overflow-scrolling: touch;
   }
 
-  pre code,
-  pre tt {
+  pre code, pre tt {
     display: inline;
     max-width: initial;
     padding: 0;
@@ -348,22 +172,20 @@ a {
     background-color: transparent;
     border: 0;
 
-    &:before,
-    &:after {
+    &:before, &:after {
       content: normal;
     }
   }
 
-  ul,
-  ol {
+  ul, ol {
     margin-top: 0;
   }
 
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    color: v.$blockquote-text-color;
+    border-left: 0.3rem solid v.$border-color;
 
     > :first-child {
       margin-top: 0;
@@ -386,10 +208,9 @@ a {
       font-weight: bold;
     }
 
-    th,
-    td {
+    th, td {
       padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
+      border: 1px solid v.$table-border-color;
     }
   }
 
@@ -414,26 +235,19 @@ a {
     padding: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: $hr-border-color;
+    background-color: v.$hr-border-color;
     border: 0;
   }
 }
 
 .site-footer {
+  font-size: 0.9rem;
   padding-top: 1.25rem;
   margin-top: 2rem;
-
-  @include large {
+  margin-bottom: 0.5rem;
+  
+  @include v.md {
     font-size: 1rem;
-  }
-
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
   }
 }
 
@@ -442,33 +256,28 @@ a {
 }
 
 .social-icon {
-  color: $body-text-color; // IE8
-  fill: $body-text-color; // IE8
+  color: v.$body-text-color; // IE8
+  fill: v.$body-text-color; // IE8
   margin: 0 6px;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
 
   &:hover {
     text-decoration: none;
-    color: $primary-accent-color; // IE8
-    fill: $primary-accent-color;
+    color: v.$primary-color; // IE8
+    fill: v.$primary-color;
     transform: scale(1.25);
     transition: color 0.5s, transform 0.2s ease-out;
   }
 
-  @include large {
+  @include v.md {
     width: 32px;
     height: 32px;
   }
-
-  @include medium {
+  
+  @include v.lg {
     width: 32px;
     height: 32px;
-  }
-
-  @include small {
-    width: 36px;
-    height: 36px;
   }
 }
 
@@ -476,84 +285,17 @@ a {
   display: inline-block;
 }
 
-.project-cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-
-   @include small {
-     display: none;
-   }
-}
-
-.project-cards-container-mobile {
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-  overflow-x: hidden;
-
-  @include large {
-    display: none;
-  }
-}
-
-.project-image-container {
-  @include mediumAndLarge {
-    height: 200px;
-  }
-}
-
-.project-card {
-  @include small {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    min-height: 32rem;
-    width: 17rem !important;
-  }
-}
-
-.project-card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-keywords-container {
-  margin-top: 12px;
-  text-align: center;
-  font-style: normal;
-  font-size: 15px;
-}
-
-.project-keyword {
-  border-style: solid;
-  border-color: #81888f;
-  border-width: 1.5px;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 0px 10px;
-  margin: 4px 4px;
-}
-
-.card-footer {
-  background-color: #fff;
-}
-
 .dev-icon {
   display: inline;
   white-space: nowrap;
   overflow: hidden;
-  background: #fff;
+  background: none;
   height: 15px;
   margin: 0 3px;
 }
 
 .section-container {
-  padding: 60px 0;
-
-  @include small {
-    padding: 25px 0;
-  }
+  padding: 25px 0;
 }
 
 #publications {

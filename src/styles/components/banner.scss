@@ -1,0 +1,39 @@
+@use '../variables.scss' as v;
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    grid-area: content;
+}
+
+.page-banner {
+    display: grid;
+    grid-template-areas: "content";
+    color: v.$banner-heading-color;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    .site-title {
+      color: #fff;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: -1px;
+      text-decoration: none;
+      
+      @include v.md {
+          font-size: 24px;
+      }
+    }
+}
+
+.page-banner-contents {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -82px;
+    padding-left: 21px;
+    padding-right: 21px;
+}

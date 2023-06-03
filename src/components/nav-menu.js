@@ -1,3 +1,4 @@
+import '../styles/components/nav-menu.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, useStaticQuery } from 'gatsby'
@@ -38,9 +39,9 @@ const NavMenu = ({ location }) => {
                     restoreFocus={false}
                     style={{ height: 'fit-content' }}
                 >
-                    <Offcanvas.Header closeButton />
-                    <Offcanvas.Body>
-                        <Nav className="justify-content-end flex-grow-1 pe-3">
+                    <Offcanvas.Header closeButton closeVariant="white" className="mobile-nav-header" />
+                    <Offcanvas.Body className="nav-container">
+                        <Nav className="nav">
                             {data.site.siteMetadata.menuLinks.map(
                                 (menuLink) =>
                                     <Nav.Link
