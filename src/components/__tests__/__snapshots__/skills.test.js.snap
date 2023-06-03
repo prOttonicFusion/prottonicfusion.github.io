@@ -3,7 +3,6 @@
 exports[`Skills section renders skills correctly 1`] = `
 <div
   id="skills"
-  style="padding: 30px 4px;"
 >
   <div>
     <div>

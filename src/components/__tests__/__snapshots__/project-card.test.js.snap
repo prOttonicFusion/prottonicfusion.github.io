@@ -3,7 +3,6 @@
 exports[`Project card renders card correctly with GitHub icon 1`] = `
 <div
   class="project-card card"
-  style="width: 18rem; margin: 1.25rem;"
 >
   <div
     class="project-image-container"
