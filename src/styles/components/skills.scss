@@ -32,7 +32,10 @@
 
   @include v.sm {
     grid-template-columns: 1fr 1fr;
-    column-gap: clamp(50px, 5vw, 200px);
+    column-gap: clamp(40px, 8%, 200px);
+    $skills-container-padding: clamp(20px, 10%, 190px);
+    padding-left: $skills-container-padding;
+    padding-right: $skills-container-padding;
   }
 }
 
