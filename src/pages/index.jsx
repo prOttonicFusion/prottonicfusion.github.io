@@ -15,7 +15,7 @@ import Timeline from '../components/timeline'
 import Publications from '../components/publications'
 import ClientOnly from '../components/client-only'
 
-export default function Home({ data }) {
+const Home = ({ data }) => {
     return (
         <>
             <NavMenu location={'/'} />
@@ -50,6 +50,10 @@ export default function Home({ data }) {
         </>
     )
 }
+
+export default Home
+
+export const Head = () => <SEO title="Error" />
 
 export const pageQuery = graphql`
   query IndexPageQuery {
