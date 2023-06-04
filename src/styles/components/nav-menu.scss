@@ -71,12 +71,8 @@ $mobile-nav-button-top: 20px;
   stroke: v.$primary-color;
   stroke-width: 1.5px;
   width: 28px;
-  transition: opacity 0.3s;
-}
-
-.hamburger:hover {
-  background-color: v.$accent-color;
-  transition: background-color v.$link-hover-tansition-duration ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  shape-rendering: geometricPrecision;
 }
 
 @keyframes menu-expand-animation {
