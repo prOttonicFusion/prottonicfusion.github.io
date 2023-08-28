@@ -40,14 +40,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  Python
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -55,6 +47,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Python
                 </div>
               </div>
             </span>
@@ -85,6 +85,14 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
                 <div
                   class="tooltip-label"
                 >
@@ -93,6 +101,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   />
                   JavaScript
                 </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
                 <div>
                   <img
                     alt="Dev icon"
@@ -101,10 +113,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     src="test-file-stub"
                   />
                 </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
                 <div
                   class="tooltip-label"
                 >
@@ -113,6 +121,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   />
                   TypeScript
                 </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
                 <div>
                   <img
                     alt="Dev icon"
@@ -121,10 +133,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     src="test-file-stub"
                   />
                 </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
                 <div
                   class="tooltip-label"
                 >
@@ -132,14 +140,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     class="tooltip-point"
                   />
                   node.js
-                </div>
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
                 </div>
               </div>
             </span>
@@ -170,14 +170,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  C++
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -185,6 +177,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  C++
                 </div>
               </div>
             </span>
@@ -215,14 +215,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  Fortran95
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -230,6 +222,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Fortran95
                 </div>
               </div>
             </span>
@@ -273,14 +273,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  React/React Native
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -288,6 +280,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  React/React Native
                 </div>
               </div>
             </span>
@@ -318,6 +318,14 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
                 <div
                   class="tooltip-label"
                 >
@@ -326,6 +334,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   />
                   HTML
                 </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
                 <div>
                   <img
                     alt="Dev icon"
@@ -334,10 +346,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     src="test-file-stub"
                   />
                 </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
                 <div
                   class="tooltip-label"
                 >
@@ -345,14 +353,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     class="tooltip-point"
                   />
                   CSS
-                </div>
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
                 </div>
               </div>
             </span>
@@ -383,14 +383,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  QT
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -398,6 +390,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  QT
                 </div>
               </div>
             </span>
@@ -428,6 +428,14 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
                 <div
                   class="tooltip-label"
                 >
@@ -436,6 +444,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   />
                   PostgreSQL
                 </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
                 <div>
                   <img
                     alt="Dev icon"
@@ -444,10 +456,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     src="test-file-stub"
                   />
                 </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
                 <div
                   class="tooltip-label"
                 >
@@ -455,14 +463,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     class="tooltip-point"
                   />
                   SQLite
-                </div>
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
                 </div>
               </div>
             </span>
@@ -506,14 +506,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  Docker
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -521,6 +513,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Docker
                 </div>
               </div>
             </span>
@@ -551,6 +551,14 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
                 <div
                   class="tooltip-label"
                 >
@@ -559,6 +567,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   />
                   macOs
                 </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
                 <div>
                   <img
                     alt="Dev icon"
@@ -567,10 +579,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     src="test-file-stub"
                   />
                 </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
                 <div
                   class="tooltip-label"
                 >
@@ -578,14 +586,6 @@ exports[`Skills section renders skills correctly 1`] = `
                     class="tooltip-point"
                   />
                   Ubuntu/Linux
-                </div>
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
                 </div>
               </div>
             </span>
@@ -629,14 +629,6 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  OpenMPI
-                </div>
                 <div>
                   <img
                     alt="Dev icon"
@@ -644,6 +636,14 @@ exports[`Skills section renders skills correctly 1`] = `
                     height="15px"
                     src="test-file-stub"
                   />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  OpenMPI
                 </div>
               </div>
             </span>
