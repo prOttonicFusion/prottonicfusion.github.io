@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import SkillsMDX from '../sections/skills'
 import skillsData from '../data/skills.json'
-import DevIcon from './dev-icon'
 
 // const SkillItem = ({ name, devIcons, level }) =>
 //     <div className="skill-item">
@@ -24,17 +23,18 @@ import DevIcon from './dev-icon'
 const processData = (skillsData) => {
     const dataSet = []
 
-    for (const skillCategory in skillsData) {
+    for (const [index, skillCategory] of skillsData.entries()) {
         const obj = {
             name: skillCategory.categoryTitle,
             children: [],
         }
 
-        for (const skill in skillCategory.skills) {
-            obj.push({
+        for (const skill of skillCategory.skills) {
+            obj.children.push({
                 name: skill.title,
-                // className: prop.toLowerCase(),
-                value: skill.level,
+                className: `skills-category-${index}`,
+                devIcons: skill.devIcons,
+                value: skill.level / 1.1,
             })
         }
 
@@ -44,7 +44,7 @@ const processData = (skillsData) => {
     return { children: dataSet }
 }
 
-const diameter = 500
+const diameter = 900
 
 const SkillCategory = ({ skillsData }) => {
     const chartRef = useRef(null)
@@ -64,7 +64,7 @@ const SkillCategory = ({ skillsData }) => {
         const root = pack(
             d3.hierarchy(processData(skillsData))
                 .sum((d) => d.value)
-                //.filter((d) => !d.children) // drop outer circle
+                .sort((a, b) => b.value - a.value)
         )
 
         // Place each node according to the layout's x and y values
@@ -75,17 +75,36 @@ const SkillCategory = ({ skillsData }) => {
             .attr('transform', (d) => `translate(${d.x},${d.y})`)
 
         // Add a title
-        node.append('title')
-            .text((d) => `${d.ancestors().map((d) => d.data.name).reverse().join('/')}`)
+        // node.append('title')
+        //     .text((d) => `${d.ancestors().map((d) => d.data.name).reverse().join('/')}`)
 
-        // Add a filled or stroked circle
-        node.append('circle')
-            .attr('fill', (d) => d.children ? '#fff' : '#ddd')
-            .attr('stroke', (d) => d.children ? '#bbb' : null)
+        // Add circles to lowest level nodes
+        node.filter((d) => !d.children)
+            .append('circle')
+            .attr('fill', '#ddd')
             .attr('r', (d) => d.r)
+            .attr('class', (d) => d.data.className)
+
+        const text = node
+            .filter((d) => !d.children && d.r > 10)
+            .append('text')
+            .attr('clip-path', (d) => `circle(${d.r})`)
+
+        text.append('tspan')
+            .attr('x', (d) => -d.r / 2)
+            .attr('y', 0)
+            .text((d) => d.data.name)
+
+        node.filter((d) => !d.children && d.r > 10)
+            .append('svg:image')
+            .attr('x', -12)
+            .attr('y', 12)
+            .attr('width', 24)
+            .attr('height', 24)
+            .attr('xlink:href', (d) => `/assets/devIcons/${d.data.devIcons[0]}.svg`)
 
         // Delete old elements as needed
-        // update.exit().remove()
+        svg.exit().remove()
 
     }, [skillsData])
 

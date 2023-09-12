@@ -15,8 +15,8 @@
                 "description": "",
                 "level": 100,
                 "devIcons": [
-                    "javascript",
                     "typescript",
+                    "javascript",
                     "nodejs"
                 ]
             },
@@ -25,7 +25,7 @@
                 "description": "",
                 "level": 65,
                 "devIcons": [
-                    "c++"
+                    "cplusplus"
                 ]
             },
             {
@@ -46,7 +46,7 @@
                 "description": "",
                 "level": 85,
                 "devIcons": [
-                    "react"
+                    "react-original"
                 ]
             },
             {
@@ -54,8 +54,8 @@
                 "description": "",
                 "level": 100,
                 "devIcons": [
-                    "html",
-                    "css"
+                    "html5",
+                    "css3"
                 ]
             },
             {
@@ -93,8 +93,8 @@
                 "description": "",
                 "level": 100,
                 "devIcons": [
-                    "mac",
-                    "ubuntu"
+                    "ubuntu",
+                    "apple"
                 ]
             }
         ]
@@ -107,7 +107,7 @@
                 "description": "",
                 "level": 75,
                 "devIcons": [
-                    "openmpi"
+                    "open-mpi"
                 ]
             },
             {
