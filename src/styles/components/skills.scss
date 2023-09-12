@@ -9,7 +9,6 @@
 }
 
 .skill-description-container {
-  background-color: v.$bg-color;
   text-align: left;
 }
 
@@ -25,10 +24,10 @@
 }
 
 .category-skills-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
 
   @include v.sm {
     grid-template-columns: 1fr 1fr;
@@ -40,14 +39,15 @@
 }
 
 .skill-item {
-  width: 100%;
-  margin: 0 auto 14px auto;
-  break-inside: avoid;
-
-  @include v.md {
-    margin-bottom: 16px;
-    width: clamp(100px, 100%, 400px);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
 }
 
 .progress-bar {
@@ -59,12 +59,4 @@
   height: 16px;
   width: 100%;
   max-width: 100%;
-}
-
-.progress {
-  background-color: v.$accent-color;
-  border-radius: 3px;
-  width: 0;
-  height: 100%;
-  transition: width 0.5s ease-in;
 }
