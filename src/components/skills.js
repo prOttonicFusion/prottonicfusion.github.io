@@ -1,6 +1,6 @@
 import '../styles/global.scss'
 import '../styles/components/skills.scss'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import SkillsMDX from '../sections/skills'
 import skillsData from '../data/skills.json'
@@ -91,14 +91,15 @@ const SkillCategory = ({ skillsData }) => {
             .attr('clip-path', (d) => `circle(${d.r})`)
 
         text.append('tspan')
-            .attr('x', (d) => -d.r / 2)
-            .attr('y', 0)
+            .attr('x', 0)
+            .attr('y', -6)
+            .attr('text-anchor', 'middle')
             .text((d) => d.data.name)
 
         node.filter((d) => !d.children && d.r > 10)
             .append('svg:image')
             .attr('x', -12)
-            .attr('y', 12)
+            .attr('y', 8)
             .attr('width', 24)
             .attr('height', 24)
             .attr('xlink:href', (d) => `/assets/devIcons/${d.data.devIcons[0]}.svg`)
@@ -110,8 +111,8 @@ const SkillCategory = ({ skillsData }) => {
 
     return <svg
         ref={chartRef}
-        width={diameter}
-        height={diameter}
+        className="skills-chart"
+        viewBox={`0 0 ${diameter} ${diameter}`}
     />
 }
 /**
