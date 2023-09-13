@@ -40,7 +40,6 @@ const Home = ({ data }) => {
             <Layout>
                 <SEO title="Home" />
                 <Projects />
-                <Skills />
                 <Timeline />
                 <Publications />
                 <Contact />
