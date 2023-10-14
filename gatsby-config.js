@@ -36,10 +36,10 @@ module.exports = {
                 name: 'Projects',
                 link: '/#projects',
             },
-            // {
-            //     name: 'Brief CV',
-            //     link: '/#skills',
-            // },
+            {
+                name: 'Brief CV',
+                link: '/#skills',
+            },
             {
                 name: 'Contact',
                 link: '/#contact',
