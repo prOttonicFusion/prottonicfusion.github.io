@@ -3,21 +3,21 @@
         "categoryTitle": "Languages",
         "skills": [
             {
-                "title": "Python",
-                "description": "",
-                "level": 100,
-                "devIcons": [
-                    "python"
-                ]
-            },
-            {
-                "title": "JavaScript/NodeJS",
+                "title": "JavaScript/TypeScript",
                 "description": "",
                 "level": 100,
                 "devIcons": [
                     "javascript",
                     "typescript",
                     "nodejs"
+                ]
+            },
+            {
+                "title": "Python",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "python"
                 ]
             },
             {
@@ -59,14 +59,6 @@
                 ]
             },
             {
-                "title": "Qt",
-                "description": "",
-                "level": 60,
-                "devIcons": [
-                    "qt"
-                ]
-            },
-            {
                 "title": "Databases/SQL",
                 "description": "",
                 "level": 85,
@@ -95,6 +87,22 @@
                 "devIcons": [
                     "mac",
                     "ubuntu"
+                ]
+            },
+            {
+                "title": "Google Cloud",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "googlecloud"
+                ]
+            },
+            {
+                "title": "AWS",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "aws"
                 ]
             }
         ]
