@@ -29,6 +29,11 @@ import typescriptLogo from '../assets/devIcons/typescript-plain.svg'
 import ubuntuLogo from '../assets/devIcons/ubuntu-plain.svg'
 import wordpressLogo from '../assets/devIcons/wordpress-plain.svg'
 import postgresLogo from '../assets/devIcons/postgresql-plain.svg'
+import awsLogo from '../assets/devIcons/aws.svg'
+import googleCloudLogo from '../assets/devIcons/google-cloud.svg'
+import kubernetesLogo from '../assets/devIcons/kubernetes.svg'
+import rancherLogo from '../assets/devIcons/rancher.svg'
+import terraformLogo from '../assets/devIcons/terraform.svg'
 
 const iconData = {
     'c++': {
@@ -138,6 +143,26 @@ const iconData = {
     postgresql: {
         icon: postgresLogo,
         label: 'PostgreSQL',
+    },
+    aws: {
+        icon: awsLogo,
+        label: 'AWS',
+    },
+    googlecloud: {
+        icon: googleCloudLogo,
+        label: 'Google Cloud',
+    },
+    kubernetes: {
+        icon: kubernetesLogo,
+        label: 'Kubernetes',
+    },
+    rancher: {
+        icon: rancherLogo,
+        label: 'Rancher',
+    },
+    terraform: {
+        icon: terraformLogo,
+        label: 'Terraform',
     },
 }
 

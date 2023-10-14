@@ -15,9 +15,6 @@ const SkillItem = ({ name, devIcons, level }) =>
                 )}
             </span>
         </div>
-        <div className="progress-bar">
-            <span className="progress" style={{ width: `${level}%` }}></span>
-        </div>
     </div>
 
 const SkillCategory = ({ skills, title }) =>

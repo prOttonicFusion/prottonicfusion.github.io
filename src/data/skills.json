@@ -3,21 +3,21 @@
         "categoryTitle": "Languages",
         "skills": [
             {
-                "title": "Python",
-                "description": "",
-                "level": 100,
-                "devIcons": [
-                    "python"
-                ]
-            },
-            {
-                "title": "JavaScript/NodeJS",
+                "title": "JavaScript/TypeScript",
                 "description": "",
                 "level": 100,
                 "devIcons": [
                     "javascript",
                     "typescript",
                     "nodejs"
+                ]
+            },
+            {
+                "title": "Python",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "python"
                 ]
             },
             {
@@ -59,15 +59,7 @@
                 ]
             },
             {
-                "title": "Qt",
-                "description": "",
-                "level": 60,
-                "devIcons": [
-                    "qt"
-                ]
-            },
-            {
-                "title": "Databases/SQL",
+                "title": "Postgres/SQL",
                 "description": "",
                 "level": 85,
                 "devIcons": [
@@ -78,7 +70,36 @@
         ]
     },
     {
-        "categoryTitle": "Platforms",
+        "categoryTitle": "Cloud Platforms",
+        "skills": [
+            {
+                "title": "Google Cloud",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "googlecloud"
+                ]
+            },
+            {
+                "title": "AWS",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "aws"
+                ]
+            },
+            {
+                "title": "Terraform",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "terraform"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "Distributed Systems",
         "skills": [
             {
                 "title": "Docker",
@@ -89,12 +110,19 @@
                 ]
             },
             {
-                "title": "Unix/Linux",
+                "title": "Kubernetes",
                 "description": "",
-                "level": 100,
+                "level": 80,
                 "devIcons": [
-                    "mac",
-                    "ubuntu"
+                    "kubernetes"
+                ]
+            },
+            {
+                "title": "Rancher",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "rancher"
                 ]
             }
         ]
