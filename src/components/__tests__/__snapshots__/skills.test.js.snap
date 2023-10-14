@@ -32,52 +32,7 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-title"
             >
-              Python
-            </span>
-            <span
-              class="skill-badge-container"
-            >
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  Python
-                </div>
-              </div>
-            </span>
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 100%;"
-            />
-          </div>
-        </div>
-        <div
-          class="skill-item"
-        >
-          <div
-            class="skill-description-container"
-          >
-            <span
-              class="skill-title"
-            >
-              JavaScript/NodeJS
+              JavaScript/TypeScript
             </span>
             <span
               class="skill-badge-container"
@@ -144,13 +99,42 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
+        </div>
+        <div
+          class="skill-item"
+        >
           <div
-            class="progress-bar"
+            class="skill-description-container"
           >
             <span
-              class="progress"
-              style="width: 100%;"
-            />
+              class="skill-title"
+            >
+              Python
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Python
+                </div>
+              </div>
+            </span>
           </div>
         </div>
         <div
@@ -189,14 +173,6 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 65%;"
-            />
-          </div>
         </div>
         <div
           class="skill-item"
@@ -233,14 +209,6 @@ exports[`Skills section renders skills correctly 1`] = `
                 </div>
               </div>
             </span>
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 80%;"
-            />
           </div>
         </div>
       </div>
@@ -291,14 +259,6 @@ exports[`Skills section renders skills correctly 1`] = `
                 </div>
               </div>
             </span>
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 85%;"
-            />
           </div>
         </div>
         <div
@@ -357,14 +317,6 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 100%;"
-            />
-          </div>
         </div>
         <div
           class="skill-item"
@@ -375,52 +327,7 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-title"
             >
-              Qt
-            </span>
-            <span
-              class="skill-badge-container"
-            >
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  QT
-                </div>
-              </div>
-            </span>
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 60%;"
-            />
-          </div>
-        </div>
-        <div
-          class="skill-item"
-        >
-          <div
-            class="skill-description-container"
-          >
-            <span
-              class="skill-title"
-            >
-              Databases/SQL
+              Postgres/SQL
             </span>
             <span
               class="skill-badge-container"
@@ -467,13 +374,129 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="skill-category"
+    >
+      <div
+        class="skill-category-title"
+      >
+        Cloud Platforms
+      </div>
+      <div
+        class="category-skills-container"
+      >
+        <div
+          class="skill-item"
+        >
           <div
-            class="progress-bar"
+            class="skill-description-container"
           >
             <span
-              class="progress"
-              style="width: 85%;"
-            />
+              class="skill-title"
+            >
+              Google Cloud
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Google Cloud
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              AWS
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  AWS
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              Terraform
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Terraform
+                </div>
+              </div>
+            </span>
           </div>
         </div>
       </div>
@@ -484,7 +507,7 @@ exports[`Skills section renders skills correctly 1`] = `
       <div
         class="skill-category-title"
       >
-        Platforms
+        Distributed Systems
       </div>
       <div
         class="category-skills-container"
@@ -525,14 +548,6 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 75%;"
-            />
-          </div>
         </div>
         <div
           class="skill-item"
@@ -543,7 +558,7 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-title"
             >
-              Unix/Linux
+              Kubernetes
             </span>
             <span
               class="skill-badge-container"
@@ -565,9 +580,26 @@ exports[`Skills section renders skills correctly 1`] = `
                   <div
                     class="tooltip-point"
                   />
-                  macOs
+                  Kubernetes
                 </div>
               </div>
+            </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              Rancher
+            </span>
+            <span
+              class="skill-badge-container"
+            >
               <div
                 class="tooltip-container dev-icon-container"
               >
@@ -585,18 +617,10 @@ exports[`Skills section renders skills correctly 1`] = `
                   <div
                     class="tooltip-point"
                   />
-                  Ubuntu/Linux
+                  Rancher
                 </div>
               </div>
             </span>
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 100%;"
-            />
           </div>
         </div>
       </div>
@@ -648,14 +672,6 @@ exports[`Skills section renders skills correctly 1`] = `
               </div>
             </span>
           </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 75%;"
-            />
-          </div>
         </div>
         <div
           class="skill-item"
@@ -670,14 +686,6 @@ exports[`Skills section renders skills correctly 1`] = `
             </span>
             <span
               class="skill-badge-container"
-            />
-          </div>
-          <div
-            class="progress-bar"
-          >
-            <span
-              class="progress"
-              style="width: 95%;"
             />
           </div>
         </div>
