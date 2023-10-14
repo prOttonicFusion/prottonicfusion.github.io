@@ -59,7 +59,7 @@
                 ]
             },
             {
-                "title": "Databases/SQL",
+                "title": "Postgres/SQL",
                 "description": "",
                 "level": 85,
                 "devIcons": [
@@ -70,25 +70,8 @@
         ]
     },
     {
-        "categoryTitle": "Platforms",
+        "categoryTitle": "Cloud Platforms",
         "skills": [
-            {
-                "title": "Docker",
-                "description": "",
-                "level": 75,
-                "devIcons": [
-                    "docker"
-                ]
-            },
-            {
-                "title": "Unix/Linux",
-                "description": "",
-                "level": 100,
-                "devIcons": [
-                    "mac",
-                    "ubuntu"
-                ]
-            },
             {
                 "title": "Google Cloud",
                 "description": "",
@@ -103,6 +86,43 @@
                 "level": 80,
                 "devIcons": [
                     "aws"
+                ]
+            },
+            {
+                "title": "Terraform",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "terraform"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "Distributed Systems",
+        "skills": [
+            {
+                "title": "Docker",
+                "description": "",
+                "level": 75,
+                "devIcons": [
+                    "docker"
+                ]
+            },
+            {
+                "title": "Kubernetes",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "kubernetes"
+                ]
+            },
+            {
+                "title": "Rancher",
+                "description": "",
+                "level": 80,
+                "devIcons": [
+                    "rancher"
                 ]
             }
         ]
