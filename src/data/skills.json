@@ -39,37 +39,6 @@
         ]
     },
     {
-        "categoryTitle": "Full-Stack",
-        "skills": [
-            {
-                "title": "React Native",
-                "description": "",
-                "level": 85,
-                "devIcons": [
-                    "react"
-                ]
-            },
-            {
-                "title": "HTML + CSS",
-                "description": "",
-                "level": 100,
-                "devIcons": [
-                    "html",
-                    "css"
-                ]
-            },
-            {
-                "title": "Postgres/SQL",
-                "description": "",
-                "level": 85,
-                "devIcons": [
-                    "postgresql",
-                    "sqlite"
-                ]
-            }
-        ]
-    },
-    {
         "categoryTitle": "DevOps",
         "skills": [
             {
@@ -118,6 +87,41 @@
                 "level": 80,
                 "devIcons": [
                     "rancher"
+                ]
+            }
+        ]
+    },
+    {
+        "categoryTitle": "Frontend",
+        "skills": [
+            {
+                "title": "React Native",
+                "description": "",
+                "level": 85,
+                "devIcons": [
+                    "react"
+                ]
+            },
+            {
+                "title": "HTML + CSS",
+                "description": "",
+                "level": 100,
+                "devIcons": [
+                    "html",
+                    "css"
+                ]
+            }
+    },
+    {
+        "categoryTitle": "Data",
+        "skills": [
+            {
+                "title": "Postgres/SQL",
+                "description": "",
+                "level": 85,
+                "devIcons": [
+                    "postgresql",
+                    "sqlite"
                 ]
             }
         ]
