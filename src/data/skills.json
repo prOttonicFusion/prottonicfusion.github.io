@@ -70,7 +70,7 @@
         ]
     },
     {
-        "categoryTitle": "Cloud Platforms",
+        "categoryTitle": "DevOps",
         "skills": [
             {
                 "title": "Google Cloud",
@@ -95,12 +95,7 @@
                 "devIcons": [
                     "terraform"
                 ]
-            }
-        ]
-    },
-    {
-        "categoryTitle": "Distributed Systems",
-        "skills": [
+            },
             {
                 "title": "Docker",
                 "description": "",
