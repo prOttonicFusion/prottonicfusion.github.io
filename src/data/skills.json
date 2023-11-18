@@ -111,17 +111,17 @@
                     "css"
                 ]
             }
+        ]
     },
     {
         "categoryTitle": "Data",
         "skills": [
             {
-                "title": "Postgres/SQL",
+                "title": "PostgreSQL",
                 "description": "",
                 "level": 85,
                 "devIcons": [
-                    "postgresql",
-                    "sqlite"
+                    "postgresql"
                 ]
             }
         ]
