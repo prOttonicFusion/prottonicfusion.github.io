@@ -6,7 +6,7 @@ const ttfFonts = [
     'RobotoMono-Bold.ttf',
     'Roboto-Regular.ttf',
     'Roboto-Light.ttf',
-    'Roboto-LightItalic.ttf',
+    'Roboto-Italic.ttf',
     'Roboto-Medium.ttf',
 ]
 
