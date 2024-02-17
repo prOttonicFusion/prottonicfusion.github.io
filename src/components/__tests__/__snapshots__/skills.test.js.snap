@@ -180,11 +180,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://fortran-lang.org/"
             >
               Fortran95
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -304,11 +305,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://www.terraform.io/"
             >
               Terraform
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -341,11 +343,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://www.docker.com/"
             >
               Docker
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -378,11 +381,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://kubernetes.io/"
             >
               Kubernetes
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -415,11 +419,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://rancher.com/"
             >
               Rancher
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -465,11 +470,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://reactnative.dev/"
             >
               React Native
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -572,11 +578,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://www.postgresql.org/"
             >
               PostgreSQL
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -603,6 +610,44 @@ exports[`Skills section renders skills correctly 1`] = `
             </span>
           </div>
         </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <a
+              class="skill-title"
+              href="https://pandas.pydata.org/"
+            >
+              pandas
+            </a>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  pandas
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -622,11 +667,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://www.open-mpi.org/"
             >
               OpenMPI
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             >
@@ -659,11 +705,12 @@ exports[`Skills section renders skills correctly 1`] = `
           <div
             class="skill-description-container"
           >
-            <span
+            <a
               class="skill-title"
+              href="https://lammps.sandia.gov/"
             >
               LAMMPS
-            </span>
+            </a>
             <span
               class="skill-badge-container"
             />

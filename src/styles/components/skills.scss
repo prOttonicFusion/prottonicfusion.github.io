@@ -45,4 +45,14 @@
 
 .skill-item {
   margin-left: 15px;
+
+  a {
+    color: v.$secondary-color;
+    text-decoration: none;
+    transition: color v.$link-hover-tansition-duration;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -34,6 +34,7 @@ import googleCloudLogo from '../assets/devIcons/google-cloud.svg'
 import kubernetesLogo from '../assets/devIcons/kubernetes.svg'
 import rancherLogo from '../assets/devIcons/rancher.svg'
 import terraformLogo from '../assets/devIcons/terraform.svg'
+import pandasLogo from '../assets/devIcons/pandas.svg'
 
 const iconData = {
     'c++': {
@@ -99,6 +100,10 @@ const iconData = {
     openmpi: {
         icon: openmpiLogo,
         label: 'OpenMPI',
+    },
+    pandas: {
+        icon: pandasLogo,
+        label: 'pandas',
     },
     photoshop: {
         icon: photoshopLogo,
