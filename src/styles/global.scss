@@ -1,36 +1,10 @@
 @use './variables.scss' as v;
 @import '~bootstrap/scss/bootstrap';
 
-// Fonts
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-  src: url(/fonts/RobotoMono-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: normal;
-  font-display: swap;
-  font-style: italic;
-  src: url(/fonts/RobotoMono-Italict.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: bold;
-  font-display: swap;
-  font-style: normal;
-  src: url(/fonts/RobotoMono-Bold.ttf) format("truetype");
-}
-
 body {
+  @include v.base-font;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: v.$body-text-color;
@@ -127,10 +101,9 @@ a {
   }
 
   h1, h2, h3, h4, h5, h6 {
+    @include v.heading-font;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-family: "Roboto Mono", "Courier New", monospace;
-    font-weight: 600;
     color: v.$primary-color;
   }
 

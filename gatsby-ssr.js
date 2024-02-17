@@ -1,30 +1,26 @@
 import * as React from 'react'
 
+const ttfFonts = [
+    'RobotoMono-Regular.ttf',
+    'RobotoMono-Italic.ttf',
+    'RobotoMono-Bold.ttf',
+    'Roboto-Regular.ttf',
+    'Roboto-Light.ttf',
+    'Roboto-LightItalic.ttf',
+    'Roboto-Medium.ttf',
+]
+
 export const onRenderBody = ({ setHeadComponents }) => {
     setHeadComponents([
-        <link
-            rel="preload"
-            href="/fonts/RobotoMono-Regular.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-            key="interFont"
-        />,
-        <link
-            rel="preload"
-            href="/fonts/RobotoMono-Italic.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-            key="interFont"
-        />,
-        <link
-            rel="preload"
-            href="/fonts/RobotoMono-Bold.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-            key="interFont"
-        />,
+        ...ttfFonts.map((font) =>
+            <link
+                rel="preload"
+                href={`/fonts/${font}`}
+                as="font"
+                type="font/ttf"
+                crossOrigin="anonymous"
+                key="interFont"
+            />
+        ),
     ])
 }

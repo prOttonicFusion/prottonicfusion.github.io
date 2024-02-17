@@ -47,3 +47,70 @@ $screen-xxl-min: 2560px;
 
 // Animations & transitions
 $link-hover-tansition-duration: 0.3s !default;
+
+// Fonts
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/RobotoMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  src: url(/fonts/RobotoMono-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/RobotoMono-Bold.ttf) format("truetype");
+}
+  
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  src: url(/fonts/Roboto-LightItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url(/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+@mixin base-font {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin heading-font {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: 700;
+}
