@@ -4,25 +4,18 @@ import PropTypes from 'prop-types'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 import cx from 'classnames'
 
-const CloseIcon = ({ className }) =>
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        className={className}
-        // Icon from https://heroicons.com/
-    >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-
-const MenuIcon = ({ className }) =>
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        className={className}
-        // Icon from https://heroicons.com/
-    >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-    </svg>
+const MenuToggleIcon = ({ isOpen }) => {
+    return (
+        <div className={cx('mobile-nav-icon', { 'open': isOpen })}>
+            <svg className="hamburger-line line-1" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M0,5 100,5" />
+            </svg>
+            <svg className="hamburger-line line-2" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path d="M0,5 100,5" />
+            </svg>
+        </div>
+    )
+}
 
 const NavMenu = () => {
     const { menuLinks } = useSiteMetadata()
@@ -37,8 +30,7 @@ const NavMenu = () => {
                 }}
             >
                 <div className="icon-container">
-                    <MenuIcon className={cx('hamburger-icon', isNavExpanded ? 'hide' : 'show')} />
-                    <CloseIcon className={cx('close-icon', isNavExpanded ? 'show' : 'hide')} />
+                    <MenuToggleIcon isOpen={isNavExpanded} />
                 </div>
             </button>
             <div

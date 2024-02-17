@@ -32,15 +32,23 @@
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center;
+
+  @include v.sm {
+    text-align: left;
+  }
 }
 
 .category-skills-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   margin-bottom: 15px;
+
+  @include v.sm {
+    align-items: start;
+  }
 }
 
 .skill-item {

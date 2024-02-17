@@ -44,6 +44,8 @@
 $mobile-nav-height: 100vh;
 $mobile-nav-button-size: 45px;
 $mobile-nav-button-top: 20px;
+$mobile-nav-icon-width: 25px;
+$mobile-nav-button-padding: 4px;
 
 .hamburger {
   position: fixed;
@@ -54,25 +56,52 @@ $mobile-nav-button-top: 20px;
   border: 0;
   height: $mobile-nav-button-size;
   width: $mobile-nav-button-size;
-  padding: 4px;
+  padding: $mobile-nav-button-padding;
   border-radius: 50%;
   background-color: v.$bg-color;
   transition: background-color 0.3s ease-in-out;
 }
 
 .icon-container {
-  display: grid;
-  grid-template-areas: "hamburger-icon";
-  justify-content: center;
+  position: relative;
+  left: -($mobile-nav-button-size - $mobile-nav-icon-width - $mobile-nav-button-padding * 2) * 0.5;
 }
 
-.hamburger-icon, .close-icon {
-  grid-area: hamburger-icon;
+.mobile-nav-icon {
+  width: $mobile-nav-icon-width;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  transition: transform 0.4s ease;
+}
+
+.line-1 {
+  top: 0;
+}
+
+.line-2 {
+  bottom: 0;
+}
+
+.hamburger-line path {
+  fill: none;
   stroke: v.$primary-color;
-  stroke-width: 1.5px;
-  width: 28px;
-  transition: opacity 0.3s ease-in-out;
-  shape-rendering: geometricPrecision;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.mobile-nav-icon.open .line-1 {
+  transform: translateY(50%) rotate(45deg);
+}
+
+.mobile-nav-icon.open .line-2 {
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 @keyframes menu-expand-animation {
@@ -81,9 +110,8 @@ $mobile-nav-button-top: 20px;
 }
 
 @keyframes menu-collapse-animation {
-  0% { opacity: 1; height: $mobile-nav-height; }
-  99% { opacity: 0; height: $mobile-nav-height; }
-  100% { opacity: 0; height: 0; }
+  0% { height: $mobile-nav-height; }
+  100% { height: 0; }
 }
 
 @include v.ltsm {
@@ -100,18 +128,21 @@ $mobile-nav-button-top: 20px;
       z-index: 14;
       flex-direction: column;
       width: 100%;
-      height: $mobile-nav-height;
+      height: 0;
       background-color: v.$bg-color;
       overflow: hidden;
-      padding-top: $mobile-nav-button-top + $mobile-nav-button-size;
     }
-
+    
     li {
       text-align: right;
       margin: 0;
       margin-top: 25px;
       margin-bottom: 25px;
       padding-right: 29px;
+      
+      &:first-child {
+        margin-top: 25px + $mobile-nav-button-top + $mobile-nav-button-size;
+      }
 
       &:hover {
         background-color: v.$accent-color;
@@ -128,10 +159,11 @@ $mobile-nav-button-top: 20px;
   .collapsed {
     ul {
       display: block;
+      height: 0;
 
       @include v.prefers-animations {
         animation-name: menu-collapse-animation;
-        animation-duration: 0.2s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
       }
     }
@@ -140,6 +172,7 @@ $mobile-nav-button-top: 20px;
   .expanded {
     ul {
       display: block;
+      height: $mobile-nav-height;
       
       @include v.prefers-animations {
         animation-name: menu-expand-animation;
@@ -147,12 +180,4 @@ $mobile-nav-button-top: 20px;
       }
     }
   }
-}
-
-.show {
-  opacity: 1;
-}
-
-.hide {
-  opacity: 0;
 }
