@@ -319,3 +319,9 @@ a {
 .publication-card-journal {
   font-style: italic;
 }
+
+.site-footer {
+  @include v.heading-font;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
