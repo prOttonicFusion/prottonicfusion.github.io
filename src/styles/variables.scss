@@ -54,7 +54,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/RobotoMono-Regular.ttf) format("truetype");
+  src: local("Roboto Mono"), url(/fonts/RobotoMono-Regular.woff) format("woff");
 }
 
 @font-face {
@@ -62,7 +62,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 400;
   font-display: swap;
   font-style: italic;
-  src: url(/fonts/RobotoMono-Italic.ttf) format("truetype");
+  src: url(/fonts/RobotoMono-Italic.woff) format("woff");
 }
 
 @font-face {
@@ -70,7 +70,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 700;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/RobotoMono-Bold.ttf) format("truetype");
+  src: url(/fonts/RobotoMono-Bold.woff) format("woff");
 }
   
 @font-face {
@@ -78,7 +78,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 300;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/Roboto-Light.ttf) format("truetype");
+  src: url(/fonts/Roboto-Light.woff) format("woff");
 }
 
 @font-face {
@@ -86,7 +86,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/Roboto-Regular.ttf) format("truetype");
+  src: local("Roboto Mono"), url(/fonts/Roboto-Regular.woff) format("woff");
 }
 
 @font-face {
@@ -94,7 +94,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 400;
   font-display: swap;
   font-style: italic;
-  src: url(/fonts/Roboto-Italic.ttf) format("truetype");
+  src: url(/fonts/Roboto-Italic.woff) format("woff");
 }
 
 @font-face {
@@ -102,7 +102,7 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 500;
   font-display: swap;
   font-style: normal;
-  src: url(/fonts/Roboto-Medium.ttf) format("truetype");
+  src: url(/fonts/Roboto-Medium.woff) format("woff");
 }
 
 @mixin base-font {
