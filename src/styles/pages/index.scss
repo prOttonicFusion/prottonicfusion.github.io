@@ -5,6 +5,8 @@
   margin-bottom: 32px;
   opacity: 0.9;
   font-size: 1.75rem;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: normal;
 
   @include v.md {
     font-size: 2.25rem;
