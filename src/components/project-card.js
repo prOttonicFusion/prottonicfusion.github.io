@@ -29,7 +29,7 @@ const ProjectCard = ({
         className="project-card"
     >
         <div className="project-image-container">
-            <Card.Img variant="top" src={image} className="project-image" />
+            <Card.Img variant="top" src={image} className="project-image" role="presentation" />
         </div>
         <Card.Body className="project-card-body">
             <div className="project-description-container">
