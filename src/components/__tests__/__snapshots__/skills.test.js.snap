@@ -219,171 +219,7 @@ exports[`Skills section renders skills correctly 1`] = `
       <div
         class="skill-category-title"
       >
-        Full-Stack
-      </div>
-      <div
-        class="category-skills-container"
-      >
-        <div
-          class="skill-item"
-        >
-          <div
-            class="skill-description-container"
-          >
-            <span
-              class="skill-title"
-            >
-              React Native
-            </span>
-            <span
-              class="skill-badge-container"
-            >
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  React/React Native
-                </div>
-              </div>
-            </span>
-          </div>
-        </div>
-        <div
-          class="skill-item"
-        >
-          <div
-            class="skill-description-container"
-          >
-            <span
-              class="skill-title"
-            >
-              HTML + CSS
-            </span>
-            <span
-              class="skill-badge-container"
-            >
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  HTML
-                </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  CSS
-                </div>
-              </div>
-            </span>
-          </div>
-        </div>
-        <div
-          class="skill-item"
-        >
-          <div
-            class="skill-description-container"
-          >
-            <span
-              class="skill-title"
-            >
-              Postgres/SQL
-            </span>
-            <span
-              class="skill-badge-container"
-            >
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  PostgreSQL
-                </div>
-              </div>
-              <div
-                class="tooltip-container dev-icon-container"
-              >
-                <div>
-                  <img
-                    alt="Dev icon"
-                    class="dev-icon"
-                    height="15px"
-                    src="test-file-stub"
-                  />
-                </div>
-                <div
-                  class="tooltip-label"
-                >
-                  <div
-                    class="tooltip-point"
-                  />
-                  SQLite
-                </div>
-              </div>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="skill-category"
-    >
-      <div
-        class="skill-category-title"
-      >
-        Cloud Platforms
+        DevOps
       </div>
       <div
         class="category-skills-container"
@@ -499,19 +335,6 @@ exports[`Skills section renders skills correctly 1`] = `
             </span>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="skill-category"
-    >
-      <div
-        class="skill-category-title"
-      >
-        Distributed Systems
-      </div>
-      <div
-        class="category-skills-container"
-      >
         <div
           class="skill-item"
         >
@@ -618,6 +441,163 @@ exports[`Skills section renders skills correctly 1`] = `
                     class="tooltip-point"
                   />
                   Rancher
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="skill-category"
+    >
+      <div
+        class="skill-category-title"
+      >
+        Frontend
+      </div>
+      <div
+        class="category-skills-container"
+      >
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              React Native
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  React/React Native
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              HTML + CSS
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  HTML
+                </div>
+              </div>
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  CSS
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="skill-category"
+    >
+      <div
+        class="skill-category-title"
+      >
+        Data
+      </div>
+      <div
+        class="category-skills-container"
+      >
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
+              PostgreSQL
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  PostgreSQL
                 </div>
               </div>
             </span>

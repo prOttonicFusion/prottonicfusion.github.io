@@ -201,7 +201,7 @@ exports[`Timeline renders timeline correctly 1`] = `
               <span
                 class="timeline-detail-text timeline-date"
               >
-                2017 - present
+                2017 - 2020
               </span>
             </span>
           </div>
