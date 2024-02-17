@@ -110,6 +110,11 @@ $link-hover-tansition-duration: 0.3s !default;
   font-weight: 400;
 }
 
+@mixin mono-font {
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-weight: 400;
+}
+
 @mixin heading-font {
   font-family: "Roboto Mono", "Courier New", monospace;
   font-weight: 700;
