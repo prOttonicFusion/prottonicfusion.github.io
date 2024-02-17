@@ -10,7 +10,7 @@
   @include v.sm {
     grid-template-columns: 1fr 1fr;
     column-gap: clamp(40px, 8%, 200px);
-    padding-left: clamp(20px, 10%, 190px);
+    padding-left: clamp(20px, 22%, 220px);
   }
 }
 
