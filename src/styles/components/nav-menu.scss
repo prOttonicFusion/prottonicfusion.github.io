@@ -64,7 +64,7 @@ $mobile-nav-button-padding: 4px;
 
 .icon-container {
   position: relative;
-  left: -($mobile-nav-button-size - $mobile-nav-icon-width - $mobile-nav-button-padding * 2) / 2;
+  left: -($mobile-nav-button-size - $mobile-nav-icon-width - $mobile-nav-button-padding * 2) * 0.5;
 }
 
 .mobile-nav-icon {
@@ -110,9 +110,8 @@ $mobile-nav-button-padding: 4px;
 }
 
 @keyframes menu-collapse-animation {
-  0% { opacity: 1; height: $mobile-nav-height; }
-  99% { opacity: 0; height: $mobile-nav-height; }
-  100% { opacity: 0; height: 0; }
+  0% { height: $mobile-nav-height; }
+  100% { height: 0; }
 }
 
 @include v.ltsm {
@@ -129,18 +128,21 @@ $mobile-nav-button-padding: 4px;
       z-index: 14;
       flex-direction: column;
       width: 100%;
-      height: $mobile-nav-height;
+      height: 0;
       background-color: v.$bg-color;
       overflow: hidden;
-      padding-top: $mobile-nav-button-top + $mobile-nav-button-size;
     }
-
+    
     li {
       text-align: right;
       margin: 0;
       margin-top: 25px;
       margin-bottom: 25px;
       padding-right: 29px;
+      
+      &:first-child {
+        margin-top: 25px + $mobile-nav-button-top + $mobile-nav-button-size;
+      }
 
       &:hover {
         background-color: v.$accent-color;
@@ -157,10 +159,11 @@ $mobile-nav-button-padding: 4px;
   .collapsed {
     ul {
       display: block;
+      height: 0;
 
       @include v.prefers-animations {
         animation-name: menu-collapse-animation;
-        animation-duration: 0.2s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
       }
     }
@@ -169,6 +172,7 @@ $mobile-nav-button-padding: 4px;
   .expanded {
     ul {
       display: block;
+      height: $mobile-nav-height;
       
       @include v.prefers-animations {
         animation-name: menu-expand-animation;
