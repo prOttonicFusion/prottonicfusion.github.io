@@ -44,6 +44,7 @@ const NavMenu = () => {
                     // Do not apply collapse animation on initial page load
                     'collapsed': isNavExpanded === false,
                 })}
+                aria-label="Main navigation menu"
             >
                 <ul>
                     {menuLinks.map(
