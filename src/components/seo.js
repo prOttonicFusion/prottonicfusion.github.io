@@ -10,58 +10,33 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, title }) => {
     const metaData = useSiteMetadata()
 
+    const fullTitle = `${title} | ${metaData.title}`
     const metaDescription = description || metaData.description
 
     return (
-        <Helmet
-            htmlAttributes={{
-                lang,
-            }}
-            title={title}
-            titleTemplate={`%s | ${metaData.title}`}
-            meta={[
-                {
-                    name: 'description',
-                    content: metaDescription,
-                },
-                {
-                    property: 'og:title',
-                    content: title,
-                },
-                {
-                    property: 'og:description',
-                    content: metaDescription,
-                },
-                {
-                    property: 'og:type',
-                    content: 'website',
-                },
-                {
-                    name: 'twitter:card',
-                    content: 'summary',
-                },
-                {
-                    name: 'twitter:creator',
-                    content: metaData.author,
-                },
-                {
-                    name: 'twitter:title',
-                    content: title,
-                },
-                {
-                    name: 'twitter:description',
-                    content: metaDescription,
-                },
-            ].concat(meta)}
-        />
+        <>
+            <Helmet
+                htmlAttributes={{
+                    lang,
+                }}
+            />
+            <title>{fullTitle}</title>
+            <meta name="description" content={metaDescription} />
+            <meta name="og:title" content={fullTitle} />
+            <meta name="og:description" content={metaDescription} />
+            <meta name="og:type" content="website" />
+            <meta name="twitter:description" content={metaDescription} />
+            <meta name="twitter:title" content={fullTitle} />
+            <meta name="twitter:creator" content={metaData.author} />
+        </>
     )
 }
 
 SEO.defaultProps = {
-    lang: 'en',
+    lang: 'en-US',
     meta: [],
     description: '',
 }

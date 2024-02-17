@@ -4,7 +4,7 @@ $primary-color: #f7f7f7 !default;
 $secondary-color: #c9c9c9 !default;
 $accent-color: #395164 !default;
 $body-text-color: #c9c9c9 !default;
-$body-link-color: #597d94 !default;
+$body-link-color: #6e8ba0 !default;
 $blockquote-text-color: #79a3b6 !default;
 
 $banner-heading-color: #fff !default;
@@ -107,6 +107,11 @@ $link-hover-tansition-duration: 0.3s !default;
 
 @mixin base-font {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin mono-font {
+  font-family: "Roboto Mono", "Courier New", monospace;
   font-weight: 400;
 }
 

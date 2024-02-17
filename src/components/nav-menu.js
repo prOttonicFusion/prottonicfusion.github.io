@@ -28,17 +28,23 @@ const NavMenu = () => {
                 onClick={() => {
                     setIsNavExpanded(!isNavExpanded)
                 }}
+                aria-label="Toggle navigation menu"
+                aria-haspopup="true"
+                aria-controls="nav-menu"
+                aria-expanded={isNavExpanded}
             >
                 <div className="icon-container">
                     <MenuToggleIcon isOpen={isNavExpanded} />
                 </div>
             </button>
-            <div
+            <nav
+                id="nav-menu"
                 className={cx('nav-menu', {
                     'expanded': isNavExpanded,
                     // Do not apply collapse animation on initial page load
                     'collapsed': isNavExpanded === false,
                 })}
+                aria-label="Main navigation menu"
             >
                 <ul>
                     {menuLinks.map(
@@ -54,7 +60,7 @@ const NavMenu = () => {
                             </li>,
                     )}
                 </ul>
-            </div>
+            </nav>
         </nav>
     )
 }

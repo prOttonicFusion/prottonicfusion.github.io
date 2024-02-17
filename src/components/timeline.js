@@ -12,7 +12,7 @@ const TimelineItem = ({ eventData }) => {
             </div>
             <div className="timeline-panel">
                 <div className="timeline-heading">
-                    <h4 className="timeline-title">{eventData.title}</h4>
+                    <h3 className="timeline-title">{eventData.title}</h3>
                     <span className="timeline-detail-container">
                         <span className="timeline-detail-text timeline-place">
                             {eventData.place}

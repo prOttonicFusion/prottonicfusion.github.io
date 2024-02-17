@@ -30,6 +30,7 @@
 }
 
 .nav-menu-link {
+  @include v.mono-font;
   color: v.$body-link-color !important;
   text-decoration: none;
   display: block;

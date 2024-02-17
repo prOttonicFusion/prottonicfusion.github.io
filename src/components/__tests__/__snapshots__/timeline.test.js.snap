@@ -32,11 +32,11 @@ exports[`Timeline renders timeline correctly 1`] = `
           <div
             class="timeline-heading"
           >
-            <h4
+            <h3
               class="timeline-title"
             >
               Software Engineer
-            </h4>
+            </h3>
             <span
               class="timeline-detail-container"
             >
@@ -82,11 +82,11 @@ exports[`Timeline renders timeline correctly 1`] = `
           <div
             class="timeline-heading"
           >
-            <h4
+            <h3
               class="timeline-title"
             >
               Software Developer
-            </h4>
+            </h3>
             <span
               class="timeline-detail-container"
             >
@@ -132,11 +132,11 @@ exports[`Timeline renders timeline correctly 1`] = `
           <div
             class="timeline-heading"
           >
-            <h4
+            <h3
               class="timeline-title"
             >
               MSc in Computational Materials Physics
-            </h4>
+            </h3>
             <span
               class="timeline-detail-container"
             >
@@ -180,11 +180,11 @@ exports[`Timeline renders timeline correctly 1`] = `
           <div
             class="timeline-heading"
           >
-            <h4
+            <h3
               class="timeline-title"
             >
               Research Assistant
-            </h4>
+            </h3>
             <span
               class="timeline-detail-container"
             >
@@ -230,11 +230,11 @@ exports[`Timeline renders timeline correctly 1`] = `
           <div
             class="timeline-heading"
           >
-            <h4
+            <h3
               class="timeline-title"
             >
               BSc in Physics
-            </h4>
+            </h3>
             <span
               class="timeline-detail-container"
             >

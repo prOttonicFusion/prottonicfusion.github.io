@@ -9,6 +9,7 @@ exports[`Project card renders card correctly with GitHub icon 1`] = `
   >
     <img
       class="card-img-top project-image"
+      role="presentation"
       src="/path/to/the/image.png"
     />
   </div>

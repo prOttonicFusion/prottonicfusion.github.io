@@ -321,7 +321,6 @@ a {
 }
 
 .site-footer {
-  @include v.heading-font;
-  font-weight: 400;
+  @include v.mono-font;
   font-size: 0.9rem;
 }
