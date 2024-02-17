@@ -2,9 +2,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
+  @include v.base-font;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: v.$body-text-color;
@@ -101,9 +101,9 @@ a {
   }
 
   h1, h2, h3, h4, h5, h6 {
+    @include v.heading-font;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-weight: normal;
     color: v.$primary-color;
   }
 

@@ -1,6 +1,7 @@
 @use '../variables' as v;
 
 .main-title {
+    @include v.heading-font;
     margin-top: 32px;
     margin-bottom: 32px;
     opacity: 0.9;
