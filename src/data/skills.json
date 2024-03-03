@@ -4,6 +4,7 @@
         "skills": [
             {
                 "title": "JavaScript/TypeScript",
+                "type": "tool",
                 "description": "",
                 "level": 100,
                 "devIcons": [
@@ -14,6 +15,7 @@
             },
             {
                 "title": "Python",
+                "type": "tool",
                 "description": "",
                 "level": 100,
                 "devIcons": [
@@ -22,6 +24,7 @@
             },
             {
                 "title": "Go",
+                "type": "tool",
                 "description": "",
                 "level": 50,
                 "devIcons": [
@@ -30,6 +33,7 @@
             },  
             {
                 "title": "C++",
+                "type": "tool",
                 "description": "",
                 "level": 65,
                 "devIcons": [
@@ -38,6 +42,7 @@
             },
             {
                 "title": "Fortran95",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "url": "https://fortran-lang.org/",
@@ -52,6 +57,7 @@
         "skills": [
             {
                 "title": "Google Cloud",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "devIcons": [
@@ -60,6 +66,7 @@
             },
             {
                 "title": "AWS",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "devIcons": [
@@ -68,6 +75,7 @@
             },
             {
                 "title": "Terraform",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "url": "https://www.terraform.io/",
@@ -77,6 +85,7 @@
             },
             {
                 "title": "Docker",
+                "type": "tool",
                 "description": "",
                 "level": 75,
                 "url": "https://www.docker.com/",
@@ -86,6 +95,7 @@
             },
             {
                 "title": "Kubernetes",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "url": "https://kubernetes.io/",
@@ -95,6 +105,7 @@
             },
             {
                 "title": "Rancher",
+                "type": "tool",
                 "description": "",
                 "level": 80,
                 "url": "https://rancher.com/",
@@ -109,6 +120,7 @@
         "skills": [
             {
                 "title": "React Native",
+                "type": "tool",
                 "description": "",
                 "level": 85,
                 "url": "https://reactnative.dev/",
@@ -118,6 +130,7 @@
             },
             {
                 "title": "HTML + CSS",
+                "type": "tool",
                 "description": "",
                 "level": 100,
                 "devIcons": [
@@ -132,6 +145,7 @@
         "skills": [
             {
                 "title": "PostgreSQL",
+                "type": "tool",
                 "description": "",
                 "level": 85,
                 "url": "https://www.postgresql.org/",
@@ -141,12 +155,21 @@
             },
             {
                 "title": "pandas",
+                "type": "tool",
                 "description": "",
                 "level": 90,
                 "url": "https://pandas.pydata.org/",
                 "devIcons": [
                     "pandas"
                 ]
+            },
+            {
+                "title": "Data lakes",
+                "type": "concept",
+                "description": "",
+                "level": 90,
+                "url": "https://en.wikipedia.org/wiki/Data_lake",
+                "devIcons": []
             }
         ]
     },
@@ -155,6 +178,7 @@
         "skills": [
             {
                 "title": "OpenMPI",
+                "type": "tool",
                 "description": "",
                 "level": 75,
                 "url": "https://www.open-mpi.org/",
@@ -164,6 +188,7 @@
             },
             {
                 "title": "LAMMPS",
+                "type": "tool",
                 "description": "",
                 "level": 95,
                 "url": "https://lammps.sandia.gov/",

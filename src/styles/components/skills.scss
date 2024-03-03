@@ -17,6 +17,10 @@
 .skill-title {
   font-size: 15px;
   margin-right: 4px;
+
+  &.concept {
+    font-style: italic;
+  }
 }
 
 .skill-description-container {
