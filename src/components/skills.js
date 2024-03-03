@@ -4,12 +4,18 @@ import React from 'react'
 import SkillsMDX from '../sections/skills'
 import skillsData from '../data/skills.json'
 import DevIcon from './dev-icon'
+import cx from 'classnames'
 
-const SkillItem = ({ name, devIcons, level, url }) =>
+const SkillItem = ({ name, devIcons, level, url, type }) =>
     <div className="skill-item">
         <div className="skill-description-container">
             {url
-                ? <a href={url} className="skill-title">{name}</a>
+                ? <a
+                    href={url}
+                    className={cx('skill-title', { 'concept': type === 'concept' })}
+                >
+                    {name}
+                </a>
                 : <span className="skill-title">{name}</span>
             }
             <span className="skill-badge-container">
@@ -27,6 +33,7 @@ const SkillCategory = ({ skills, title }) =>
             {skills.map((skill) =>
                 <SkillItem
                     name={skill.title}
+                    type={skill.type}
                     level={skill.level}
                     devIcons={skill.devIcons}
                     key={skill.title}
