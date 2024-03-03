@@ -146,6 +146,43 @@ exports[`Skills section renders skills correctly 1`] = `
             <span
               class="skill-title"
             >
+              Go
+            </span>
+            <span
+              class="skill-badge-container"
+            >
+              <div
+                class="tooltip-container dev-icon-container"
+              >
+                <div>
+                  <img
+                    alt="Dev icon"
+                    class="dev-icon"
+                    height="15px"
+                    src="test-file-stub"
+                  />
+                </div>
+                <div
+                  class="tooltip-label"
+                >
+                  <div
+                    class="tooltip-point"
+                  />
+                  Go
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <span
+              class="skill-title"
+            >
               C++
             </span>
             <span
@@ -646,6 +683,23 @@ exports[`Skills section renders skills correctly 1`] = `
                 </div>
               </div>
             </span>
+          </div>
+        </div>
+        <div
+          class="skill-item"
+        >
+          <div
+            class="skill-description-container"
+          >
+            <a
+              class="skill-title concept"
+              href="https://en.wikipedia.org/wiki/Data_lake"
+            >
+              Data lakes
+            </a>
+            <span
+              class="skill-badge-container"
+            />
           </div>
         </div>
       </div>
