@@ -35,6 +35,7 @@ import kubernetesLogo from '../assets/devIcons/kubernetes.svg'
 import rancherLogo from '../assets/devIcons/rancher.svg'
 import terraformLogo from '../assets/devIcons/terraform.svg'
 import pandasLogo from '../assets/devIcons/pandas.svg'
+import goLogo from '../assets/devIcons/go.svg'
 
 const iconData = {
     'c++': {
@@ -64,6 +65,10 @@ const iconData = {
     github: {
         icon: gitHubLogo,
         label: 'GitHub',
+    },
+    go: {
+        icon: goLogo,
+        label: 'Go',
     },
     html: {
         icon: htmlLogo,

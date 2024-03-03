@@ -21,6 +21,14 @@
                 ]
             },
             {
+                "title": "Go",
+                "description": "",
+                "level": 50,
+                "devIcons": [
+                    "go"
+                ]
+            },  
+            {
                 "title": "C++",
                 "description": "",
                 "level": 65,
