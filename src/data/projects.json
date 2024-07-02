@@ -19,21 +19,6 @@
                 ]
             },
             {
-                "name": "This site!",
-                "description": "Built using Gatsby and hosted on GitHub Pages",
-                "github": "prOttonicFusion/prOttonicFusion.github.io",
-                "image": "/assets/images/project-covers/Gatsby_Monogram.png",
-                "keywords": [
-                    {
-                        "label": "GatsbyJS",
-                        "url": "https://www.gatsbyjs.com/"
-                    },
-                    {
-                        "label": "React"
-                    }
-                ]
-            },
-            {
                 "name": "NSFoundationCoding",
                 "description": "A package for encoding Swift objects into NSFoundation containers and vice versa",
                 "github": "fjuul/NSFoundationCoding",
@@ -45,10 +30,27 @@
                 ]
             },
             {
-                "name": "Emiliaqvist.com",
-                "description": "The website of Finnish pop-soul artist Emilia Qvist",
-                "link": "https://emiliaqvist.com",
-                "image": "/assets/images/project-covers/emilia-qvist-homepage.png",
+                "name": "Koherent.io",
+                "description": "The website & various other customer-facing infrastructure at Koherent Oy",
+                "link": "https://koherent.io",
+                "image": "/assets/images/project-covers/koherent-io.jpg",
+                "keywords": [
+                    {
+                        "label": "React"
+                    },
+                    {
+                        "label": "TypeScript"
+                    },
+                    {
+                        "label": "AWS"
+                    }
+                ]
+            },
+            {
+                "name": "This site!",
+                "description": "Built using Gatsby and hosted on GitHub Pages",
+                "github": "prOttonicFusion/prOttonicFusion.github.io",
+                "image": "/assets/images/project-covers/Gatsby_Monogram.png",
                 "keywords": [
                     {
                         "label": "GatsbyJS",
@@ -56,9 +58,6 @@
                     },
                     {
                         "label": "React"
-                    },
-                    {
-                        "label": "Google Cloud"
                     }
                 ]
             },
@@ -94,17 +93,6 @@
                 ]
             },
             {
-                "name": "Oivahankinta.fi",
-                "description": "The website of Oiva Hankinta",
-                "wordpress": "https://oivahankinta.fi",
-                "image": "/assets/images/project-covers/oiva-screenshot.png",
-                "keywords": [
-                    {
-                        "label": "WordPress"
-                    }
-                ]
-            },
-            {
                 "name": "Orbital Motion Simulator",
                 "description": "A Velocity Verlet integrator for simulating planetary orbits in three dimensions",
                 "github": "prOttonicFusion/orbital-motion-simulator",
@@ -112,6 +100,24 @@
                 "keywords": [
                     {
                         "label": "Fortran"
+                    }
+                ]
+            },
+            {
+                "name": "Emiliaqvist.com",
+                "description": "The website of Finnish pop-soul artist Emilia Qvist",
+                "link": "https://emiliaqvist.com",
+                "image": "/assets/images/project-covers/emilia-qvist-homepage.png",
+                "keywords": [
+                    {
+                        "label": "GatsbyJS",
+                        "url": "https://www.gatsbyjs.com/"
+                    },
+                    {
+                        "label": "React"
+                    },
+                    {
+                        "label": "Google Cloud"
                     }
                 ]
             }
