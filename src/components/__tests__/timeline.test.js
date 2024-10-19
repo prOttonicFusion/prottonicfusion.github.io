@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { jest } from '@jest/globals'
+import { describe, expect, it, jest } from '@jest/globals'
 import Timeline from '../timeline'
 
 jest.mock('../../sections/timeline.mdx', () => {
