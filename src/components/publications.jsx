@@ -26,7 +26,7 @@ const Publications = () =>
         <PublicationsMDX />
 
         <div className="publication-cards-container">
-            {publicationList.map(publication => {
+            {publicationList.map((publication) => {
                 return (
                     <PublicationCard
                         title={publication.title}
