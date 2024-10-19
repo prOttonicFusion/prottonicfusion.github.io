@@ -1,7 +1,13 @@
 [
     {
+        "title": "Senior Software Engineer",
+        "time": "2023 -",
+        "place": "Koherent",
+        "description": "Customer-facing systems | Scalable data storage solutions | IoT | DevOps"
+    },
+    {
         "title": "Software Engineer",
-        "time": "2022 -",
+        "time": "2022 - 2023",
         "place": "Koherent",
         "description": "Full-stack web development"
     },
@@ -9,7 +15,7 @@
         "title": "Software Developer",
         "time": "2020 - 2022",
         "place": "Fjuul",
-        "description": "Full-stack mobile & web development",
+        "description": "Full-stack mobile & web development | Technical customer service | Data analytics & visualization",
         "itemClass": "timeline-normal"
     },
     {
