@@ -7,18 +7,6 @@ const GLOBALS_BROWSER_FIX = Object.assign({}, globals.browser, {
 })
 delete GLOBALS_BROWSER_FIX['AudioWorkletGlobalScope ']
 
-// module.exports = {
-//     globals: {
-//         __PATH_PREFIX__: true,
-//     },
-//     extends: ['react-app', 'prottonic'],
-//     parserOptions: {
-//         ecmaFeatures: {
-//             jsx: true,
-//         },
-//     },
-// }
-
 export default [
     {
         ignores: [
