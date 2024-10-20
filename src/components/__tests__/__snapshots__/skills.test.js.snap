@@ -40,9 +40,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -60,9 +62,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -80,9 +84,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -117,9 +123,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -154,9 +162,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -191,9 +201,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -229,9 +241,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -279,9 +293,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -316,9 +332,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -354,9 +372,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -392,9 +412,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -430,9 +452,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -468,9 +492,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -519,9 +545,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -556,9 +584,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -576,9 +606,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -627,9 +659,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -665,9 +699,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"
@@ -716,9 +752,11 @@ exports[`Skills section renders skills correctly 1`] = `
               <div
                 class="tooltip-container dev-icon-container"
               >
-                <div>
+                <div
+                  role="presentation"
+                >
                   <img
-                    alt="Dev icon"
+                    alt=""
                     class="dev-icon"
                     height="15px"
                     src="test-file-stub"

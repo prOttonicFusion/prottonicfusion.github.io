@@ -1,6 +1,6 @@
 import '../styles/global.scss'
 import React from 'react'
-import SocialIcon from './social-icon'
+import SocialIcon from './icons/social-icon'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Footer = () => {

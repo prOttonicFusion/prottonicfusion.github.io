@@ -2,45 +2,38 @@ import '../styles/global.scss'
 import '../styles/components/project-card.scss'
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Card } from 'react-bootstrap'
-import SocialIcon from './social-icon'
+import SocialIcon from './icons/social-icon'
 
 const ProjectKeywords = ({ keywords }) =>
-    <Card.Text>
+    <div>
         {keywords.map((keyword, index) =>
             <div className="project-keyword">
                 <a href={keyword.url}>{keyword.label}</a>
             </div>,
         )}
-    </Card.Text>
+    </div>
 
 
 const ProjectCard = ({
-    title,
-    image,
-    description,
-    wordpress,
-    github,
-    link,
-    documentation,
-    keywords,
+    title, image, description, wordpress, github, link, documentation, keywords,
 }) =>
-    <Card
+    <div
         className="project-card"
     >
-        <div className="project-image-container">
-            <Card.Img variant="top" src={image} className="project-image" role="presentation" />
-        </div>
-        <Card.Body className="project-card-body">
-            <div className="project-description-container">
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{description}</Card.Text>
+        <div className="project-card-body">
+            <div className="project-image-container">
+                <img src={image} className="project-image" alt="Project logo" />
             </div>
+            <div className="project-description-container">
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
+        </div>
+        <div className="project-card-footer">
             <div className="project-keywords-container">
                 {keywords && <ProjectKeywords keywords={keywords} />}
             </div>
-        </Card.Body>
-        <Card.Footer>
+
             {github &&
                 <SocialIcon
                     service="github"
@@ -63,8 +56,8 @@ const ProjectCard = ({
                 ></SocialIcon>
             }
             {link && <SocialIcon service="" url={link} label="WebSite"></SocialIcon>}
-        </Card.Footer>
-    </Card>
+        </div>
+    </div>
 
 ProjectCard.propTypes = {
     title: PropTypes.string,

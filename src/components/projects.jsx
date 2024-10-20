@@ -1,9 +1,25 @@
 import '../styles/global.scss'
+import 'react-multi-carousel/lib/styles.css'
 import React from 'react'
 import ProjectsMDX from '../sections/projects'
 import ProjectCard from './project-card'
 import projectList from '../data/projects.json'
-import { Carousel } from 'react-bootstrap'
+import Carousel from 'react-multi-carousel'
+
+const responsive = {
+    desktop: {
+      breakpoint: { min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1
+    }
+}
 
 const Projects = () =>
     <div
@@ -32,25 +48,29 @@ const Projects = () =>
             )}
         </div>
         <Carousel
-            variant="light"
-            interval={null}
-            controls={true}
-            indicators={false}
-            className="project-cards-container-mobile"
+            arrows={true}
+            swipeable={true}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            infinite={true}
+            autoPlay={false}
+            transitionDuration={500}
+            ssr={false}
+            containerClass="project-cards-container-mobile"
         >
             {projectList[0].projects.map((project) =>
-                <Carousel.Item key={project.name}>
-                    <ProjectCard
-                        title={project.name}
-                        description={project.description}
-                        image={project.image}
-                        github={project.github}
-                        wordpress={project.wordpress}
-                        documentation={project.documentation}
-                        link={project.link}
-                        keywords={project.keywords}
-                    />
-                </Carousel.Item>
+                <ProjectCard
+                    key={project.name}
+                    title={project.name}
+                    description={project.description}
+                    image={project.image}
+                    github={project.github}
+                    wordpress={project.wordpress}
+                    documentation={project.documentation}
+                    link={project.link}
+                    keywords={project.keywords}
+                />
             )}
         </Carousel>
     </div>

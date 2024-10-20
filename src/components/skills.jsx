@@ -3,7 +3,7 @@ import '../styles/components/skills.scss'
 import React from 'react'
 import SkillsMDX from '../sections/skills'
 import skillsData from '../data/skills.json'
-import DevIcon from './dev-icon'
+import DevIcon from './icons/dev-icon'
 
 const SkillItem = ({ name, devIcons, level, url }) =>
     <div className="skill-item">
