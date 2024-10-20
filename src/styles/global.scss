@@ -1,5 +1,4 @@
 @use './variables.scss' as v;
-@import '~bootstrap/scss/bootstrap';
 
 body {
   @include v.base-font;
