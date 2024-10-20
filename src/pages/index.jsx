@@ -4,7 +4,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Banner from '../components/banner'
 import NavMenu from '../components/nav-menu'
 import IndexMDX from '../sections/index.mdx'
@@ -39,7 +39,7 @@ const Home = ({ data }) => {
                 </div>
             </Banner>
             <Layout>
-                <SEO title="Home" />
+                <Seo title="Home" />
                 <Projects />
                 <Skills />
                 <Timeline />
@@ -54,7 +54,7 @@ const Home = ({ data }) => {
 
 export default Home
 
-export const Head = () => <SEO title="Home" />
+export const Head = () => <Seo title="Home" />
 
 export const pageQuery = graphql`
   query IndexPageQuery {

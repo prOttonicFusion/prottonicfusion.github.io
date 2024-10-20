@@ -185,7 +185,7 @@ const DevIcon = ({ tool, height }) => {
                 src={icon}
                 className="dev-icon"
                 height={height ? height : '15px'}
-                alt={'Dev icon'}
+                alt=""
             />
         </WithTooltip>
     )

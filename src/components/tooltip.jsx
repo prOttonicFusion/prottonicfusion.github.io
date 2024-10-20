@@ -11,6 +11,7 @@ const WithTooltip = ({ label, className, children, ...rest }) => {
             <div
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
+                role="presentation"
             >
                 {children}
             </div>

@@ -4,7 +4,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import Banner from '../components/banner'
 import Footer from '../components/footer'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import NavMenu from '../components/nav-menu'
 
 const ErrorPage = () => {
@@ -25,5 +25,5 @@ const ErrorPage = () => {
 
 export default ErrorPage
 
-export const Head = () => <SEO title="Error" />
+export const Head = () => <Seo title="Error" />
 
