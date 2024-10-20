@@ -3,7 +3,7 @@ import { describe, expect, it, jest } from '@jest/globals'
 import { render } from '@testing-library/react'
 import Skills from '../skills'
 
-jest.mock('../../sections/skills.mdx', () => {
+jest.mock('../../../content/sections/skills.mdx', () => {
     return {
         __esModule: true,
         default: () => {

@@ -1,8 +1,8 @@
 import '../styles/global.scss'
 import '../styles/components/timeline.scss'
 import React from 'react'
-import TimelineMDX from '../sections/timeline'
-import timelineData from '../data/timeline.json'
+import TimelineMDX from '../../content/sections/timeline'
+import timelineData from '../../content/data/timeline.json'
 
 const TimelineItem = ({ eventData }) => {
     return (

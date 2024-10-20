@@ -1,7 +1,7 @@
 import '../styles/global.scss'
 import React from 'react'
-import PublicationsMDX from '../sections/publications'
-import publicationList from '../data/publications.json'
+import PublicationsMDX from '../../content/sections/publications'
+import publicationList from '../../content/data/publications.json'
 
 const PublicationCard = ({ title, url, journal, year }) =>
     <div className="publication-card">

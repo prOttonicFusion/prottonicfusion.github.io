@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { describe, expect, it, jest } from '@jest/globals'
 import Timeline from '../timeline'
 
-jest.mock('../../sections/timeline.mdx', () => {
+jest.mock('../../../content/sections/timeline.mdx', () => {
     return {
         __esModule: true,
         default: () => {

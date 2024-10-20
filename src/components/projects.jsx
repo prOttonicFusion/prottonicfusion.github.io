@@ -1,9 +1,9 @@
 import '../styles/global.scss'
 import 'react-multi-carousel/lib/styles.css'
 import React from 'react'
-import ProjectsMDX from '../sections/projects'
+import ProjectsMDX from '../../content/sections/projects'
 import ProjectCard from './project-card'
-import projectList from '../data/projects.json'
+import projectList from '../../content/data/projects.json'
 import Carousel from 'react-multi-carousel'
 
 const responsive = {

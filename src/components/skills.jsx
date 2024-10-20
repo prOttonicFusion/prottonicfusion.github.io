@@ -1,8 +1,8 @@
 import '../styles/global.scss'
 import '../styles/components/skills.scss'
 import React from 'react'
-import SkillsMDX from '../sections/skills'
-import skillsData from '../data/skills.json'
+import SkillsMDX from '../../content/sections/skills'
+import skillsData from '../../content/data/skills.json'
 import DevIcon from './icons/dev-icon'
 
 const SkillItem = ({ name, devIcons, level, url }) =>

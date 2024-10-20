@@ -51,7 +51,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'pages',
-                path: `${__dirname}/src/sections/`,
+                path: `${__dirname}/content/sections/`,
             },
         },
         'gatsby-plugin-mdx',

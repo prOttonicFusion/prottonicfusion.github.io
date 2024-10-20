@@ -1,6 +1,6 @@
 import '../styles/global.scss'
 import React from 'react'
-import ContactMDX from '../sections/contact'
+import ContactMDX from '../../content/sections/contact'
 
 const Contact = () =>
     <div className="section-container" id="contact">
