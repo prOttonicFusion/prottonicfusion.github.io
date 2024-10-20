@@ -2,41 +2,37 @@
 
 exports[`Project card renders card correctly with GitHub icon 1`] = `
 <div
-  class="project-card card"
+  class="project-card"
 >
   <div
-    class="project-image-container"
+    class="project-card-body"
   >
-    <img
-      class="card-img-top project-image"
-      role="presentation"
-      src="/path/to/the/image.png"
-    />
-  </div>
-  <div
-    class="project-card-body card-body"
-  >
+    <div
+      class="project-image-container"
+    >
+      <img
+        alt="Project logo"
+        class="project-image"
+        src="/path/to/the/image.png"
+      />
+    </div>
     <div
       class="project-description-container"
     >
-      <div
-        class="card-title h5"
-      >
+      <h3>
         Some title
-      </div>
-      <p
-        class="card-text"
-      >
+      </h3>
+      <p>
         My GitHub project
       </p>
     </div>
+  </div>
+  <div
+    class="project-card-footer"
+  >
     <div
       class="project-keywords-container"
     />
-  </div>
-  <div
-    class="card-footer"
-  >
     <span>
       <a
         href="https://github.com/github-user/github-repo.git"
