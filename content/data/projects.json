@@ -9,13 +9,8 @@
                 "github": "prOttonicFusion/spectrograph",
                 "image": "/assets/images/project-covers/spectrograph.png",
                 "keywords": [
-                    {
-                        "label": "Python"
-                    },
-                    {
-                        "label": "Pillow",
-                        "url": "https://pillow.readthedocs.io/"
-                    }
+                    { "label": "Python" },
+                    { "label": "Pillow", "url": "https://pillow.readthedocs.io/" }
                 ]
             },
             {
@@ -24,9 +19,7 @@
                 "github": "fjuul/NSFoundationCoding",
                 "image": "/assets/images/project-covers/fjuul.png",
                 "keywords": [
-                    {
-                        "label": "Swift"
-                    }
+                    { "label": "Swift" }
                 ]
             },
             {
@@ -35,41 +28,28 @@
                 "link": "https://koherent.io",
                 "image": "/assets/images/project-covers/koherent-io.jpg",
                 "keywords": [
-                    {
-                        "label": "React"
-                    },
-                    {
-                        "label": "TypeScript"
-                    },
-                    {
-                        "label": "AWS"
-                    }
+                    { "label": "React" },
+                    { "label": "TypeScript" },
+                    { "label": "AWS" }
                 ]
             },
             {
-                "name": "This site!",
-                "description": "Built using Gatsby and hosted on GitHub Pages",
-                "github": "prOttonicFusion/prOttonicFusion.github.io",
-                "image": "/assets/images/project-covers/Gatsby_Monogram.png",
+                "name": "gtfs-plotter",
+                "description": "A tool for drawing public transit routes from General Transit Feed Specifications",
+                "github": "prOttonicFusion/gtfs-plotter",
+                "image": "/assets/images/project-covers/gtfs-plotter.jpg",
                 "keywords": [
-                    {
-                        "label": "GatsbyJS",
-                        "url": "https://www.gatsbyjs.com/"
-                    },
-                    {
-                        "label": "React"
-                    }
+                    { "label": "Python" },
+                    { "label": "GTFS", "url": "https://gtfs.org/" }
                 ]
             },
             {
-                "name": "GitHub Contributions CLI",
-                "description": "A command line tool for tracking your daily contributions on GitHub",
-                "github": "prOttonicFusion/github-contributions-cli",
-                "image": "/assets/images/project-covers/contributions-cli.png",
+                "name": "parquetool",
+                "description": "A command-line utility for previewing & analyzing Apache Parquet files",
+                "github": "prOttonicFusion/parquetool",
+                "image": "/assets/images/project-covers/parquetool.jpg",
                 "keywords": [
-                    {
-                        "label": "Python"
-                    }
+                    { "label": "Python" }
                 ]
             },
             {
@@ -84,12 +64,8 @@
                 "github": "prOttonicFusion/parallel-genetic-optimization",
                 "image": "https://raw.githubusercontent.com/prOttonicFusion/parallel-genetic-optimization/master/images/final_route.png",
                 "keywords": [
-                    {
-                        "label": "C++"
-                    },
-                    {
-                        "label": "OpenMPI"
-                    }
+                    { "label": "C++" },
+                    { "label": "OpenMPI" }
                 ]
             },
             {
@@ -98,9 +74,7 @@
                 "github": "prOttonicFusion/orbital-motion-simulator",
                 "image": "/assets/images/project-covers/orbital-motion-simulator.png",
                 "keywords": [
-                    {
-                        "label": "Fortran"
-                    }
+                    { "label": "Fortran" }
                 ]
             },
             {
@@ -109,16 +83,9 @@
                 "link": "https://emiliaqvist.com",
                 "image": "/assets/images/project-covers/emilia-qvist-homepage.png",
                 "keywords": [
-                    {
-                        "label": "GatsbyJS",
-                        "url": "https://www.gatsbyjs.com/"
-                    },
-                    {
-                        "label": "React"
-                    },
-                    {
-                        "label": "Google Cloud"
-                    }
+                    { "label": "GatsbyJS", "url": "https://www.gatsbyjs.com/" },
+                    { "label": "React" },
+                    { "label": "Google Cloud" }
                 ]
             }
         ]
