@@ -39,8 +39,8 @@ const Home = ({ data }) => {
             </Banner>
             <Layout>
                 <Seo title="Home" />
-                <Projects />
                 <Experience />
+                <Projects />
                 <Publications />
                 <Contact />
                 <hr />
