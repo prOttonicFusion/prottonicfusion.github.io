@@ -67,7 +67,7 @@ exports[`Page footer renders footer correctly 1`] = `
   <div
     class="copyright-container"
   >
-    2024
+    2026
      © 
     Otto Lindblom
   </div>
