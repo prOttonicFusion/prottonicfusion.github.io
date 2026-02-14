@@ -1,39 +1,65 @@
 [
     {
-        "title": "Senior Software Engineer",
-        "time": "2023 -",
         "place": "Koherent",
-        "description": "Customer-facing systems | Scalable data storage solutions | IoT | DevOps"
+        "title": "Senior Software Engineer",
+        "time": "2023 - Present",
+        "type": "job",
+        "description": "Customer-facing systems | Scalable data storage solutions | IoT | DevOps",
+        "descriptionFull": [
+            "Design & development of customer-facing systems and DevOps tools for infrastructure provisioning.",
+            "Development of scalable analytics and data storage solutions for Structural Health Monitoring (SHM) and positioning data."
+        ]
     },
     {
+        "place": "Koherent",
         "title": "Software Engineer",
         "time": "2022 - 2023",
-        "place": "Koherent",
-        "description": "Full-stack web development"
+        "type": "job",
+        "description": "Full-stack web development",
+        "descriptionFull": [
+            "Full-stack web development of customer-facing interfaces and internal development tools."
+        ]
     },
     {
+        "place": "Fjuul Vision",
         "title": "Software Developer",
         "time": "2020 - 2022",
-        "place": "Fjuul",
+        "type": "job",
         "description": "Full-stack mobile & web development | Technical customer service | Data analytics & visualization",
-        "itemClass": "timeline-normal"
+        "descriptionFull": [
+            "Full-stack development of a mobile application for fitness data analytics.",
+            "Technical customer service and support for enterprise customers.",
+            "Data analytics and visualization"
+        ]
     },
     {
+        "place": "University of Helsinki",
         "title": "MSc in Computational Materials Physics",
         "time": "2020",
-        "place": "University of Helsinki",
-        "description": null
+        "type": "education",
+        "description": null,
+        "descriptionFull": [
+            "Courses in Materials Science, High-Performance Computing, and Industrial Physics"
+        ]
     },
     {
+        "place": "University of Helsinki Accelerator Lab",
         "title": "Research Assistant",
         "time": "2017 - 2020",
-        "place": "Univ. of Helsinki Accelerator Lab",
-        "description": "Molecular dynamics simulations related to fusion materials research"
+        "type": "job",
+        "description": "Molecular dynamics simulations related to fusion materials research",
+        "descriptionFull": [
+            "Molecular dynamics simulations of hydrogen-tungsten interactions",
+            "Massively parallel high-performance computing",
+            "Large-scale data analysis"
+        ]
     },
     {
+        "place": "University of Helsinki",
         "title": "BSc in Physics",
         "time": "2018",
-        "place": "University of Helsinki",
-        "description": null
+        "type": "education",
+        "description": null,
+        "descriptionFull": ""
     }
 ]

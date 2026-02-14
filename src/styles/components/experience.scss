@@ -1,0 +1,87 @@
+@use "../variables.scss" as v;
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.experience-section {
+  margin-bottom: 3.5rem;
+  width: clamp(100px, 1000px, 100%);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    
+    @include v.sm {
+      font-size: 2rem;
+    }
+  }
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.experience-item {
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+
+.experience-header {
+  margin-bottom: 0.5rem;
+
+  .experience-place {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    
+    @include v.sm {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.85;
+
+  .experience-title {
+    font-weight: 500;
+  }
+
+  .experience-separator {
+    opacity: 0.6;
+  }
+
+  .experience-time {
+    font-style: italic;
+  }
+}
+
+.experience-description {
+  margin-top: 0.5rem;
+  
+  p {
+    margin: 0;
+    line-height: 1.65;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+}
+
+.experience-description-list {
+    margin-left: 1.5rem;
+}

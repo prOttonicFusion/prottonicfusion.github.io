@@ -11,10 +11,9 @@ import IndexMDX from '../../content/sections/index.mdx'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
-import Skills from '../components/skills'
-import Timeline from '../components/timeline'
 import Publications from '../components/publications'
 import ClientOnly from '../components/client-only'
+import Experience from '../components/experience'
 
 const Home = ({ data }) => {
     return (
@@ -41,8 +40,7 @@ const Home = ({ data }) => {
             <Layout>
                 <Seo title="Home" />
                 <Projects />
-                <Skills />
-                <Timeline />
+                <Experience />
                 <Publications />
                 <Contact />
                 <hr />
