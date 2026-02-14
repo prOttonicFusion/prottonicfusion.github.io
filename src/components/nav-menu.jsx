@@ -1,5 +1,5 @@
 import '../styles/components/nav-menu.scss'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 import cx from 'classnames'
@@ -20,9 +20,28 @@ const MenuToggleIcon = ({ isOpen }) => {
 const NavMenu = () => {
     const { menuLinks } = useSiteMetadata()
     const [isNavExpanded, setIsNavExpanded] = useState(undefined)
+    const [scrollOpacity, setScrollOpacity] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Fade navbar bg color into view
+            // Start fading at 50% down the viewport, complete at 100%
+            const scrollPosition = window.scrollY
+            const viewportHeight = window.innerHeight
+            const opacity = Math.max(0, Math.min(1, (scrollPosition / viewportHeight - 0.5) * 2))
+            setScrollOpacity(opacity)
+        }
+
+        handleScroll() // Initialize on mount
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
-        <nav className="nav-container">
+        <nav 
+            className="nav-container"
+            style={{ '--scroll-opacity': scrollOpacity }}
+        >
             <button
                 className="hamburger"
                 onClick={() => {

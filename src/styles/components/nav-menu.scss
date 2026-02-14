@@ -9,7 +9,14 @@
   align-items: center;
   width: 100%;
   padding-top: 10px;
-  background-color: transparent;
+  padding-bottom: 6px;
+  
+  @include v.sm {
+    --scroll-opacity: 0;
+    background-color: rgba(v.$bg-color, calc(0.95 * var(--scroll-opacity)));
+    backdrop-filter: blur(calc(10px * var(--scroll-opacity)));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, calc(0.1 * var(--scroll-opacity)));
+  }
 }
 
 .nav-menu {
