@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
-      - uses: enriikke/gatsby-gh-pages-action/commit/6293db9dd9d25701c5220c26a8716ac8322b6588  #v2.2.1
+      - uses: enriikke/gatsby-gh-pages-action@6293db9dd9d25701c5220c26a8716ac8322b6588  #v2.2.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages-test
