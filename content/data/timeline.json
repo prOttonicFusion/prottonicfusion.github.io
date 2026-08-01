@@ -1,14 +1,16 @@
 [
     {
         "place": "Koherent",
-        "title": "Senior Software Engineer",
+        "title": "Senior Software & Systems Engineer",
         "time": "2023 - Present",
         "type": "job",
         "description": "Customer-facing systems | Scalable data storage solutions | IoT | DevOps",
         "descriptionFull": [
-            "Designing and developing scalable analytics and data storage solutions for Structural Health Monitoring (SHM) and positioning data.",
-            "Building and maintaining internal and customer-facing interfaces for data management and access.",
-            "Creating DevOps pipelines and tools for cloud infrastructure provisioning and monitoring."
+            "Developing scalable analytics and data storage solutions for Structural Health Monitoring and positioning data.",
+            "Building and maintaining customer-facing interfaces for data management and access.",
+            "Creating DevOps pipelines and tools for cloud infrastructure provisioning and monitoring.",
+            "Engineering and installing sensor networks for Structural Health Monitoring and positioning across physical infrastructure and worksites.",
+            ""
         ]
     },
     {
@@ -16,7 +18,7 @@
         "title": "Software Engineer",
         "time": "2022 - 2023",
         "type": "job",
-        "description": "Full-stack web development",
+        "description": "Full-stack development | Data analytics & visualization | DevOps",
         "descriptionFull": [
             "Developed customer-facing interfaces and internal development tools."
         ]
@@ -34,6 +36,28 @@
         ]
     },
     {
+        "place": "University of Helsinki Accelerator Lab",
+        "title": "Research Assistant",
+        "time": "2017 - 2020",
+        "type": "job",
+        "description": "Molecular dynamics simulations related to fusion materials research",
+        "descriptionFull": [
+            "Molecular-scale simulations of damage formation and dynamics in metals",
+            "Massively parallel high-performance computing",
+            "Large-scale data analysis"
+        ]
+    },
+    {
+        "place": "KTH Royal Institute of Technology",
+        "title": "MSc in Railway Engineering",
+        "time": "2025-2027",
+        "type": "education",
+        "description": null,
+        "descriptionFull": [
+            "Courses in Railway Infrastructure, Operations and Vehicle Dynamics"
+        ]
+    },
+    {
         "place": "University of Helsinki",
         "title": "MSc in Computational Materials Physics",
         "time": "2020",
@@ -41,18 +65,6 @@
         "description": null,
         "descriptionFull": [
             "Courses in Materials Science, High-Performance Computing, and Industrial Physics"
-        ]
-    },
-    {
-        "place": "University of Helsinki Accelerator Lab",
-        "title": "Research Assistant",
-        "time": "2017 - 2020",
-        "type": "job",
-        "description": "Molecular dynamics simulations related to fusion materials research",
-        "descriptionFull": [
-            "Molecular dynamics simulations of hydrogen-tungsten interactions",
-            "Massively parallel high-performance computing",
-            "Large-scale data analysis"
         ]
     },
     {
