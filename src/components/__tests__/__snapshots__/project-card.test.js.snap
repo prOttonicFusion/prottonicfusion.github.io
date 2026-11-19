@@ -11,7 +11,7 @@ exports[`Project card renders card correctly with GitHub icon 1`] = `
       class="project-image-container"
     >
       <img
-        alt="Project logo"
+        alt=""
         class="project-image"
         src="/path/to/the/image.png"
       />
@@ -35,10 +35,12 @@ exports[`Project card renders card correctly with GitHub icon 1`] = `
     />
     <span>
       <a
+        aria-label="GitHub"
         href="https://github.com/github-user/github-repo.git"
         title="GitHub"
       >
         <svg
+          aria-hidden="true"
           class="social-icon"
           height="32"
           viewBox="0 0 24 24"

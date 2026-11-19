@@ -38,9 +38,10 @@ const NavMenu = () => {
     }, [])
 
     return (
-        <nav 
+        <nav
             className="nav-container"
             style={{ '--scroll-opacity': scrollOpacity }}
+            aria-label="Main navigation"
         >
             <button
                 className="hamburger"
@@ -48,7 +49,6 @@ const NavMenu = () => {
                     setIsNavExpanded(!isNavExpanded)
                 }}
                 aria-label="Toggle navigation menu"
-                aria-haspopup="true"
                 aria-controls="nav-menu"
                 aria-expanded={isNavExpanded}
             >
@@ -56,14 +56,13 @@ const NavMenu = () => {
                     <MenuToggleIcon isOpen={isNavExpanded} />
                 </div>
             </button>
-            <nav
+            <div
                 id="nav-menu"
                 className={cx('nav-menu', {
                     'expanded': isNavExpanded,
                     // Do not apply collapse animation on initial page load
                     'collapsed': isNavExpanded === false,
                 })}
-                aria-label="Main navigation menu"
             >
                 <ul>
                     {menuLinks.map(
@@ -79,7 +78,7 @@ const NavMenu = () => {
                             </li>,
                     )}
                 </ul>
-            </nav>
+            </div>
         </nav>
     )
 }

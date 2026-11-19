@@ -22,6 +22,24 @@
 .nav-menu {
   margin-left: auto;
 
+  @include v.sm {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px; // cover .nav-container's vertical padding
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      pointer-events: none;
+      background-color: rgba(v.$bg-color, 0.7);
+      border-bottom-left-radius: 12px;
+      opacity: calc(1 - var(--scroll-opacity));
+    }
+  }
+
   ul {
     display: flex;
     margin: 0;
@@ -38,14 +56,13 @@
 
 .nav-menu-link {
   @include v.mono-font;
-  color: v.$body-link-color !important;
+  color: v.$primary-color !important;
   text-decoration: none;
   display: block;
   width: 100%;
 
   &:hover {
     text-decoration: underline;
-    color: v.$blockquote-text-color !important;
   }
 }
 
@@ -118,8 +135,8 @@ $mobile-nav-button-padding: 4px;
 }
 
 @keyframes menu-collapse-animation {
-  0% { height: $mobile-nav-height; }
-  100% { height: 0; }
+  0% { height: $mobile-nav-height; visibility: visible; }
+  100% { height: 0; visibility: hidden; }
 }
 
 @include v.ltsm {
@@ -168,6 +185,7 @@ $mobile-nav-button-padding: 4px;
     ul {
       display: block;
       height: 0;
+      visibility: hidden;
 
       @include v.prefers-animations {
         animation-name: menu-collapse-animation;

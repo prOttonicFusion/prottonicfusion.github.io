@@ -1,18 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page footer renders footer correctly 1`] = `
-<div
-  class="site-footer"
+<footer
+  class="main-content site-footer"
 >
+  <hr />
   <div
     class="social-icon-container"
   >
     <span>
       <a
+        aria-label="GitHub"
         href="https://github.com/prottonicfusion/"
         title="GitHub"
       >
         <svg
+          aria-hidden="true"
           class="social-icon"
           height="32"
           viewBox="0 0 24 24"
@@ -27,10 +30,12 @@ exports[`Page footer renders footer correctly 1`] = `
     </span>
     <span>
       <a
+        aria-label="LinkedIn"
         href="https://www.linkedin.com/in/otto-lindblom"
         title="LinkedIn"
       >
         <svg
+          aria-hidden="true"
           class="social-icon"
           clip-rule="evenodd"
           fill-rule="evenodd"
@@ -47,10 +52,12 @@ exports[`Page footer renders footer correctly 1`] = `
     </span>
     <span>
       <a
+        aria-label="E-mail"
         href="mailto: otto.lindblom@gmail.com"
         title="E-mail"
       >
         <svg
+          aria-hidden="true"
           class="social-icon"
           height="32"
           viewBox="0 0 24 24"
@@ -71,5 +78,5 @@ exports[`Page footer renders footer correctly 1`] = `
      © 
     Otto Lindblom
   </div>
-</div>
+</footer>
 `;

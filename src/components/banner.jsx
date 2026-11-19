@@ -5,7 +5,7 @@ import ClientOnly from '../components/client-only'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Banner = ({ children }) =>
-    <div className="page-banner">
+    <header className="page-banner">
         <ClientOnly>
             <StaticImage
                 src={'../assets/images/hero/hero-image.jpg'}
@@ -13,13 +13,13 @@ const Banner = ({ children }) =>
                 placeholder="dominantColor"
                 loading="eager"
                 quality={80}
-                alt="Hero Image"
+                alt=""
             />
         </ClientOnly>
         <div className="page-banner-contents">
             {children}
         </div>
-    </div>
+    </header>
 
 Banner.propTypes = {
     children: PropTypes.node,

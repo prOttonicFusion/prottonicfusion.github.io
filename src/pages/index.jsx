@@ -26,7 +26,7 @@ const Home = ({ data }) => {
                             src={'../assets/images/profile.jpg'}
                             className={'profile-pic'}
                             loading="eager"
-                            alt="Me"
+                            alt="A photo of Otto"
                         />
                     </ClientOnly>
                 </div>
@@ -43,9 +43,8 @@ const Home = ({ data }) => {
                 <Projects />
                 <Publications />
                 <Contact />
-                <hr />
-                <Footer />
             </Layout>
+            <Footer />
         </>
     )
 }

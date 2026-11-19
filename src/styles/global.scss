@@ -19,6 +19,12 @@ a {
   }
 }
 
+.main-content p a,
+.main-description p a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .btn {
   display: block;
   width: 100%;

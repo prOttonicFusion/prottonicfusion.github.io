@@ -22,7 +22,7 @@ const ProjectCard = ({
     >
         <div className="project-card-body">
             <div className="project-image-container">
-                <img src={image} className="project-image" alt="Project logo" />
+                <img src={image} className="project-image" alt="" />
             </div>
             <div className="project-description-container">
                 <h3>{title}</h3>

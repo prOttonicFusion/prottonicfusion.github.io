@@ -7,7 +7,8 @@ const Footer = () => {
     const { contactOptions, author } = useSiteMetadata()
 
     return (
-        <div className={'site-footer'}>
+        <footer className="main-content site-footer">
+            <hr />
             <div className={'social-icon-container'}>
                 {contactOptions.map((contactOption) =>
                     <SocialIcon
@@ -21,7 +22,7 @@ const Footer = () => {
             <div className="copyright-container">
                 {new Date().getFullYear()} &copy; {author}
             </div>
-        </div>
+        </footer>
     )
 }
 
